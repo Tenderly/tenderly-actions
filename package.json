@@ -1,9 +1,8 @@
 {
     "name": "tenderly-actions",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Client library for Tenderly Actions",
-    "main": "out/index.js",
-    "types": "out/index.d.ts",
+    "types": "out/actions.d.ts",
     "scripts": {
         "build": "tsc"
     },

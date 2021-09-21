@@ -2,11 +2,14 @@
     "compilerOptions": {
         "target": "es2017",
         "module": "commonjs",
+        "declaration": true,
+        "declarationMap": true,
+        "sourceMap": true,
+        "esModuleInterop": true,
         "noImplicitReturns": true,
         "noUnusedLocals": true,
         "strict": true,
-        "sourceMap": true,
-        "outDir": "./out",
+        "outDir": "out",
     },
     "compileOnSave": true,
     "include": [
