@@ -1,2 +1,2 @@
 # tenderly-actions
-Actions client library.
+Actions types package.
