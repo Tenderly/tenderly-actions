@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "target": "es2017",
+        "module": "commonjs",
+        "noImplicitReturns": true,
+        "noUnusedLocals": true,
+        "strict": true,
+        "sourceMap": true,
+        "outDir": "./out",
+    },
+    "compileOnSave": true,
+    "include": [
+        "src/**/*"
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "name": "tenderly-actions",
+    "version": "1.0.0",
+    "description": "Client library for Tenderly Actions",
+    "main": "out/index.js",
+    "types": "out/index.d.ts",
+    "scripts": {
+        "build": "tsc"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Tenderly/tenderly-actions.git"
+    },
+    "keywords": [
+        "ethereum",
+        "smart-contracts",
+        "tenderly"
+    ],
+    "files": [
+        "out/",
+        "LICENSE",
+        "README.md"
+    ],
+    "homepage": "https://github.com/Tenderly/tenderly-actions#readme",
+    "devDependencies": {
+        "typescript": "^4.4.3"
+    }
+}
