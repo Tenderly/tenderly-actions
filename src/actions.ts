@@ -38,10 +38,9 @@ export interface WebhookEvent extends Event {
  */
 export interface BlockEvent extends Event {
     /**
-     * Network identifiers: chain id and Tenderly network slug, if present.
+     * Chain identifier.
      */
-    networkId: bigint
-    networkSlug?: string
+    network: string
 
     blockHash: string
     /**
@@ -52,10 +51,9 @@ export interface BlockEvent extends Event {
 
 export interface TransactionEvent extends Event {
     /**
-     * Network identifiers: chain id and Tenderly network slug, if present.
+     * Chain identifier.
      */
-    networkId: bigint
-    networkSlug?: string
+    network: string
 
     blockHash: string
     /**
