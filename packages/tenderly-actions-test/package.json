@@ -1,6 +1,6 @@
 {
     "name": "tenderly-actions-test",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "Testing library for Tenderly Actions",
     "main": "out/index.js",
     "types": "out/index.d.ts",
