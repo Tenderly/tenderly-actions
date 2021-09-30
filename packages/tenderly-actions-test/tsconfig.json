@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-        "target": "es2017",
+        "target": "es2020",
         "module": "commonjs",
         "declaration": true,
         "declarationMap": true,
@@ -9,10 +9,10 @@
         "noImplicitReturns": true,
         "noUnusedLocals": true,
         "strict": true,
-        "outDir": "out",
+        "outDir": "out"
     },
     "compileOnSave": true,
     "include": [
-        "src/**/*"
+      "src/**/*"
     ]
 }

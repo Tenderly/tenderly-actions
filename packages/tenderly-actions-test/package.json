@@ -1,0 +1,33 @@
+{
+    "name": "tenderly-actions-test",
+    "version": "0.0.0",
+    "description": "Testing library for Tenderly Actions",
+    "types": "out/actions.d.ts",
+    "scripts": {
+        "build": "tsc"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Tenderly/tenderly-actions.git"
+    },
+    "keywords": [
+        "ethereum",
+        "smart-contracts",
+        "tenderly"
+    ],
+    "files": [
+        "out/",
+        "LICENSE",
+        "README.md"
+    ],
+    "homepage": "https://github.com/Tenderly/tenderly-actions#readme",
+    "devDependencies": {
+        "typescript": "^4.4.3"
+    },
+    "publishConfig": {
+        "registry": "http://localhost:4873"
+    },
+    "dependencies": {
+        "tenderly-actions": "^1.5.0"
+    }
+}

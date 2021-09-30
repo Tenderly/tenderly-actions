@@ -74,12 +74,12 @@ export interface Context {
     /**
      * Project's key-value store.
      */
-    storage: Storage;
+    readonly storage: Storage;
 
     /**
      * Project's secrets.
      */
-    secrets: Secrets;
+    readonly secrets: Secrets;
 }
 
 export interface Secrets {
