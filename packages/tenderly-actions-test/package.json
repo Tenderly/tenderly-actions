@@ -1,0 +1,30 @@
+{
+    "name": "tenderly-actions",
+    "version": "1.5.0",
+    "description": "Types for Tenderly Actions",
+    "types": "out/actions.d.ts",
+    "scripts": {
+        "build": "tsc"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Tenderly/tenderly-actions.git"
+    },
+    "keywords": [
+        "ethereum",
+        "smart-contracts",
+        "tenderly"
+    ],
+    "files": [
+      "out/",
+      "LICENSE",
+        "README.md"
+    ],
+    "homepage": "https://github.com/Tenderly/tenderly-actions#readme",
+    "devDependencies": {
+        "typescript": "^4.4.3"
+    },
+    "publishConfig": {
+        "registry":"http://localhost:4873"
+    }
+}
