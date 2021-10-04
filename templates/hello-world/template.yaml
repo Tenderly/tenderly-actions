@@ -6,6 +6,6 @@ files:
   - package.json
   - tsconfig.json
 
-variables:
+args:
   - name: ACTION_NAME
     description: Name the example actions ([a-z][a-z0-9_-]*)
