@@ -1,0 +1,5 @@
+$ACTION_NAME:
+  description: This is just an example, but you can publish this action.
+  function: example:helloWorldFn
+  trigger:
+    type: block

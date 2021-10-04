@@ -1,0 +1,13 @@
+{
+    "name": "actions",
+    "scripts": {
+        "build": "tsc"
+    },
+    "devDependencies": {
+        "typescript": "^4.3.5"
+    },
+    "dependencies": {
+        "tenderly-actions": "^1.2.0"
+    },
+    "private": true
+}

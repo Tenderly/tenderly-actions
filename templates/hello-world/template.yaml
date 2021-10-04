@@ -1,0 +1,11 @@
+# template.yaml and specs.yaml are required!
+
+files:
+  - .gitignore
+  - example.ts
+  - package.json
+  - tsconfig.json
+
+variables:
+  - name: ACTION_NAME
+    description: Name the example actions ([a-z][a-z0-9_-]*)
