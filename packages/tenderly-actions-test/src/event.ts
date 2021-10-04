@@ -20,19 +20,19 @@ export class TestWebhookEvent implements WebhookEvent {
 
 export class TestBlockEvent implements BlockEvent {
     blockHash: string;
-    blockNumber: string;
+    blockNumber: number;
     network: string;
 
     constructor() {
         this.blockHash = "0x"
-        this.blockNumber = "0x"
+        this.blockNumber = 0
         this.network = "0"
     }
 }
 
 export class TestTransactionEvent implements TransactionEvent {
     blockHash: string;
-    blockNumber: string;
+    blockNumber: number;
     from: string;
     hash: string;
     network: string;
@@ -40,7 +40,7 @@ export class TestTransactionEvent implements TransactionEvent {
 
     constructor() {
         this.blockHash = "0x"
-        this.blockNumber = "0x"
+        this.blockNumber = 0
         this.from = "0x"
         this.hash = "0x"
         this.network = "0"

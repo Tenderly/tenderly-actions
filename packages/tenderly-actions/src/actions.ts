@@ -43,10 +43,7 @@ export interface BlockEvent extends Event {
     network: string
 
     blockHash: string
-    /**
-     * Hex block number.
-     */
-    blockNumber: string
+    blockNumber: number
 }
 
 export interface TransactionEvent extends Event {
@@ -56,10 +53,7 @@ export interface TransactionEvent extends Event {
     network: string
 
     blockHash: string
-    /**
-     * Hex block number.
-     */
-    blockNumber: string
+    blockNumber: number
 
     /**
      * Transaction hash.
