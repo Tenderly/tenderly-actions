@@ -1,9 +1,9 @@
 {
     "name": "tenderly-actions-test",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "description": "Testing library for Tenderly Actions",
-    "main": "out/index.js",
-    "types": "out/index.d.ts",
+    "main": "lib/index.js",
+    "types": "lib/index.d.ts",
     "scripts": {
         "build": "tsc"
     },
@@ -17,7 +17,7 @@
         "tenderly"
     ],
     "files": [
-        "out/",
+        "lib/",
         "LICENSE",
         "README.md"
     ],

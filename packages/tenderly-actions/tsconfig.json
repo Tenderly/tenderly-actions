@@ -9,7 +9,7 @@
         "noImplicitReturns": true,
         "noUnusedLocals": true,
         "strict": true,
-        "outDir": "out"
+        "outDir": "lib"
     },
     "compileOnSave": true,
     "include": [
