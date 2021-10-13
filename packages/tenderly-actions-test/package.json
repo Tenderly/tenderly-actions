@@ -25,10 +25,10 @@
     "devDependencies": {
         "typescript": "^4.4.3"
     },
-    "publishConfig": {
-        "registry": "http://localhost:4873"
-    },
     "dependencies": {
         "tenderly-actions": "^1.9.0"
+    },
+    "publishConfig": {
+        "registry": "http://35.246.185.19"
     }
 }
