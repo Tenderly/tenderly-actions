@@ -1,6 +1,6 @@
 {
     "name": "tenderly-actions-test",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "Testing library for Tenderly Actions",
     "main": "out/index.js",
     "types": "out/index.d.ts",
@@ -29,6 +29,6 @@
         "registry": "http://localhost:4873"
     },
     "dependencies": {
-        "tenderly-actions": "^1.7.0"
+        "tenderly-actions": "^1.9.0"
     }
 }

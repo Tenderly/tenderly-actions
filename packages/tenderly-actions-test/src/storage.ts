@@ -36,19 +36,32 @@ export class TestStorage implements Storage {
         return Promise.resolve(value);
     }
 
+    getNumber(key: string): Promise<number> {
+        let value = this.stored.get(key)
+        if (value === undefined) {
+            throw new Error("NotFound")
+        }
+        return Promise.resolve(Number(value));
+    }
+
+    putNumber(key: string, value: number): Promise<void> {
+        this.stored.set(key, value.toString())
+        return Promise.resolve();
+    }
+
     putBigInt(key: string, value: bigint): Promise<void> {
         this.stored.set(key, value.toString())
-        return Promise.resolve(undefined);
+        return Promise.resolve();
     }
 
     putJson(key: string, value: any): Promise<void> {
         this.stored.set(key, JSON.stringify(value))
-        return Promise.resolve(undefined);
+        return Promise.resolve();
     }
 
     putStr(key: string, value: string): Promise<void> {
         this.stored.set(key, value)
-        return Promise.resolve(undefined);
+        return Promise.resolve();
     }
 
     clear() {
