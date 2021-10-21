@@ -7,7 +7,7 @@
         "typescript": "^4.3.5"
     },
     "dependencies": {
-        "tenderly-actions": "^1.2.0"
+        "@tenderly/actions": "^0.0.1"
     },
     "private": true
 }
