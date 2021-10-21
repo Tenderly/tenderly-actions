@@ -1,7 +1,7 @@
 {
-    "name": "tenderly-actions-test",
+    "name": "@tenderly/actions-test",
     "version": "0.0.7",
-    "description": "Testing library for Tenderly Actions",
+    "description": "Helper library for testing Web3 Actions.",
     "main": "lib/index.js",
     "types": "lib/index.d.ts",
     "scripts": {
@@ -14,7 +14,9 @@
     "keywords": [
         "ethereum",
         "smart-contracts",
-        "tenderly"
+        "tenderly",
+        "web3",
+        "serverless"
     ],
     "files": [
         "lib/",

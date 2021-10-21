@@ -1,7 +1,7 @@
 {
-    "name": "tenderly-actions",
-    "version": "1.10.1",
-    "description": "Types for Tenderly Actions",
+    "name": "@tenderly/actions",
+    "version": "0.0.1",
+    "description": "Types for Web3 Actions",
     "types": "lib/actions.d.ts",
     "scripts": {
         "build": "tsc"
@@ -13,7 +13,9 @@
     "keywords": [
         "ethereum",
         "smart-contracts",
-        "tenderly"
+        "tenderly",
+        "web3",
+        "serverless"
     ],
     "files": [
         "lib/",
