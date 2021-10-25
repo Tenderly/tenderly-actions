@@ -6,4 +6,4 @@ You can use Web3 Actions to create custom scenarios in order to further deepen y
 
 The code Web3 Actions run is called a function. Function must be written in TypeScript (or JavaScript) and runs in Node 14 runtime. Specification of events that your action listens to is called a trigger.
 
-To get started, see docs.tenderly.co/web3-actions/intro-to-web3-actions
+To get started, see [docs](docs.tenderly.co/web3-actions/intro-to-web3-actions).
