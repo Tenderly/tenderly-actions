@@ -25,8 +25,5 @@
     "homepage": "https://github.com/Tenderly/tenderly-actions#readme",
     "devDependencies": {
         "typescript": "^4.4.3"
-    },
-    "publishConfig": {
-        "registry":"http://35.246.185.19"
     }
 }

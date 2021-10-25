@@ -29,8 +29,5 @@
     },
     "dependencies": {
         "@tenderly/actions": "^0.0.1"
-    },
-    "publishConfig": {
-        "registry": "http://35.246.185.19"
     }
 }
