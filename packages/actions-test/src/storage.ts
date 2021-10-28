@@ -1,4 +1,4 @@
-import {Storage} from "tenderly-actions";
+import {Storage} from "@tenderly/actions";
 
 export class TestStorage implements Storage {
     private stored: Map<string, string>;

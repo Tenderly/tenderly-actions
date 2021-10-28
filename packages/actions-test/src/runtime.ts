@@ -1,4 +1,4 @@
-import {ActionFn, Context, Event} from "tenderly-actions";
+import {ActionFn, Context, Event} from "@tenderly/actions";
 import {TestSecrets} from "./secrets";
 import {TestStorage} from "./storage";
 

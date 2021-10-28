@@ -1,4 +1,4 @@
-import {Secrets} from "tenderly-actions";
+import {Secrets} from "@tenderly/actions";
 
 export class TestSecrets implements Secrets {
     private stored: Map<string, string>;
