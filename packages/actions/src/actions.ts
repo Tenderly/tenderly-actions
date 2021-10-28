@@ -64,6 +64,17 @@ export interface TransactionEvent extends Event {
     to?: string
 }
 
+export interface AlertEvent extends Event {
+    alertId: string
+
+    /**
+     * Chain identifier.
+     */
+    network: string
+
+    transactionHash: string
+}
+
 export interface Context {
     /**
      * Project's key-value store.
