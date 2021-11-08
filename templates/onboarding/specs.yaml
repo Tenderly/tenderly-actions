@@ -1,0 +1,22 @@
+# The action name. Must be unique in the project.
+helloWorldFailedTransactions:
+  description: Failed transaction that produced HelloWorld on Web3Actions contract.
+  function: hello:helloWorldFn
+  trigger:
+    type: transaction
+    transaction:
+      status:
+          # Listen to mined transactions stream
+        - mined
+      filters:
+          # Filter for transaction that match Ropsten network
+        - network: 3
+          # and failed
+          status: FAIL
+          # and produced event
+          eventEmitted:
+            # on this contract
+            contract:
+              address: 0xca5f355d158e7f38f58145c5e6f0c870b00e3cc7
+            # with HelloWorld name
+            name: HelloWorld
