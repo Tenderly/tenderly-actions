@@ -9,16 +9,16 @@ const helloWorldFn = async (context, event) => {
 
     // Project storage is accessed through context
     // Fetch already saved transactions under HELLO_WORLD/TXS key
-    const failedTxs = await context.storage.getJson('HELLO_WORLD/TXS');
-    if (!failedTxs['txs']) {
+    const storedTxs = await context.storage.getJson('HELLO_WORLD/TXS');
+    if (!storedTxs['txs']) {
         // Create new list if first
-        failedTxs['txs'] = [event.hash];
+        storedTxs['txs'] = [event.hash];
     } else {
         // Otherwise append
-        failedTxs['txs'].push(event.hash);
+        storedTxs['txs'].push(event.hash);
     }
     // Write to storage - don't forget the await!
-    await context.storage.putJson('HELLO_WORLD/TXS', failedTxs);
+    await context.storage.putJson('HELLO_WORLD/TXS', storedTxs);
 };
 
 // Function must be exported
