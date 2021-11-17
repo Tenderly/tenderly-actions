@@ -1,6 +1,6 @@
 # The action name. Must be unique in the project.
-helloWorldFailedTransactions:
-  description: Failed transaction that produced HelloWorld on Web3Actions contract.
+helloWorldTransactions:
+  description: Transaction that produced HelloWorld on Web3Actions contract.
   function: hello:helloWorldFn
   trigger:
     type: transaction
