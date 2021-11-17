@@ -11,8 +11,6 @@ helloWorldFailedTransactions:
       filters:
           # Filter for transaction that match Ropsten network
         - network: 3
-          # and failed
-          status: FAIL
           # and produced event
           eventEmitted:
             # on this contract
