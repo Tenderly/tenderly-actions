@@ -40,28 +40,45 @@ export interface BlockEvent extends Event {
     /**
      * Chain identifier.
      */
-    network: string
+    network: string;
 
-    blockHash: string
-    blockNumber: number
+    blockHash: string;
+    blockNumber: number;
 }
 
 export interface TransactionEvent extends Event {
     /**
      * Chain identifier.
      */
-    network: string
+    network: string;
 
-    blockHash: string
-    blockNumber: number
+    blockHash: string;
+    blockNumber: number;
 
     /**
      * Transaction hash.
      */
-    hash: string
+    hash: string;
 
-    from: string
-    to?: string
+    from: string;
+    to?: string;
+
+    logs: Log[];
+}
+
+export interface Log {
+    /**
+     * Hex-encoded address.
+     */
+    address: string;
+    /**
+     * Hex-encoded topics.
+     */
+    topics: string[];
+    /**
+     * Hex-encoded data.
+     */
+    data: string;
 }
 
 export interface AlertEvent extends Event {
