@@ -39,6 +39,8 @@ export class TestTransactionEvent implements TransactionEvent {
     to?: string;
     logs: TestLog[];
     input: string;
+    value: string;
+    nonce: string;
 
     constructor() {
         this.blockHash = "0x"
@@ -49,6 +51,8 @@ export class TestTransactionEvent implements TransactionEvent {
         this.to = "0x"
         this.logs = [new TestLog()]
         this.input = "0x"
+        this.value = "0x"
+        this.nonce = "0x"
     }
 }
 

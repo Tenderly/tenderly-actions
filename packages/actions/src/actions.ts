@@ -66,9 +66,11 @@ export interface TransactionEvent extends Event {
     logs: Log[];
 
     /**
-     * Hex encoded input.
+     * Hex encoded.
      */
     input: string
+    value: string
+    nonce: string
 }
 
 export interface Log {
