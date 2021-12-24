@@ -1,5 +1,7 @@
 $ACTION_NAME:
-  description: Send event to webhook.
+  description: |
+    Action listens to transactions that produce event with specified name on specified contract
+    Action sends transaction payload to specified webhook.
   function: dispatcher:actionFn
   trigger:
     type: transaction
