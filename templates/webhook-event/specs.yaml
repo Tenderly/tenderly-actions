@@ -1,0 +1,14 @@
+$ACTION_NAME:
+  description: Send event to webhook.
+  function: dispatcher:actionFn
+  trigger:
+    type: transaction
+    transaction:
+      status:
+        - MINED
+      filters:
+        - network: $CHAIN_ID
+          eventEmitted:
+            contract:
+              address: $CONTRACT_ADDRESS
+            name: $EVENT_NAME

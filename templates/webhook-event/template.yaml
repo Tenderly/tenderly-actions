@@ -1,0 +1,14 @@
+files:
+  - dispatcher.js
+
+args:
+  - name: ACTION_NAME
+    description: Name the webhook event dispatcher actions ([a-z][a-z0-9_-]*).
+  - name: CHAIN_ID
+    description: Chain id where contract is deployed. You can change this later in tenderly.yaml file.
+  - name: CONTRACT_ADDRESS
+    description: Address of deployed contract. You can change this later in tenderly.yaml file.
+  - name: EVENT_NAME
+    description: Name of the event contract is producing and you want to listen. You can change this later in tenderly.yaml file.
+  - name: WEBHOOK_URL
+    description: URL of the webhook where event should be POSTed. You can change this later in dispatcher.js.
