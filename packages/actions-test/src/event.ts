@@ -41,6 +41,8 @@ export class TestTransactionEvent implements TransactionEvent {
     input: string;
     value: string;
     nonce: string;
+    transactionHash: string;
+    alertId?: string;
 
     constructor() {
         this.blockHash = "0x"
@@ -53,6 +55,8 @@ export class TestTransactionEvent implements TransactionEvent {
         this.input = "0x"
         this.value = "0x"
         this.nonce = "0x"
+        this.transactionHash = "0x"
+        this.alertId = "-"
     }
 }
 
@@ -69,13 +73,31 @@ export class TestLog implements Log {
 }
 
 export class TestAlertEvent implements AlertEvent {
-    alertId: string;
+    alertId?: string;
     network: string;
     transactionHash: string;
+    blockHash: string;
+    blockNumber: number;
+    from: string;
+    hash: string;
+    to?: string;
+    logs: TestLog[];
+    input: string;
+    value: string;
+    nonce: string;
 
     constructor() {
         this.alertId = "-"
         this.network = "0"
         this.transactionHash = "0x"
+        this.blockHash = "0x"
+        this.blockNumber = 0
+        this.from = "0x"
+        this.hash = "0x"
+        this.to = "0x"
+        this.logs = [new TestLog()]
+        this.input = "0x"
+        this.value = "0x"
+        this.nonce = "0x"
     }
 }

@@ -88,6 +88,7 @@ export interface TransactionEvent extends Event {
  */
 export interface AlertEvent extends TransactionEvent {}
 
+
 export interface Log {
     /**
      * Hex-encoded address.
