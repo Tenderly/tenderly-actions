@@ -1,4 +1,4 @@
-import {Storage} from "@tenderly/actions";
+import { Storage } from "@tenderly/actions";
 
 export class TestStorage implements Storage {
     private stored: Map<string, string>;
@@ -23,7 +23,7 @@ export class TestStorage implements Storage {
     getJson(key: string): Promise<any> {
         let value = this.stored.get(key)
         if (value === undefined) {
-            throw new Error("NotFound")
+            return Promise.resolve({})
         }
         return Promise.resolve(JSON.parse(value));
     }
