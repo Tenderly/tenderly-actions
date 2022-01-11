@@ -10,7 +10,7 @@ export class TestSecrets implements Secrets {
     get(key: string): Promise<string> {
         let value = this.stored.get(key)
         if (value === undefined) {
-            throw new Error("NotFound")
+            return Promise.resolve("")
         }
         return Promise.resolve(value);
     }

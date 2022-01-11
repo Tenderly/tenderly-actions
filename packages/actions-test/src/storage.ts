@@ -15,7 +15,7 @@ export class TestStorage implements Storage {
     getBigInt(key: string): Promise<bigint> {
         let value = this.stored.get(key)
         if (value === undefined) {
-            throw new Error("NotFound")
+            return Promise.resolve(BigInt(0));
         }
         return Promise.resolve(BigInt(value));
     }
@@ -31,7 +31,7 @@ export class TestStorage implements Storage {
     getStr(key: string): Promise<string> {
         let value = this.stored.get(key)
         if (value === undefined) {
-            throw new Error("NotFound")
+            return Promise.resolve("");
         }
         return Promise.resolve(value);
     }
@@ -39,7 +39,7 @@ export class TestStorage implements Storage {
     getNumber(key: string): Promise<number> {
         let value = this.stored.get(key)
         if (value === undefined) {
-            throw new Error("NotFound")
+            return Promise.resolve(0);
         }
         return Promise.resolve(Number(value));
     }
