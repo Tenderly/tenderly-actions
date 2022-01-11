@@ -1,4 +1,4 @@
-import {BlockEvent, PeriodicEvent, TransactionEvent, WebhookEvent, AlertEvent, Log} from "@tenderly/actions";
+import {BlockEvent, PeriodicEvent, TransactionEvent, WebhookEvent, Log} from "@tenderly/actions";
 
 export class TestPeriodicEvent implements PeriodicEvent {
     time: Date;
@@ -41,6 +41,7 @@ export class TestTransactionEvent implements TransactionEvent {
     input: string;
     value: string;
     nonce: string;
+    transactionHash: string;
 
     constructor() {
         this.blockHash = "0x"
@@ -53,6 +54,7 @@ export class TestTransactionEvent implements TransactionEvent {
         this.input = "0x"
         this.value = "0x"
         this.nonce = "0x"
+        this.transactionHash = "0x"
     }
 }
 
@@ -65,17 +67,5 @@ export class TestLog implements Log {
         this.address = "0x"
         this.data = "0x"
         this.topics = ["0x"]
-    }
-}
-
-export class TestAlertEvent implements AlertEvent {
-    alertId: string;
-    network: string;
-    transactionHash: string;
-
-    constructor() {
-        this.alertId = "-"
-        this.network = "0"
-        this.transactionHash = "0x"
     }
 }

@@ -60,6 +60,11 @@ export interface TransactionEvent extends Event {
      */
     hash: string;
 
+    /**
+     * @deprecated Use hash instead.
+     */
+    transactionHash: string
+
     from: string;
     to?: string;
 
@@ -71,7 +76,18 @@ export interface TransactionEvent extends Event {
     input: string
     value: string
     nonce: string
+
+    /**
+     * If event was created from alert.
+     */
+    alertId?: string
 }
+
+/**
+ * Alert type is deprecated. This is for back-compat.
+ */
+export interface AlertEvent extends TransactionEvent {}
+
 
 export interface Log {
     /**
@@ -86,17 +102,6 @@ export interface Log {
      * Hex-encoded data.
      */
     data: string;
-}
-
-export interface AlertEvent extends Event {
-    alertId: string
-
-    /**
-     * Chain identifier.
-     */
-    network: string
-
-    transactionHash: string
 }
 
 export interface Context {
