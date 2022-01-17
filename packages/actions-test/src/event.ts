@@ -42,7 +42,7 @@ export class TestTransactionEvent implements TransactionEvent {
     value: string;
     nonce: string;
     gas: string;
-    gasUsed: string
+    gasUsed: string;
     cumulativeGasUsed: string;
     gasPrice: string;
     gasTipCap: string;
