@@ -6,7 +6,7 @@ export type ActionFn = (ctx: Context, event: Event) => Promise<void>;
 /**
  * Event provided to function dependens on a configured trigger.
  */
-export interface Event {}
+export interface Event { }
 
 /**
  * For trigger type "periodic"
@@ -63,7 +63,7 @@ export interface TransactionEvent extends Event {
     /**
      * @deprecated Use hash instead.
      */
-    transactionHash: string
+    transactionHash: string;
 
     from: string;
     to?: string;
@@ -73,9 +73,15 @@ export interface TransactionEvent extends Event {
     /**
      * Hex encoded.
      */
-    input: string
-    value: string
-    nonce: string
+    input: string;
+    value: string;
+    nonce: string;
+    gas: string;
+    gasUsed: string
+    cumulativeGasUsed: string;
+    gasPrice: string;
+    gasTipCap: string;
+    gasFeeCap: string;
 
     /**
      * If event was created from alert.
@@ -86,8 +92,7 @@ export interface TransactionEvent extends Event {
 /**
  * Alert type is deprecated. This is for back-compat.
  */
-export interface AlertEvent extends TransactionEvent {}
-
+export interface AlertEvent extends TransactionEvent { }
 
 export interface Log {
     /**

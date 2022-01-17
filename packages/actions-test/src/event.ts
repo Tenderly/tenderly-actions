@@ -1,10 +1,10 @@
-import {BlockEvent, PeriodicEvent, TransactionEvent, WebhookEvent, Log} from "@tenderly/actions";
+import { BlockEvent, PeriodicEvent, TransactionEvent, WebhookEvent, Log } from "@tenderly/actions";
 
 export class TestPeriodicEvent implements PeriodicEvent {
     time: Date;
 
     constructor() {
-        this.time = new Date(Date.now())
+        this.time = new Date(Date.now());
     }
 }
 
@@ -14,7 +14,7 @@ export class TestWebhookEvent implements WebhookEvent {
 
     constructor(payload: any) {
         this.payload = payload;
-        this.time = new Date(Date.now())
+        this.time = new Date(Date.now());
     }
 }
 
@@ -24,9 +24,9 @@ export class TestBlockEvent implements BlockEvent {
     network: string;
 
     constructor() {
-        this.blockHash = "0x"
-        this.blockNumber = 0
-        this.network = "0"
+        this.blockHash = "0x";
+        this.blockNumber = 0;
+        this.network = "0";
     }
 }
 
@@ -41,20 +41,32 @@ export class TestTransactionEvent implements TransactionEvent {
     input: string;
     value: string;
     nonce: string;
+    gas: string;
+    gasUsed: string;
+    cumulativeGasUsed: string;
+    gasPrice: string;
+    gasTipCap: string;
+    gasFeeCap: string;
     transactionHash: string;
 
     constructor() {
-        this.blockHash = "0x"
-        this.blockNumber = 0
-        this.from = "0x"
-        this.hash = "0x"
-        this.network = "0"
-        this.to = "0x"
-        this.logs = [new TestLog()]
-        this.input = "0x"
-        this.value = "0x"
-        this.nonce = "0x"
-        this.transactionHash = "0x"
+        this.blockHash = "0x";
+        this.blockNumber = 0;
+        this.from = "0x";
+        this.hash = "0x";
+        this.network = "0";
+        this.to = "0x";
+        this.logs = [new TestLog()];
+        this.input = "0x";
+        this.value = "0x";
+        this.nonce = "0x";
+        this.gas = "0x";
+        this.gasUsed = "0x";
+        this.cumulativeGasUsed = "0x";
+        this.gasPrice = "0x";
+        this.gasTipCap = "0x";
+        this.gasFeeCap = "0x";
+        this.transactionHash = "0x";
     }
 }
 
@@ -64,8 +76,8 @@ export class TestLog implements Log {
     topics: string[];
 
     constructor() {
-        this.address = "0x"
-        this.data = "0x"
-        this.topics = ["0x"]
+        this.address = "0x";
+        this.data = "0x";
+        this.topics = ["0x"];
     }
 }
