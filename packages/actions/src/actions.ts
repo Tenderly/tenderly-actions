@@ -86,7 +86,7 @@ export interface TransactionEvent extends Event {
     /**
      * If event was created from alert.
      */
-    alertId?: string
+    alertId?: string | null
 }
 
 /**
