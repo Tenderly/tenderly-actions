@@ -22,11 +22,15 @@ export class TestBlockEvent implements BlockEvent {
     blockHash: string;
     blockNumber: number;
     network: string;
+    blockDifficulty: string;
+    totalDifficulty: string;
 
     constructor() {
         this.blockHash = "0x";
         this.blockNumber = 0;
         this.network = "0";
+        this.blockDifficulty = "0";
+        this.totalDifficulty = "0";
     }
 }
 
