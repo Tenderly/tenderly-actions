@@ -44,6 +44,8 @@ export interface BlockEvent extends Event {
 
     blockHash: string;
     blockNumber: number;
+    blockDifficulty: string;
+    totalDifficulty: string;
 }
 
 export interface TransactionEvent extends Event {
