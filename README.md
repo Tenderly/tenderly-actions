@@ -11,7 +11,7 @@ To get started, see [docs](https://docs.tenderly.co/web3-actions/intro-to-web3-a
 ## Release procedure
 
 ### Prerequisites
-- Having an NPM account with the permissions to publish and unpublish packages
+- Having an NPM account with the permissions to publish and unpublish packages.
 
 ### Release order
 `@tenderly/actions-test` depends on `@tenderly/actions` as it uses definitions from that package.
@@ -24,7 +24,7 @@ This means that the order of publishing should be:
 1. Navigate to `packages/actions` directory;
 2. Bump the package version in `package.json`;
 3. Commit and push both `package.json` and `package-lock.json` to the repo;
-4. Run `npm build` command which will generate a `lib` directory, containing typescript definitions;
+4. Run `npm run build` command which will generate a `lib` directory, containing typescript definitions;
 5. Run `npm publish` command;
 
 ### Publishing `@tenderly/actions-test`
@@ -32,5 +32,5 @@ This means that the order of publishing should be:
 2. Bump the package version in `package.json`;
 3. Commit and push both `package.json` and `package-lock.json` to the repo;
 4. (Optional) If there's been a change in `@tenderly/actions` version, bump the dependency version in `package.json`;
-5. Run `npm build` command which will generate a `lib` directory, containing typescript definitions;
+5. Run `npm run build` command which will generate a `lib` directory, containing typescript definitions;
 6. Run `npm publish` command;
