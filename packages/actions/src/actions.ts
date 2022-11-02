@@ -121,6 +121,10 @@ export interface Context {
      * Project's secrets.
      */
     readonly secrets: Secrets;
+    /**
+     * Project's gateways.
+     */
+    readonly gateways: Gateways;
 }
 
 export interface Secrets {
