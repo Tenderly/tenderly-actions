@@ -152,3 +152,20 @@ export interface Storage {
      */
     delete(key: string): Promise<void>;
 }
+
+export interface Gateways {
+    /**
+     * Creates gateway provider (name param is reserved for future use)
+     */
+    getGateway(network: Network, name?: string): string;
+}
+/**
+ * Networks supported by web3 gateways
+ */
+export enum Network {
+    MAINNET = "mainnet",
+    ROPSTEN = "ropsten",
+    RINKEBY = "rinkeby",
+    GOERLI = "goerli",
+    SEPOLIA = "sepolia"
+}
