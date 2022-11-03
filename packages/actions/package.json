@@ -1,6 +1,6 @@
 {
     "name": "@tenderly/actions",
-    "version": "0.0.12",
+    "version": "0.0.13",
     "description": "Types for Web3 Actions",
     "types": "lib/actions.d.ts",
     "scripts": {
@@ -25,5 +25,6 @@
     "homepage": "https://github.com/Tenderly/tenderly-actions#readme",
     "devDependencies": {
         "typescript": "^4.4.3"
-    }
+    },
+    "main": "./lib/actions.js"
 }
