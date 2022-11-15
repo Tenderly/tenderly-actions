@@ -9,6 +9,6 @@ export class TestGateways implements Gateways {
 
     getGateway(network: Network, name?: string | undefined): string {
         const gatewayConfig = this.gatewayConfig.get(name ?? "")
-        return `https://${network}.gateway.tenderly.co/${gatewayConfig.accessKey}`
+        return `https://${network}.gateway.tenderly.co/${gatewayConfig?.accessKey}`
     }
 }
