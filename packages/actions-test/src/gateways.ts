@@ -11,4 +11,8 @@ export class TestGateways implements Gateways {
         const gatewayConfig = this.gatewayConfig.get(name ?? "")
         return `https://${network}.gateway.tenderly.co/${gatewayConfig?.accessKey}`
     }
+
+    setConfig(name: string, config: any) {
+        this.gatewayConfig.set(name, config)
+    }
 }
