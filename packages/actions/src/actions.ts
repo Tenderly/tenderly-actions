@@ -1,10 +1,10 @@
 /**
  * Function must implement ActionFn. Event payload depends on a configured trigger.
  */
-export type ActionFn = (ctx: Context, event: Event) => Promise<void>;
+export type ActionFn = (ctx: Context, event: Event) => Promise<any>;
 
 /**
- * Event provided to function dependens on a configured trigger.
+ * Event provided to function depends on a configured trigger.
  */
 export interface Event { }
 
