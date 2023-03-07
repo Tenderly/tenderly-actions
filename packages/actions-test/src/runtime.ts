@@ -22,7 +22,7 @@ export class TestRuntime {
         this.context = new TestContext()
     }
 
-    async execute(action: ActionFn, event: Event): Promise<void> {
-        await action(this.context, event)
+    async execute(action: ActionFn, event: Event): Promise<any> {
+        return action(this.context, event)
     }
 }
