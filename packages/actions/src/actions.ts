@@ -34,6 +34,11 @@ export interface WebhookEvent extends Event {
 }
 
 /**
+ * For actions triggered by extensions.
+ */
+export type ExtensionEvent = any[]
+
+/**
  * For trigger type "block
  */
 export interface BlockEvent extends Event {
@@ -121,10 +126,16 @@ export interface Context {
      * Project's secrets.
      */
     readonly secrets: Secrets;
+
     /**
      * Project's gateways.
      */
     readonly gateways: Gateways;
+
+    /**
+     * Execution metadata.
+     */
+    readonly metadata: Metadata;
 }
 
 export interface Secrets {
@@ -161,15 +172,62 @@ export interface Gateways {
     /**
      * Creates gateway provider (name param is reserved for future use)
      */
-    getGateway(network: Network, name?: string): string;
+    getGateway(network?: GatewayNetwork, name?: string): string;
 }
+
+export interface Metadata {
+    /**
+     * Gets network of the current execution.
+     * If current execution doesn't happen in a context of a network, returns undefined.
+     */
+    getNetwork(): Network | undefined;
+}
+
 /**
- * Networks supported by web3 gateways
+ * Networks supported by Web3 Actions
  */
 export enum Network {
     MAINNET = "mainnet",
+    KOVAN = "kovan",
     ROPSTEN = "ropsten",
     RINKEBY = "rinkeby",
     GOERLI = "goerli",
-    SEPOLIA = "sepolia"
+    SEPOLIA = "sepolia",
+    RSK = "rsk",
+    RSK_TESTNET = "rsk-testnet",
+    BSC = "bsc",
+    BSC_TESTNET = "bsc-testnet",
+    POA = "poa",
+    GNOSIS_CHAIN = "gnosis-chain",
+    POLYGON = "polygon",
+    MUMBAI = "mumbai",
+    OPTIMISTIC = "optimistic",
+    OPTIMISTIC_KOVAN = "optimistic-kovan",
+    OPTIMISTIC_GOERLI = "optimistic-goerli",
+    ARBITRUM = "arbitrum",
+    ARBITRUM_GOERLI = "arbitrum-goerli",
+    AVA = "ava",
+    FUJI = "fuji",
+    FANTOM = "fantom",
+    FANTOM_TESTNET = "fantom-testnet",
+    CRONOS = "cronos",
+    CRONOS_TESTNET = "cronos-testnet",
+    BOBA_GOERLI = "boba-goerli",
+    BOBA_ETHEREUM = "boba-ethereum",
+    BOBA_MOONBEAM = "boba-moonbeam",
+    BOBA_BINANCE = "boba-binance",
+    BOBA_AVALANCHE = "boba-avalanche",
+    BOBA_AVALANCHE_FUJI = "boba-avalanche-fuji",
+    BOBA_BINANCE_RIALTO = "boba-binance-rialto",
+    BOBA_MOONBASE = "boba-moonbase"
 }
+
+/**
+ * Networks supported by Web3 Gateways
+ */
+export type GatewayNetwork = Extract<Network,
+    Network.MAINNET |
+    Network.GOERLI |
+    Network.ROPSTEN |
+    Network.RINKEBY |
+    Network.SEPOLIA>
