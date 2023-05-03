@@ -2,7 +2,7 @@
 
 <div align="center">
     <a href="https://tenderly.co">
-        <img src="https://storage.googleapis.com/tenderly-public-assets/tenderly-logo-purple.png" alt="tenderly-node-extensions" width="100%" height="auto" style="background-color: #ffffffb2; padding: 10px 20px; margin-bottom: 20px; box-sizing: border-box; max-width:200px;" />
+        <img src="https://storage.googleapis.com/tenderly-public-assets/tenderly-logo-purple.png" alt="Tenderly" width="100%" height="auto" style="background-color: #ffffffb2; padding: 10px 20px; margin-bottom: 20px; box-sizing: border-box; max-width:200px;" />
     </a>
 </div>
 
@@ -34,7 +34,7 @@ improve your dapp in terms of UX and interactivity and enhance your project thro
 collect or share through notifications.
 
 > The code Web3 Actions run is called a **function**. Function must be written in TypeScript/JavaScript and runs in
-**Node 14** runtime. Specification of events that your action listens to is called a **trigger**.
+**Node** runtime. Specification of events that your action listens to is called a **trigger**.
 
 ## Getting Started
 
