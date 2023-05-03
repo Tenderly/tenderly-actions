@@ -14,6 +14,13 @@
 
 </div>
 
+## Packages
+
+This repository contains the following packages:
+
+- **actions** - Contains the code for your Web3 Actions. You can find the package at the NPM registry under [@tenderly/actions](https://www.npmjs.com/package/@tenderly/actions).
+- **actions-test** - Contains the testing library for your Web3 Actions. You can find the package at the NPM registry under [@tenderly/actions-test](https://www.npmjs.com/package/@tenderly/actions-test).
+
 ## Introduction
 
 [Tenderly](https://tenderly.co) Web3 Actions are programmable hooks for smart contract and chain events. They can also
