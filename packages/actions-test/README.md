@@ -54,6 +54,10 @@ The defined trigger and yaml configuration become an integral part of your proje
 - [Deploy Web3 Actions via Tenderly CLI](https://docs.tenderly.co/web3-actions/tutorials-and-quickstarts/deploy-web3-action-via-cli) - Learn how to install the Tenderly CLI, define triggers using the YAML configuration, and set up and deploy Web3 Actions through the command line.
 - [Local Development and Testing](https://docs.tenderly.co/web3-actions/references/local-development-and-testing) - Learn how to test your Web3 Actions locally before deploying them to Tenderly.
 
+### Supported Networks
+
+Tenderly Web3 Actions are currently supported on the [following networks](https://docs.tenderly.co/web3-actions/references/networks).
+
 ## Contributors
 
 <a href="https://github.com/Tenderly/tenderly-actions/graphs/contributors">

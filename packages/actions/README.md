@@ -10,7 +10,7 @@
 
 [![npm](https://img.shields.io/npm/v/@tenderly%2Factions.svg)](https://www.npmjs.org/package/@tenderly/actions)
 [![Twitter](https://img.shields.io/twitter/follow/TenderlyApp?style=social)](https://twitter.com/intent/follow?screen_name=TenderlyApp)
-[![Github](https://img.shields.io/github/stars/Tenderly/integration-samples?style=social)](https://github.com/Tenderly/integration-samples)
+[![Github](https://img.shields.io/github/stars/Tenderly/tenderly-actions?style=social)](https://github.com/Tenderly/tenderly-actions)
 
 </div>
 
@@ -49,6 +49,10 @@ The defined trigger and yaml configuration become an integral part of your proje
 - [Deploy Web3 Actions via Tenderly Dashboard](https://docs.tenderly.co/web3-actions/tutorials-and-quickstarts/deploy-web3-actions-via-dashboard) - Learn how to set up and deploy Web3 Actions directly in your browser.
 - [Deploy Web3 Actions via Tenderly CLI](https://docs.tenderly.co/web3-actions/tutorials-and-quickstarts/deploy-web3-action-via-cli) - Learn how to install the Tenderly CLI, define triggers using the YAML configuration, and set up and deploy Web3 Actions through the command line.
 - [Local Development and Testing](https://docs.tenderly.co/web3-actions/references/local-development-and-testing) - Learn how to test your Web3 Actions locally before deploying them to Tenderly.
+
+### Supported Networks
+
+Tenderly Web3 Actions are currently supported on the [following networks](https://docs.tenderly.co/web3-actions/references/networks).
 
 ## Contributors
 
