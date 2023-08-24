@@ -219,7 +219,9 @@ export enum Network {
     BOBA_AVALANCHE = "boba-avalanche",
     BOBA_AVALANCHE_FUJI = "boba-avalanche-fuji",
     BOBA_BINANCE_RIALTO = "boba-binance-rialto",
-    BOBA_MOONBASE = "boba-moonbase"
+    BOBA_MOONBASE = "boba-moonbase",
+    BASE = "base",
+    BASE_GOERLI = "base-goerli"
 }
 
 /**
@@ -231,4 +233,10 @@ export type GatewayNetwork = Extract<Network,
     Network.GOERLI |
     Network.SEPOLIA |
     Network.POLYGON |
-    Network.MUMBAI>
+    Network.MUMBAI |
+    Network.BOBA_BINANCE |
+    Network.BOBA_BINANCE_RIALTO |
+    Network.OPTIMISTIC |
+    Network.OPTIMISTIC_GOERLI |
+    Network.BASE |
+    Network.BASE_GOERLI>
