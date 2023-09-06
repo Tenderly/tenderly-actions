@@ -222,7 +222,8 @@ export enum Network {
     BOBA_BINANCE_RIALTO = "boba-binance-rialto",
     BOBA_MOONBASE = "boba-moonbase",
     BASE = "base",
-    BASE_GOERLI = "base-goerli"
+    BASE_GOERLI = "base-goerli",
+    ZORA = "zora"
 }
 
 /**
