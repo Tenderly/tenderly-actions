@@ -206,6 +206,7 @@ export enum Network {
     OPTIMISTIC_GOERLI = "optimistic-goerli",
     ARBITRUM = "arbitrum",
     ARBITRUM_GOERLI = "arbitrum-goerli",
+    ARBITRUM_NOVA = "arbitrum-nova",
     AVA = "ava",
     FUJI = "fuji",
     FANTOM = "fantom",
