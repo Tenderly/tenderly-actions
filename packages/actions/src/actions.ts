@@ -223,7 +223,8 @@ export enum Network {
     BOBA_MOONBASE = "boba-moonbase",
     BASE = "base",
     BASE_GOERLI = "base-goerli",
-    ZORA = "zora"
+    ZORA = "zora",
+    HOLESKY = "holesky"
 }
 
 /**
