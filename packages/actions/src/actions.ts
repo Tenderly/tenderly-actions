@@ -224,7 +224,8 @@ export enum Network {
     BASE = "base",
     BASE_GOERLI = "base-goerli",
     ZORA = "zora",
-    HOLESKY = "holesky"
+    HOLESKY = "holesky",
+    ZORA_TESTNET ="zora-testnet"
 }
 
 /**
