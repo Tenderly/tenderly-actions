@@ -243,4 +243,6 @@ export type GatewayNetwork = Extract<Network,
     Network.OPTIMISTIC |
     Network.OPTIMISTIC_GOERLI |
     Network.BASE |
-    Network.BASE_GOERLI>
+    Network.BASE_GOERLI |
+    Network.BOBA_GOERLI |
+    Network.HOLESKY>
