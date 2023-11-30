@@ -226,6 +226,7 @@ export enum Network {
     ZORA = "zora",
     HOLESKY = "holesky",
     ZORA_TESTNET ="zora-testnet",
+    ZORA_SEPOLIA ="zora-sepolia",
     BASE_SEPOLIA ="base-sepolia",
     ARBITRUM_SEPOLIA ="arbitrum-sepolia",
     OPTIMISTIC_SEPOLIA ="optimistic-sepolia"
