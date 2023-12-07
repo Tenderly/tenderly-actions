@@ -229,7 +229,8 @@ export enum Network {
     ZORA_SEPOLIA ="zora-sepolia",
     BASE_SEPOLIA ="base-sepolia",
     ARBITRUM_SEPOLIA ="arbitrum-sepolia",
-    OPTIMISTIC_SEPOLIA ="optimistic-sepolia"
+    OPTIMISTIC_SEPOLIA ="optimistic-sepolia",
+    MANTLE = "mantle"
 }
 
 /**
