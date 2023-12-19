@@ -230,7 +230,9 @@ export enum Network {
     BASE_SEPOLIA ="base-sepolia",
     ARBITRUM_SEPOLIA ="arbitrum-sepolia",
     OPTIMISTIC_SEPOLIA ="optimistic-sepolia",
-    MANTLE = "mantle"
+    MANTLE = "mantle",
+    LINEA = "linea",
+    LINEA_GOERLI = "linea-goerli"
 }
 
 /**
