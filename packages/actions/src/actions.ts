@@ -252,5 +252,5 @@ export type GatewayNetwork = Extract<Network,
     Network.BASE |
     Network.BASE_GOERLI |
     Network.BOBA_GOERLI |
-    Network.HOLESKY> |
-    Network.ARBITRUM_SEPOLIA
+    Network.HOLESKY |
+    Network.ARBITRUM_SEPOLIA>
