@@ -188,21 +188,16 @@ export interface Metadata {
  */
 export enum Network {
     MAINNET = "mainnet",
-    KOVAN = "kovan",
-    ROPSTEN = "ropsten",
-    RINKEBY = "rinkeby",
     GOERLI = "goerli",
     SEPOLIA = "sepolia",
     RSK = "rsk",
     RSK_TESTNET = "rsk-testnet",
     BSC = "bsc",
     BSC_TESTNET = "bsc-testnet",
-    POA = "poa",
     GNOSIS_CHAIN = "gnosis-chain",
     POLYGON = "polygon",
     MUMBAI = "mumbai",
     OPTIMISTIC = "optimistic",
-    OPTIMISTIC_KOVAN = "optimistic-kovan",
     OPTIMISTIC_GOERLI = "optimistic-goerli",
     ARBITRUM = "arbitrum",
     ARBITRUM_GOERLI = "arbitrum-goerli",
@@ -215,12 +210,10 @@ export enum Network {
     CRONOS_TESTNET = "cronos-testnet",
     BOBA_GOERLI = "boba-goerli",
     BOBA_ETHEREUM = "boba-ethereum",
-    BOBA_MOONBEAM = "boba-moonbeam",
     BOBA_BINANCE = "boba-binance",
     BOBA_AVALANCHE = "boba-avalanche",
     BOBA_AVALANCHE_FUJI = "boba-avalanche-fuji",
     BOBA_BINANCE_RIALTO = "boba-binance-rialto",
-    BOBA_MOONBASE = "boba-moonbase",
     BASE = "base",
     BASE_GOERLI = "base-goerli",
     ZORA = "zora",
@@ -232,7 +225,9 @@ export enum Network {
     OPTIMISTIC_SEPOLIA ="optimistic-sepolia",
     MANTLE = "mantle",
     LINEA = "linea",
-    LINEA_GOERLI = "linea-goerli"
+    LINEA_GOERLI = "linea-goerli",
+    MOONBEAM = "moonbeam",
+    MOONRIVER = "moonriver",
 }
 
 /**
