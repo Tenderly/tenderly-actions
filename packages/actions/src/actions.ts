@@ -196,7 +196,7 @@ export enum Network {
     BSC_TESTNET = "bsc-testnet",
     GNOSIS_CHAIN = "gnosis-chain",
     POLYGON = "polygon",
-    MUMBAI = "mumbai",
+    MUMBAI = "polygon-mumbai",
     OPTIMISTIC = "optimistic",
     OPTIMISTIC_GOERLI = "optimistic-goerli",
     ARBITRUM = "arbitrum",
