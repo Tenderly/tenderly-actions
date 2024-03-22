@@ -230,6 +230,8 @@ export enum Network {
     LINEA_GOERLI = "linea-goerli",
     MOONBEAM = "moonbeam",
     MOONRIVER = "moonriver",
+    FRAXTAL = "fraxtal-mainnet",
+    FRAXTAL_HOLESKY = "fraxtal-holesky"
 }
 
 /**
