@@ -208,6 +208,7 @@ export enum Network {
     FANTOM_TESTNET = "fantom-testnet",
     CRONOS = "cronos",
     CRONOS_TESTNET = "cronos-testnet",
+    BLAST = "blast",
     BOBA_GOERLI = "boba-goerli",
     BOBA_ETHEREUM = "boba-ethereum",
     BOBA_BINANCE = "boba-binance",
