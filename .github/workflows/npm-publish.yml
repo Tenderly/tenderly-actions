@@ -38,10 +38,9 @@ jobs:
         working-directory: packages/actions
 
       - name: publish release
-        run: echo "Releasing to npm"
-      #   run: npm publish
-      #   env:
-      #     NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
   
   publish-actions-test-npm:
     needs: publish-actions-npm
@@ -52,20 +51,18 @@ jobs:
         with:
           node-version: 18
           registry-url: https://registry.npmjs.org/
-
       - run: cat package.json
         working-directory: packages/actions-test
       - name: bump version
         working-directory: packages/actions-test
         run: npm version ${{ github.ref_name }}
-      - run: npm ci
+      - run: npm update @tenderly/actions && npm ci
         working-directory: packages/actions-test
       - run: npm run build
         working-directory: packages/actions-test
       - run: cat package.json && cat package-lock.json
         working-directory: packages/actions-test
       - name: publish release
-        run: echo "Releasing to npm"
-      #   run: npm publish
-      #   env:
-      #     NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
