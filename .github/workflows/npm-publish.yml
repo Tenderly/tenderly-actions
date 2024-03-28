@@ -38,6 +38,7 @@ jobs:
         working-directory: packages/actions
 
       - name: publish release
+        working-directory: packages/actions
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
@@ -63,6 +64,7 @@ jobs:
       - run: cat package.json && cat package-lock.json
         working-directory: packages/actions-test
       - name: publish release
+        working-directory: packages/actions-test
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
