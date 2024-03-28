@@ -1,70 +1,108 @@
 name: Actions Package Release
 
 on:
-  push:
-    tags:
-      - "*.*.*"
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version to release"
+        required: true
+
 
 jobs:
-  create-release:
+  validate:
     runs-on: ubuntu-latest
     steps:
-      - name: Release
-        uses: softprops/action-gh-release@v2
-        if: startsWith(github.ref, 'refs/tags/')
-  publish-actions-npm:
-    needs: create-release
+      - name: validate semver
+        uses: rubenesp87/semver-validation-action@0.1.0
+        with:
+          version: ${{ inputs.version }}
+  release-actions:
+    needs: validate
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: prepare
+        run: |
+          git config --global user.email "tenderly+github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "GitHub Actions"
       - uses: actions/setup-node@v3
         with:
           node-version: 18
           registry-url: https://registry.npmjs.org/
-
-      - run: cat package.json
-        working-directory: packages/actions
       - name: bump version
         working-directory: packages/actions
-        run: npm version ${{ github.ref_name }}
+        run: npm version ${{ inputs.version }}
 
-      - run: npm ci
+      - name: install 
         working-directory: packages/actions
-        
+        run: npm install
+
       - run: npm run build
         working-directory: packages/actions
-        
-      - run: cat package.json
-        working-directory: packages/actions
 
+      - name: commit
+        working-directory: packages/actions
+        run: |
+          git add "package.json"
+          git add "package-lock.json"
+          git commit -m "release actions-${{ inputs.version }}"
+          git tag actions/${{ inputs.version }}
+
+      - run: cat package.json && cat package-lock.json
+        working-directory: packages/actions
+      
+      - name: push
+        run: git push origin && git push origin actions/${{ inputs.version }}
       - name: publish release
         working-directory: packages/actions
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
-  
-  publish-actions-test-npm:
-    needs: publish-actions-npm
+      
+  release-actions-test:
+    needs: release-actions
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: prepare
+        run: |
+          git config --global user.email "tenderly+github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "GitHub Actions"
       - uses: actions/setup-node@v3
         with:
           node-version: 18
           registry-url: https://registry.npmjs.org/
-      - run: cat package.json
-        working-directory: packages/actions-test
       - name: bump version
         working-directory: packages/actions-test
-        run: npm version ${{ github.ref_name }}
-      - run: npm update @tenderly/actions && npm ci
+        run: npm version ${{ inputs.version }}
+
+      - name: install 
         working-directory: packages/actions-test
+        run: npm update @tenderly/actions && npm install
+
       - run: npm run build
         working-directory: packages/actions-test
+
+      - name: commit
+        working-directory: packages/actions-test
+        run: |
+          git add "package.json"
+          git add "package-lock.json"
+          git commit -m "release actions-test-${{ inputs.version }}"
+          git tag actions-test/${{ inputs.version }}
       - run: cat package.json && cat package-lock.json
         working-directory: packages/actions-test
+
+      - name: push
+        run: git push origin && git push origin actions-test/${{ inputs.version }}
+
       - name: publish release
         working-directory: packages/actions-test
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+
