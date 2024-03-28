@@ -2,8 +2,6 @@ name: Actions Package Release
 
 on:
   push:
-    paths:
-      - 'packages/actions/*.ts'
     tags:
       - "*.*.*"
 
