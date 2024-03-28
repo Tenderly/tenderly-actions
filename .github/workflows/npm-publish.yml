@@ -1,34 +1,108 @@
-# This workflow will run tests using node and then publish a package to GitHub Packages when a release is created
-# For more information see: https://docs.github.com/en/actions/publishing-packages/publishing-nodejs-packages
-
-name: Node.js Package
+name: Actions Package Release
 
 on:
-  release:
-    types: [created]
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version to release"
+        required: true
+
 
 jobs:
-  build:
+  validate:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - name: validate semver
+        uses: rubenesp87/semver-validation-action@0.1.0
         with:
-          node-version: 16
-      - run: npm ci
-      - run: npm test
-
-  publish-npm:
-    needs: build
+          version: ${{ inputs.version }}
+  release-actions:
+    needs: validate
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: prepare
+        run: |
+          git config --global user.email "tenderly+github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "GitHub Actions"
       - uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 18
           registry-url: https://registry.npmjs.org/
-      - run: npm ci
+      - name: bump version
+        working-directory: packages/actions
+        run: npm version ${{ inputs.version }}
+
+      - name: install 
+        working-directory: packages/actions
+        run: npm install
+
       - run: npm run build
-      - run: npm publish
+        working-directory: packages/actions
+
+      - name: commit
+        working-directory: packages/actions
+        run: |
+          git add "package.json"
+          git add "package-lock.json"
+          git commit -m "release actions-${{ inputs.version }}"
+          git tag actions/${{ inputs.version }}
+
+      - run: cat package.json && cat package-lock.json
+        working-directory: packages/actions
+      
+      - name: push
+        run: git push origin && git push origin actions/${{ inputs.version }}
+      - name: publish release
+        working-directory: packages/actions
+        run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+      
+  release-actions-test:
+    needs: release-actions
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: prepare
+        run: |
+          git config --global user.email "tenderly+github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "GitHub Actions"
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          registry-url: https://registry.npmjs.org/
+      - name: bump version
+        working-directory: packages/actions-test
+        run: npm version ${{ inputs.version }}
+
+      - name: install 
+        working-directory: packages/actions-test
+        run: npm update @tenderly/actions && npm install
+
+      - run: npm run build
+        working-directory: packages/actions-test
+
+      - name: commit
+        working-directory: packages/actions-test
+        run: |
+          git add "package.json"
+          git add "package-lock.json"
+          git commit -m "release actions-test-${{ inputs.version }}"
+          git tag actions-test/${{ inputs.version }}
+      - run: cat package.json && cat package-lock.json
+        working-directory: packages/actions-test
+
+      - name: push
+        run: git push origin && git push origin actions-test/${{ inputs.version }}
+
+      - name: publish release
+        working-directory: packages/actions-test
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+
