@@ -58,9 +58,6 @@ jobs:
       - name: bump version
         working-directory: packages/actions-test
         run: npm version ${{ github.ref_name }}
-
-      - run: npm ci
-        working-directory: packages/actions-test
         
       - run: npm run build
         working-directory: packages/actions-test
