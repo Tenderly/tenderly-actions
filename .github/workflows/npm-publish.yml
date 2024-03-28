@@ -3,7 +3,7 @@ name: Actions Package Release
 on:
   push:
     paths:
-      - 'actions/**.ts'
+      - 'packages/actions/**.ts'
     tags:
       - .*
 
