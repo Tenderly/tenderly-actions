@@ -58,13 +58,12 @@ jobs:
       - name: bump version
         working-directory: packages/actions-test
         run: npm version ${{ github.ref_name }}
-        
+      - run: npm ci
+        working-directory: packages/actions-test
       - run: npm run build
         working-directory: packages/actions-test
-        
       - run: cat package.json && cat package-lock.json
         working-directory: packages/actions-test
-
       - name: publish release
         run: echo "Releasing to npm"
       #   run: npm publish
