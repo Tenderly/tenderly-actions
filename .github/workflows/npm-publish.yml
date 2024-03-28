@@ -5,7 +5,7 @@ on:
     paths:
       - 'packages/actions/**.ts'
     tags:
-      - .*
+      - "*.*.*"
 
 jobs:
   create-release:
