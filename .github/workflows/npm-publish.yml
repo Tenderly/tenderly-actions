@@ -5,21 +5,17 @@ name: Node.js Package
 
 on:
   release:
-    types: [created]
+    types: [published]
+
 
 jobs:
-  build:
+  create-release:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16
-      - run: npm ci
-      - run: npm test
-
-  publish-npm:
-    needs: build
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        if: startsWith(github.ref, 'refs/tags/')
+  publish-actions-npm:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -27,8 +23,22 @@ jobs:
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org/
+
+      - run: cat package.json
+        working-directory: packages/actions
+      - name: bump version
+        working-directory: packages/actions
+        run: npm version ${{ github.ref_name }}
+
       - run: npm ci
+        working-directory: packages/actions
+        
       - run: npm run build
-      - run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+        working-directory: packages/actions
+        
+      - run: cat package.json
+        working-directory: packages/actions
+
+      # - run: npm publish
+      #   env:
+      #     NODE_AUTH_TOKEN: ${{secrets.npm_token}}
