@@ -1,23 +1,12 @@
 name: Actions Package Release
 
 on:
-  workflow_dispatch:
-    inputs:
-      version:
-        description: "Version to release"
-        required: true
+  push:
+    branches: master
 
 
 jobs:
-  validate:
-    runs-on: ubuntu-latest
-    steps:
-      - name: validate semver
-        uses: rubenesp87/semver-validation-action@0.1.0
-        with:
-          version: ${{ inputs.version }}
   release-actions:
-    needs: validate
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -32,8 +21,7 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - name: bump version
         working-directory: packages/actions
-        run: npm version ${{ inputs.version }}
-
+        run: npm version patch
       - name: install 
         working-directory: packages/actions
         run: npm install
@@ -44,16 +32,17 @@ jobs:
       - name: commit
         working-directory: packages/actions
         run: |
+          VERSION=$(node -p "require('./package.json').version")
           git add "package.json"
           git add "package-lock.json"
-          git commit -m "release actions-${{ inputs.version }}"
-          git tag actions/${{ inputs.version }}
+          git commit -m "release actions-$VERSION"
+          git tag actions/$VERSION
 
       - run: cat package.json && cat package-lock.json
         working-directory: packages/actions
       
       - name: push
-        run: git push origin && git push origin actions/${{ inputs.version }}
+        run: git push origin && git push origin actions/$VERSION
       - name: publish release
         working-directory: packages/actions
         run: npm publish
@@ -78,7 +67,7 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - name: bump version
         working-directory: packages/actions-test
-        run: npm version ${{ inputs.version }}
+        run:  npm version patch
 
       - name: install 
         working-directory: packages/actions-test
@@ -90,19 +79,19 @@ jobs:
       - name: commit
         working-directory: packages/actions-test
         run: |
+          VERSION=$(node -p "require('./package.json').version")
           git add "package.json"
           git add "package-lock.json"
-          git commit -m "release actions-test-${{ inputs.version }}"
-          git tag actions-test/${{ inputs.version }}
+          git commit -m "release actions-test-$VERSION"
+          git tag actions-test/$VERSION
       - run: cat package.json && cat package-lock.json
         working-directory: packages/actions-test
 
       - name: push
-        run: git push origin && git push origin actions-test/${{ inputs.version }}
+        run: git push origin && git push origin actions-test/$VERSION
 
       - name: publish release
         working-directory: packages/actions-test
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
-
