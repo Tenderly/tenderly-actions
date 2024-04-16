@@ -1,3 +1,4 @@
+
 /**
  * Function must implement ActionFn. Event payload depends on a configured trigger.
  */
