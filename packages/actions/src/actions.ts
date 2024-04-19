@@ -233,7 +233,9 @@ export enum Network {
     MOONBEAM = "moonbeam",
     MOONRIVER = "moonriver",
     FRAXTAL = "fraxtal-mainnet",
-    FRAXTAL_HOLESKY = "fraxtal-holesky"
+    FRAXTAL_HOLESKY = "fraxtal-holesky",
+    MODE = "mode",
+    MODE_SEPOLIA = "mode-sepolia"
 }
 
 /**
