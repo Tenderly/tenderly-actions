@@ -235,7 +235,8 @@ export enum Network {
     FRAXTAL = "fraxtal-mainnet",
     FRAXTAL_HOLESKY = "fraxtal-holesky",
     MODE = "mode",
-    MODE_SEPOLIA = "mode-sepolia"
+    MODE_SEPOLIA = "mode-sepolia",
+    GOLD_MAINNET = "gold-mainnet"
 }
 
 /**
