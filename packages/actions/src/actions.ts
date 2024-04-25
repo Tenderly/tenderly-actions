@@ -225,6 +225,7 @@ export enum Network {
     LINEA = "linea",
     LINEA_SEPOLIA = "linea-sepolia",
     MOONBEAM = "moonbeam",
+    MOONBASE_ALPHA = "moonbase-alpha",
     MOONRIVER = "moonriver",
     FRAXTAL = "fraxtal-mainnet",
     FRAXTAL_HOLESKY = "fraxtal-holesky",
