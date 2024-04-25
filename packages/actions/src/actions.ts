@@ -240,17 +240,13 @@ export enum Network {
 export type GatewayNetwork = Extract<Network,
     Network.BOBA_ETHEREUM |
     Network.MAINNET |
-    Network.GOERLI |
     Network.SEPOLIA |
     Network.POLYGON |
     Network.MUMBAI |
     Network.BOBA_BINANCE |
     Network.BOBA_BINANCE_RIALTO |
     Network.OPTIMISTIC |
-    Network.OPTIMISTIC_GOERLI |
     Network.BASE |
-    Network.BASE_GOERLI |
-    Network.BOBA_GOERLI |
     Network.HOLESKY |
     Network.ARBITRUM_SEPOLIA |
     Network.ARBITRUM_NOVA |
