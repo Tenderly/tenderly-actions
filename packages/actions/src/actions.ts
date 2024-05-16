@@ -196,6 +196,7 @@ export enum Network {
     GNOSIS_CHAIN = "gnosis-chain",
     POLYGON = "polygon",
     MUMBAI = "polygon-mumbai",
+    AMOY = "polygon-amoy",
     OPTIMISTIC = "optimistic",
     ARBITRUM = "arbitrum",
     ARBITRUM_NOVA = "arbitrum-nova",
