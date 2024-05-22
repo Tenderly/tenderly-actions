@@ -234,6 +234,7 @@ export enum Network {
     MODE_SEPOLIA = "mode-sepolia",
     GOLD_MAINNET = "gold-mainnet",
     TANGIBLE_REAL = "tangible-real",
+    BOB = "bob-mainnet",
 }
 
 /**
@@ -253,4 +254,7 @@ export type GatewayNetwork = Extract<Network,
     Network.ARBITRUM_SEPOLIA |
     Network.ARBITRUM_NOVA |
     Network.ARBITRUM |
+    Network.MODE |
+    Network.MODE_SEPOLIA |
+    Network.BOB |
     Network.TANGIBLE_REAL>
