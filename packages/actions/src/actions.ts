@@ -261,4 +261,5 @@ export type GatewayNetwork = Extract<Network,
     Network.BOB |
     Network.IMMUTABLE |
     Network.IMMUTABLE_TESTNET |
+    Network.GOLD_MAINNET |
     Network.TANGIBLE_REAL>
