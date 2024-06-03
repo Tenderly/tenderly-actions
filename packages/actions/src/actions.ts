@@ -235,8 +235,10 @@ export enum Network {
     GOLD_MAINNET = "gold-mainnet",
     TANGIBLE_REAL = "tangible-real",
     BOB = "bob-mainnet",
+    BOB_SEPOLIA = "bob-sepolia",
     IMMUTABLE = "immutable-mainnet",
     IMMUTABLE_TESTNET = "immutable-testnet",
+    LISK = "lisk-mainnet",
 }
 
 /**
@@ -259,8 +261,10 @@ export type GatewayNetwork = Extract<Network,
     Network.MODE |
     Network.MODE_SEPOLIA |
     Network.BOB |
+    Network.BOB_SEPOLIA |
     Network.IMMUTABLE |
     Network.IMMUTABLE_TESTNET |
     Network.GOLD_MAINNET |
     Network.BLAST |
+    Network.LISK |
     Network.TANGIBLE_REAL>
