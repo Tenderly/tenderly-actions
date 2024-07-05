@@ -195,7 +195,6 @@ export enum Network {
     BSC_TESTNET = "bsc-testnet",
     GNOSIS_CHAIN = "gnosis-chain",
     POLYGON = "polygon",
-    MUMBAI = "polygon-mumbai",
     AMOY = "polygon-amoy",
     OPTIMISTIC = "optimistic",
     ARBITRUM = "arbitrum",
@@ -251,7 +250,6 @@ export type GatewayNetwork = Extract<Network,
     Network.MAINNET |
     Network.SEPOLIA |
     Network.POLYGON |
-    Network.MUMBAI |
     Network.BOBA_BINANCE |
     Network.BOBA_BINANCE_RIALTO |
     Network.OPTIMISTIC |
