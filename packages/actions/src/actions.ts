@@ -240,6 +240,7 @@ export enum Network {
     LISK = "lisk-mainnet",
     LISK_SEPOLIA = "lisk-sepolia",
     CONCRETE_TESTNET = "concrete-testnet",
+    ZETACHAIN = "zetachain",
 }
 
 /**
