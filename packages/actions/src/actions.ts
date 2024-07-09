@@ -271,4 +271,5 @@ export type GatewayNetwork = Extract<Network,
     Network.LISK |
     Network.LISK_SEPOLIA |
     Network.CONCRETE_TESTNET |
+    Network.AMOY |
     Network.TANGIBLE_REAL>
