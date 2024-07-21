@@ -32,6 +32,15 @@ such as API keys. You can think of Web3 Actions as infrastructure building a Web
 allowing you to glue together your smart contracts, on-chain events, dapp frontends, APIs, and other services.
 
 ![Web3 Actions](https://storage.googleapis.com/tenderly-public-assets/web3-actions/tenderly-web3-actions-breakdown.webp)
+**src
+|--- actions 			# actions root directory, can be renamed
+|--- |--- example.ts
+|--- |--- package.json
+|--- |--- tsconfig.json
+|--- |--- node_modules
+|         |--- @tenderly/actions
+|         |--- typescript
+|--- tenderly.yaml**
 
 Based on the trigger rules you define, external on-chain or off-chain events will trigger your Web3 Action and your
 TypeScript/JavaScript code will handle the event instantly.
