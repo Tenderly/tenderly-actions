@@ -1,0 +1,1 @@
+https://raw.githubusercontent.com/MetaMask/metamask-mobile/main/attribution.txt
