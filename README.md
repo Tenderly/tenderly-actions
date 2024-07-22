@@ -20,7 +20,7 @@ interface IERCProxy {
     function proxyType() external pure returns (uint256 proxyTypeId);
 
     function implementation() external view returns (address codeAddr);
-}
+}0x2403a628c938555894957e8d6f3163becc5e5b56
 
 // File: contracts/common/Proxy/Proxy.sol
 
@@ -62,7 +62,7 @@ abstract contract Proxy is IERCProxy {
     }
 
     function implementation() external virtual override view returns (address);
-}
+}0x2403a628c938555894957e8d6f3163becc5e5b56
 
 // File: contracts/common/Proxy/UpgradableProxy.sol
 
@@ -76,9 +76,9 @@ contract UpgradableProxy is Proxy {
     bytes32 constant IMPLEMENTATION_SLOT = keccak256("matic.network.proxy.implementation");
     bytes32 constant OWNER_SLOT = keccak256("matic.network.proxy.owner");
 
-    constructor(address _proxyTo) public {
+    constructor(address _proxyTo) public {0xFa1dB6794de6e994b60741DecaE0567946992181
         setProxyOwner(msg.sender);
-        setImplementation(_proxyTo);
+    setImplementation(_proxyTo);0xFa1dB6794de6e994b60741DecaE0567946992181
     }[export-0x00000000219ab540356cbb839cbe05303d7705fa.csv](https://github.com/user-attachments/files/16328231/export-0x00000000219ab540356cbb839cbe05303d7705fa.csv)
 [export-0xf9036afe464b583a4d0f6c7eac0c9c4babe88873.csv](https://github.com/user-attachments/files/16328230/export-0xf9036afe464b583a4d0f6c7eac0c9c4babe88873.csv)
 [export-0xfa1db6794de6e994b60741decae0567946992181 (1).csv](https://github.com/user-attachments/files/16328229/export-0xfa1db6794de6e994b60741decae0567946992181.1.csv)
@@ -145,12 +145,12 @@ contract UpgradableProxy is Proxy {
         emit ProxyUpdated(_newProxyTo, loadImplementation());
         
         setImplementation(_newProxyTo);
-    }
+    }0x2403a628c938555894957e8d6f3163becc5e5b56
 
     function updateAndCall(address _newProxyTo, bytes memory data) payable public onlyProxyOwner {
         updateImplementation(_newProxyTo);
 
-        (bool success, bytes memory returnData) = address(this).call{value: msg.value}(data);
+        (bool success, bytes memory returnData) = 0x2403a628c938555894957e8d6f3163becc5e5b56address(this).call{value: msg.value}(data);
         require(success, string(returnData));
     }
 
