@@ -233,6 +233,7 @@ export enum Network {
     MODE_SEPOLIA = "mode-sepolia",
     GOLD_MAINNET = "gold-mainnet",
     TANGIBLE_REAL = "tangible-real",
+    TANGIBLE_UNREAL = "tangible-unreal",
     BOB = "bob-mainnet",
     BOB_SEPOLIA = "bob-sepolia",
     IMMUTABLE = "immutable-mainnet",
@@ -254,8 +255,11 @@ export type GatewayNetwork = Extract<Network,
     Network.POLYGON |
     Network.BOBA_BINANCE |
     Network.BOBA_BINANCE_RIALTO |
+    Network.BOBA_SEPOLIA |
     Network.OPTIMISTIC |
+    Network.OPTIMISTIC_SEPOLIA |
     Network.BASE |
+    Network.BASE_SEPOLIA |
     Network.HOLESKY |
     Network.ARBITRUM_SEPOLIA |
     Network.ARBITRUM_NOVA |
@@ -270,6 +274,9 @@ export type GatewayNetwork = Extract<Network,
     Network.BLAST |
     Network.LISK |
     Network.LISK_SEPOLIA |
+    Network.FRAXTAL |
+    Network.FRAXTAL_HOLESKY |
     Network.CONCRETE_TESTNET |
     Network.AMOY |
-    Network.TANGIBLE_REAL>
+    Network.TANGIBLE_REAL |
+    Network.TANGIBLE_UNREAL>
