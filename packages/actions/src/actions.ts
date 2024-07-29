@@ -242,6 +242,7 @@ export enum Network {
     CONCRETE_TESTNET = "concrete-testnet",
     ZETACHAIN = "zetachain",
     ZETACHAIN_TESTNET = "zetachain-testnet",
+    MORPH_HOLESKY = "morph-holesky",
 }
 
 /**
