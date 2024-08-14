@@ -244,6 +244,7 @@ export enum Network {
     ZETACHAIN = "zetachain",
     ZETACHAIN_TESTNET = "zetachain-testnet",
     MORPH_HOLESKY = "morph-holesky",
+    INTERVAL_TESTNET = "interval-testnet",
 }
 
 /**
@@ -280,5 +281,6 @@ export type GatewayNetwork = Extract<Network,
     Network.CONCRETE_TESTNET |
     Network.AMOY |
     Network.MORPH_HOLESKY |
+    Network.INTERVAL_TESTNET |
     Network.TANGIBLE_REAL |
     Network.TANGIBLE_UNREAL>
