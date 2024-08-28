@@ -245,6 +245,8 @@ export enum Network {
     ZETACHAIN_TESTNET = "zetachain-testnet",
     MORPH_HOLESKY = "morph-holesky",
     INTERVAL_TESTNET = "interval-testnet",
+    TAIKO_HEKLA = "taiko-hekla",
+    TAIKO = "taiko-mainnet",
 }
 
 /**
