@@ -247,6 +247,7 @@ export enum Network {
     INTERVAL_TESTNET = "interval-testnet",
     TAIKO_HEKLA = "taiko-hekla",
     TAIKO = "taiko-mainnet",
+    WORLDCHAIN = "worldchain-mainnet",
 }
 
 /**
