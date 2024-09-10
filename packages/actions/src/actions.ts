@@ -248,6 +248,7 @@ export enum Network {
     TAIKO_HEKLA = "taiko-hekla",
     TAIKO = "taiko-mainnet",
     WORLDCHAIN = "worldchain-mainnet",
+    WORLDCHAIN_SEPOLIA = "worldchain-sepolia",
     POLYNOMIAL = "polynomial-mainnet",
 }
 
