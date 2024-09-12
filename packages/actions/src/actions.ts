@@ -250,6 +250,7 @@ export enum Network {
     WORLDCHAIN = "worldchain-mainnet",
     WORLDCHAIN_SEPOLIA = "worldchain-sepolia",
     POLYNOMIAL = "polynomial-mainnet",
+    POLYNOMIAL_SEPOLIA = "polynomial-sepolia",
     APECHAIN = "apechain",
     CURTIS = "curtis",
 }
