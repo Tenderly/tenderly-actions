@@ -296,4 +296,5 @@ export type GatewayNetwork = Extract<Network,
     Network.POLYNOMIAL |
     Network.POLYNOMIAL_SEPOLIA |
     Network.WORLDCHAIN |
+    Network.AVA |
     Network.TANGIBLE_UNREAL>
