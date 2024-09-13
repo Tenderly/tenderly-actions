@@ -253,6 +253,7 @@ export enum Network {
     POLYNOMIAL_SEPOLIA = "polynomial-sepolia",
     APECHAIN = "apechain",
     CURTIS = "curtis",
+    KINTO = "kinto-mainnet",
 }
 
 /**
@@ -297,4 +298,5 @@ export type GatewayNetwork = Extract<Network,
     Network.POLYNOMIAL_SEPOLIA |
     Network.WORLDCHAIN |
     Network.AVA |
+    Network.KINTO |
     Network.TANGIBLE_UNREAL>
