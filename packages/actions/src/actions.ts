@@ -293,4 +293,6 @@ export type GatewayNetwork = Extract<Network,
     Network.TANGIBLE_REAL |
     Network.TAIKO |
     Network.TAIKO_HEKLA |
+    Network.POLYNOMIAL |
+    Network.POLYNOMIAL_SEPOLIA |
     Network.TANGIBLE_UNREAL>
