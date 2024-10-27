@@ -60,9 +60,3 @@ The defined trigger and yaml configuration become an integral part of your proje
 ### Supported Networks
 
 Tenderly Web3 Actions are currently supported on the [following networks](https://docs.tenderly.co/web3-actions/references/networks).
-
-## Contributors
-
-<a href="https://github.com/Tenderly/tenderly-actions/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Tenderly/tenderly-actions&max=100&columns=20" alt="tenderly-contributors" />
-</a>
