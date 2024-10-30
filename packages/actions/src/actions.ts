@@ -291,6 +291,7 @@ export type GatewayNetwork = Extract<Network,
     Network.CONCRETE_TESTNET |
     Network.AMOY |
     Network.MORPH_HOLESKY |
+    Network.MORPH |
     Network.INTERVAL_TESTNET |
     Network.TANGIBLE_REAL |
     Network.TAIKO |
