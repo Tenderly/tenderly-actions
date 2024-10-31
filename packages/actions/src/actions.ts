@@ -236,6 +236,7 @@ export enum Network {
     TANGIBLE_UNREAL = "tangible-unreal",
     BOB = "bob-mainnet",
     BOB_SEPOLIA = "bob-sepolia",
+    BOB_TESTNET = "bob-testnet",
     IMMUTABLE = "immutable-mainnet",
     IMMUTABLE_TESTNET = "immutable-testnet",
     LISK = "lisk-mainnet",
@@ -255,6 +256,10 @@ export enum Network {
     APECHAIN = "apechain",
     CURTIS = "curtis",
     KINTO = "kinto-mainnet",
+    BERACHAIN_BARTION = "berachain-bartio",
+    CONCRETE = "concrete",
+    INK_SEPOLIA = "ink-sepolia",
+    ETHENA_TESTNET = "ethena-testnet",
 }
 
 /**
