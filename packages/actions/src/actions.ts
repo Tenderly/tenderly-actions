@@ -285,7 +285,7 @@ export type GatewayNetwork = Extract<Network,
     Network.MODE_SEPOLIA |
     Network.BOB |
     Network.BOB_SEPOLIA |
-    Network.BOB_TESNET |
+    Network.BOB_TESTNET |
     Network.IMMUTABLE |
     Network.IMMUTABLE_TESTNET |
     Network.GOLD_MAINNET |
