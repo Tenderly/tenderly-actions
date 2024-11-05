@@ -259,7 +259,7 @@ export enum Network {
     BERACHAIN_BARTION = "berachain-bartio",
     CONCRETE = "concrete",
     INK_SEPOLIA = "ink-sepolia",
-    ETHENA_TESTNET = "ethena-testnet",
+    BLE_TESTNET = "ble-testnet",
 }
 
 /**
