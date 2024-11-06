@@ -311,4 +311,5 @@ export type GatewayNetwork = Extract<Network,
     Network.BERACHAIN_BARTION |
     Network.CONCRETE |
     Network.INK_SEPOLIA |
+    Network.BLE_TESTNET |
     Network.TANGIBLE_UNREAL>
