@@ -260,6 +260,7 @@ export enum Network {
     CONCRETE = "concrete",
     INK_SEPOLIA = "ink-sepolia",
     BLE_TESTNET = "ble-testnet",
+    OMEGA_03 = "omega-03",
 }
 
 /**
