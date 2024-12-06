@@ -323,4 +323,5 @@ export type GatewayNetwork = Extract<Network,
     Network.TANGIBLE_UNREAL|
     Network.SONEIUM_MINATO |
     Network.UNICHAIN_SEPOLIA |
-    Network.OMEGA_03>
+    Network.OMEGA_03|
+    Network.FLARE>
