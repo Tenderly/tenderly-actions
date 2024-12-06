@@ -267,6 +267,7 @@ export enum Network {
     UNICHAIN_SEPOLIA = "unichain-sepolia",
     METIS_ANDROMEDA = "metis-andromeda",
     METIS_SEPOLIA = "metis-sepolia",
+    FLARE = "flare",
 }
 
 /**
