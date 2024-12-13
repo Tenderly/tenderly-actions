@@ -260,7 +260,6 @@ export enum Network {
     CONCRETE = "concrete",
     INK_SEPOLIA = "ink-sepolia",
     BLE_TESTNET = "ble-testnet",
-    OMEGA_03 = "omega-03",
     SEI_PACIFIC_1 = "sei-pacific-1",
     SEI_ATLANTIC_2 = "sei-atlantic-2",
     SONEIUM_MINATO = "soneium-minato",
@@ -268,6 +267,9 @@ export enum Network {
     METIS_ANDROMEDA = "metis-andromeda",
     METIS_SEPOLIA = "metis-sepolia",
     FLARE = "flare",
+
+    OMEGA_03 = "omega-03",
+    OMEGA_04 = "omega-04",
 }
 
 /**
@@ -324,4 +326,5 @@ export type GatewayNetwork = Extract<Network,
     Network.SONEIUM_MINATO |
     Network.UNICHAIN_SEPOLIA |
     Network.OMEGA_03 |
+    Network.OMEGA_04 |
     Network.FLARE>
