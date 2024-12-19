@@ -270,16 +270,22 @@ export enum Network {
     SWELLCHAIN = "swellchain",
     SWELLCHAIN_SEPOLIA = "swellchain-sepolia",
     CORN = "corn",
+    CORN_TESTNET = "corn-testnet",
     SONIC = "sonic",
+    SONIC_BLAZE = "sonic-blaze",
 
     OMEGA_03 = "omega-03",
     OMEGA_04 = "omega-04",
+    OMEGA_05 = "omega-05",
 }
 
 /**
  * Networks supported by Web3 Gateways
  */
 export type GatewayNetwork = Extract<Network,
+    Network.OMEGA_03 |
+    Network.OMEGA_04 |
+    Network.OMEGA_05 |
     Network.BOBA_ETHEREUM |
     Network.MAINNET |
     Network.SEPOLIA |
@@ -329,10 +335,10 @@ export type GatewayNetwork = Extract<Network,
     Network.TANGIBLE_UNREAL|
     Network.SONEIUM_MINATO |
     Network.UNICHAIN_SEPOLIA |
-    Network.OMEGA_03 |
-    Network.OMEGA_04 |
     Network.FLARE |
     Network.SWELLCHAIN |
     Network.SWELLCHAIN_SEPOLIA|
     Network.CORN|
-    Network.SONIC>
+    Network.CORN_TESTNET|
+    Network.SONIC|
+    Network.SONIC_BLAZE>
