@@ -270,6 +270,7 @@ export enum Network {
     SWELLCHAIN = "swellchain",
     SWELLCHAIN_SEPOLIA = "swellchain-sepolia",
     CORN = "corn",
+    SONIC = "sonic",
 
     OMEGA_03 = "omega-03",
     OMEGA_04 = "omega-04",
@@ -333,4 +334,5 @@ export type GatewayNetwork = Extract<Network,
     Network.FLARE |
     Network.SWELLCHAIN |
     Network.SWELLCHAIN_SEPOLIA|
-    Network.CORN>
+    Network.CORN|
+    Network.SONIC>
