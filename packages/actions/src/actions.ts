@@ -341,4 +341,6 @@ export type GatewayNetwork = Extract<Network,
     Network.CORN|
     Network.CORN_TESTNET|
     Network.SONIC|
-    Network.SONIC_BLAZE>
+    Network.SONIC_BLAZE|
+    Network.LINEA|
+    Network.LINEA_SEPOLIA>
