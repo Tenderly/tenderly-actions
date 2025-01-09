@@ -273,6 +273,7 @@ export enum Network {
     CORN_TESTNET = "corn-testnet",
     SONIC = "sonic",
     SONIC_BLAZE = "sonic-blaze",
+    SCROLL_SEPOLIA = "scroll-sepolia",
 
     OMEGA_03 = "omega-03",
     OMEGA_04 = "omega-04",
@@ -343,4 +344,5 @@ export type GatewayNetwork = Extract<Network,
     Network.SONIC|
     Network.SONIC_BLAZE|
     Network.LINEA|
-    Network.LINEA_SEPOLIA>
+    Network.LINEA_SEPOLIA |
+    Network.SCROLL_SEPOLIA>
