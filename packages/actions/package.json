@@ -1,6 +1,6 @@
 {
     "name": "@tenderly/actions",
-    "version": "0.2.94",
+    "version": "0.2.95",
     "description": "Types for Web3 Actions",
     "types": "lib/actions.d.ts",
     "scripts": {
