@@ -262,6 +262,7 @@ export enum Network {
     BLE_TESTNET = "ble-testnet",
     SEI_PACIFIC_1 = "sei-pacific-1",
     SEI_ATLANTIC_2 = "sei-atlantic-2",
+    SONEIUM = "soneium",
     SONEIUM_MINATO = "soneium-minato",
     UNICHAIN_SEPOLIA = "unichain-sepolia",
     METIS_ANDROMEDA = "metis-andromeda",
@@ -335,6 +336,7 @@ export type GatewayNetwork = Extract<Network,
     Network.INK_SEPOLIA |
     Network.BLE_TESTNET |
     Network.TANGIBLE_UNREAL|
+    Network.SONEIUM |
     Network.SONEIUM_MINATO |
     Network.UNICHAIN_SEPOLIA |
     Network.FLARE |
