@@ -274,6 +274,7 @@ export enum Network {
     SONIC = "sonic",
     SONIC_BLAZE = "sonic-blaze",
     SCROLL_SEPOLIA = "scroll-sepolia",
+    SCROLL = "scroll-mainnet",
 
     OMEGA_03 = "omega-03",
     OMEGA_04 = "omega-04",
