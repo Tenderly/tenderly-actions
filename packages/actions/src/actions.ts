@@ -278,8 +278,6 @@ export enum Network {
     SCROLL = "scroll-mainnet",
 
     OMEGA_03 = "omega-03",
-    OMEGA_04 = "omega-04",
-    OMEGA_05 = "omega-05",
 }
 
 /**
@@ -287,8 +285,6 @@ export enum Network {
  */
 export type GatewayNetwork = Extract<Network,
     Network.OMEGA_03 |
-    Network.OMEGA_04 |
-    Network.OMEGA_05 |
     Network.BOBA_ETHEREUM |
     Network.MAINNET |
     Network.SEPOLIA |
