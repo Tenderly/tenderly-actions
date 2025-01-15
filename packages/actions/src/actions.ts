@@ -344,4 +344,5 @@ export type GatewayNetwork = Extract<Network,
     Network.SONIC_BLAZE|
     Network.LINEA|
     Network.LINEA_SEPOLIA |
-    Network.SCROLL_SEPOLIA>
+    Network.SCROLL_SEPOLIA |
+    Network.SCROLL>
