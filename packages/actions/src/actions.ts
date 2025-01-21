@@ -346,4 +346,5 @@ export type GatewayNetwork = Extract<Network,
     Network.LINEA|
     Network.LINEA_SEPOLIA |
     Network.SCROLL_SEPOLIA |
-    Network.SCROLL>
+    Network.SCROLL |
+    Network.RONIN>
