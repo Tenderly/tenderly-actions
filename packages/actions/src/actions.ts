@@ -279,6 +279,7 @@ export enum Network {
     RONIN = "ronin",
 
     OMEGA_03 = "omega-03",
+    OMEGA_08 = "omega-08",
 }
 
 /**
@@ -286,6 +287,7 @@ export enum Network {
  */
 export type GatewayNetwork = Extract<Network,
     Network.OMEGA_03 |
+    Network.OMEGA_08 |
     Network.BOBA_ETHEREUM |
     Network.MAINNET |
     Network.SEPOLIA |
