@@ -256,6 +256,7 @@ export enum Network {
     APECHAIN = "apechain",
     CURTIS = "curtis",
     KINTO = "kinto-mainnet",
+    BERACHAIN = "berachain",
     BERACHAIN_BARTIO = "berachain-bartio",
     CONCRETE = "concrete",
     INK_SEPOLIA = "ink-sepolia",
@@ -279,7 +280,6 @@ export enum Network {
     RONIN = "ronin",
 
     OMEGA_03 = "omega-03",
-    OMEGA_08 = "omega-08",
 }
 
 /**
@@ -287,7 +287,6 @@ export enum Network {
  */
 export type GatewayNetwork = Extract<Network,
     Network.OMEGA_03 |
-    Network.OMEGA_08 |
     Network.BOBA_ETHEREUM |
     Network.MAINNET |
     Network.SEPOLIA |
@@ -330,6 +329,7 @@ export type GatewayNetwork = Extract<Network,
     Network.WORLDCHAIN_SEPOLIA |
     Network.AVA |
     Network.KINTO |
+    Network.BERACHAIN |
     Network.BERACHAIN_BARTIO |
     Network.CONCRETE |
     Network.INK_SEPOLIA |
