@@ -280,7 +280,7 @@ export enum Network {
     RONIN = "ronin",
     RONIN_TESTNET = "ronin-testnet",
 
-    OMEGA_03 = "omega-03",
+    UNICHAIN = "unichain",
 }
 
 /**
@@ -350,4 +350,5 @@ export type GatewayNetwork = Extract<Network,
     Network.LINEA_SEPOLIA |
     Network.SCROLL_SEPOLIA |
     Network.SCROLL |
+    Network.UNICHAIN |
     Network.RONIN>
