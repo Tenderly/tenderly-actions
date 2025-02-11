@@ -278,6 +278,7 @@ export enum Network {
     SCROLL_SEPOLIA = "scroll-sepolia",
     SCROLL = "scroll-mainnet",
     RONIN = "ronin",
+    RONIN_TESTNET = "ronin-testnet",
 
     OMEGA_03 = "omega-03",
 }
