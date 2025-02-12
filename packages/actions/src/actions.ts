@@ -287,7 +287,6 @@ export enum Network {
  * Networks supported by Web3 Gateways
  */
 export type GatewayNetwork = Extract<Network,
-    Network.OMEGA_03 |
     Network.BOBA_ETHEREUM |
     Network.MAINNET |
     Network.SEPOLIA |
