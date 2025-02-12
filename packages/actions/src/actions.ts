@@ -279,8 +279,8 @@ export enum Network {
     SCROLL = "scroll-mainnet",
     RONIN = "ronin",
     RONIN_TESTNET = "ronin-testnet",
-
     UNICHAIN = "unichain",
+    ZKSYNC_SEPOLIA = "zksync-sepolia",
 }
 
 /**
