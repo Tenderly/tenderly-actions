@@ -351,4 +351,5 @@ export type GatewayNetwork = Extract<Network,
     Network.SCROLL |
     Network.UNICHAIN |
     Network.RONIN |
-    Network.RONIN_TESTNET>
+    Network.RONIN_TESTNET |
+    Network.ZKSYNC_SEPOLIA>
