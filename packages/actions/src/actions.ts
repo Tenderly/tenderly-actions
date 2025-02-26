@@ -281,6 +281,7 @@ export enum Network {
     RONIN_TESTNET = "ronin-testnet",
     UNICHAIN = "unichain",
     ZKSYNC_SEPOLIA = "zksync-sepolia",
+    SOPHON = "sophon",
 }
 
 /**
