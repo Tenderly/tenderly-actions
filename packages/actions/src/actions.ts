@@ -282,6 +282,8 @@ export enum Network {
     UNICHAIN = "unichain",
     ZKSYNC_SEPOLIA = "zksync-sepolia",
     SOPHON = "sophon",
+    STORY = "story",
+    STORY_AENEID = "story-aeneid",
 }
 
 /**
@@ -354,5 +356,6 @@ export type GatewayNetwork = Extract<Network,
     Network.RONIN |
     Network.RONIN_TESTNET |
     Network.ZKSYNC_SEPOLIA |
-    Network.SOPHON
->
+    Network.SOPHON |
+    Network.STORY |
+    Network.STORY_AENEID>
