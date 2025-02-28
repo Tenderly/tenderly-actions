@@ -215,11 +215,11 @@ export enum Network {
     BASE = "base",
     ZORA = "zora",
     HOLESKY = "holesky",
-    ZORA_TESTNET ="zora-testnet",
-    ZORA_SEPOLIA ="zora-sepolia",
-    BASE_SEPOLIA ="base-sepolia",
-    ARBITRUM_SEPOLIA ="arbitrum-sepolia",
-    OPTIMISTIC_SEPOLIA ="optimistic-sepolia",
+    ZORA_TESTNET = "zora-testnet",
+    ZORA_SEPOLIA = "zora-sepolia",
+    BASE_SEPOLIA = "base-sepolia",
+    ARBITRUM_SEPOLIA = "arbitrum-sepolia",
+    OPTIMISTIC_SEPOLIA = "optimistic-sepolia",
     MANTLE = "mantle",
     MANTLE_SEPOLIA = "mantle-sepolia",
     LINEA = "linea",
@@ -335,22 +335,24 @@ export type GatewayNetwork = Extract<Network,
     Network.CONCRETE |
     Network.INK_SEPOLIA |
     Network.BLE_TESTNET |
-    Network.TANGIBLE_UNREAL|
+    Network.TANGIBLE_UNREAL |
     Network.SONEIUM |
     Network.SONEIUM_MINATO |
     Network.UNICHAIN_SEPOLIA |
     Network.FLARE |
     Network.SWELLCHAIN |
-    Network.SWELLCHAIN_SEPOLIA|
-    Network.CORN|
-    Network.CORN_TESTNET|
-    Network.SONIC|
-    Network.SONIC_BLAZE|
-    Network.LINEA|
+    Network.SWELLCHAIN_SEPOLIA |
+    Network.CORN |
+    Network.CORN_TESTNET |
+    Network.SONIC |
+    Network.SONIC_BLAZE |
+    Network.LINEA |
     Network.LINEA_SEPOLIA |
     Network.SCROLL_SEPOLIA |
     Network.SCROLL |
     Network.UNICHAIN |
     Network.RONIN |
     Network.RONIN_TESTNET |
-    Network.ZKSYNC_SEPOLIA>
+    Network.ZKSYNC_SEPOLIA |
+    Network.SOPHON
+>
