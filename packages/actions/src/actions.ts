@@ -282,6 +282,7 @@ export enum Network {
     UNICHAIN = "unichain",
     ZKSYNC_SEPOLIA = "zksync-sepolia",
     SOPHON = "sophon",
+    SOPHON_TESTNET = "sophon-testnet",
     STORY = "story",
     STORY_AENEID = "story-aeneid",
 }
