@@ -358,5 +358,6 @@ export type GatewayNetwork = Extract<Network,
     Network.RONIN_TESTNET |
     Network.ZKSYNC_SEPOLIA |
     Network.SOPHON |
+    Network.SOPHON_TESTNET |
     Network.STORY |
     Network.STORY_AENEID>
