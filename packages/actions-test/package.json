@@ -28,6 +28,6 @@
         "typescript": "^4.4.3"
     },
     "dependencies": {
-        "@tenderly/actions": "^0.2.41"
+        "@tenderly/actions": "^0.2.106"
     }
 }
