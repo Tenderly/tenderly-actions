@@ -286,7 +286,7 @@ export enum Network {
     STORY = "story",
     STORY_AENEID = "story-aeneid",
     LENS = "lens",
-    LENS_TESTNET = "lens-sepolia",
+    LENS_SEPOLIA = "lens-sepolia",
 }
 
 /**
