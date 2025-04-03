@@ -362,4 +362,6 @@ export type GatewayNetwork = Extract<Network,
     Network.SOPHON |
     Network.SOPHON_TESTNET |
     Network.STORY |
-    Network.STORY_AENEID>
+    Network.STORY_AENEID |
+    Network.LENS |
+    Network.LENS_SEPOLIA>
