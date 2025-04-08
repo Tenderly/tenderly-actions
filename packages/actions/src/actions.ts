@@ -201,8 +201,6 @@ export enum Network {
     ARBITRUM_NOVA = "arbitrum-nova",
     AVA = "ava",
     FUJI = "fuji",
-    FANTOM = "fantom",
-    FANTOM_TESTNET = "fantom-testnet",
     CRONOS = "cronos",
     CRONOS_TESTNET = "cronos-testnet",
     BLAST = "blast",
