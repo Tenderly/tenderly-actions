@@ -256,6 +256,7 @@ export enum Network {
     KINTO = "kinto-mainnet",
     BERACHAIN = "berachain",
     BERACHAIN_BARTIO = "berachain-bartio",
+    BEPOLIA = "bepolia",
     CONCRETE = "concrete",
     INK_SEPOLIA = "ink-sepolia",
     BLE_TESTNET = "ble-testnet",
@@ -336,6 +337,7 @@ export type GatewayNetwork = Extract<Network,
     Network.KINTO |
     Network.BERACHAIN |
     Network.BERACHAIN_BARTIO |
+    Network.BEPOLIA |
     Network.CONCRETE |
     Network.INK_SEPOLIA |
     Network.BLE_TESTNET |
