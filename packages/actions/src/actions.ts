@@ -288,6 +288,7 @@ export enum Network {
     LENS = "lens",
     LENS_SEPOLIA = "lens-sepolia",
     HOODI = "hoodi",
+    KATANA_TATARA = "katana-tatara",
 }
 
 /**
@@ -368,4 +369,5 @@ export type GatewayNetwork = Extract<Network,
     Network.STORY_AENEID |
     Network.LENS |
     Network.LENS_SEPOLIA |
-    Network.HOODI>
+    Network.HOODI |
+    Network.KATANA_TATARA>
