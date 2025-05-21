@@ -291,6 +291,7 @@ export enum Network {
     KATANA_TATARA = "katana-tatara",
     AF_NEXUS_TESTNET = "af-nexus-testnet",
     ZIRCUIT = "zircuit",
+    ZIRCUIT_GARFIELD_TESTNET = "zircuit-garfield-testnet"
 }
 
 /**
@@ -374,4 +375,5 @@ export type GatewayNetwork = Extract<Network,
     Network.HOODI |
     Network.KATANA_TATARA|
     Network.AF_NEXUS_TESTNET|
+    Network.ZIRCUIT_GARFIELD_TESTNET|
     Network.ZIRCUIT>
