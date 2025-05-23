@@ -291,7 +291,8 @@ export enum Network {
     KATANA_TATARA = "katana-tatara",
     AF_NEXUS_TESTNET = "af-nexus-testnet",
     ZIRCUIT = "zircuit",
-    ZIRCUIT_GARFIELD_TESTNET = "zircuit-garfield-testnet"
+    ZIRCUIT_GARFIELD_TESTNET = "zircuit-garfield-testnet",
+    INJECTIVE_TESTNET = "injective-testnet"
 }
 
 /**
