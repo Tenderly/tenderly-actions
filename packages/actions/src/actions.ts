@@ -293,7 +293,8 @@ export enum Network {
     ZIRCUIT = "zircuit",
     ZIRCUIT_GARFIELD_TESTNET = "zircuit-garfield-testnet",
     INJECTIVE_TESTNET = "injective-testnet",
-    CELO_ALFAJORES_TESTNET = "celo-alfajores-testnet"
+    CELO_ALFAJORES_TESTNET = "celo-alfajores-testnet",
+    CELO = "celo"
 }
 
 /**
@@ -379,4 +380,5 @@ export type GatewayNetwork = Extract<Network,
     Network.AF_NEXUS_TESTNET|
     Network.ZIRCUIT_GARFIELD_TESTNET|
     Network.ZIRCUIT|
-    Network.CELO_ALFAJORES_TESTNET>
+    Network.CELO_ALFAJORES_TESTNET|
+    Network.CELO>
