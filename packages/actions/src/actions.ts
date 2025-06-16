@@ -296,7 +296,8 @@ export enum Network {
     CELO_ALFAJORES_TESTNET = "celo-alfajores-testnet",
     CELO = "celo",
     CONVERGE_TESTNET = "converge-testnet",
-    OMEGA_10 = "omega-10"
+    OMEGA_10 = "omega-10",
+    TAC = "tac",
 }
 
 /**
@@ -384,5 +385,4 @@ export type GatewayNetwork = Extract<Network,
     Network.ZIRCUIT|
     Network.CELO_ALFAJORES_TESTNET|
     Network.CELO|
-    Network.CONVERGE_TESTNET|
     Network.OMEGA_10>
