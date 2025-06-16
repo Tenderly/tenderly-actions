@@ -288,7 +288,6 @@ export enum Network {
     LENS = "lens",
     LENS_SEPOLIA = "lens-sepolia",
     HOODI = "hoodi",
-    KATANA = "katana",
     KATANA_TATARA = "katana-tatara",
     AF_NEXUS_TESTNET = "af-nexus-testnet",
     ZIRCUIT = "zircuit",
@@ -297,6 +296,7 @@ export enum Network {
     CELO_ALFAJORES_TESTNET = "celo-alfajores-testnet",
     CELO = "celo",
     CONVERGE_TESTNET = "converge-testnet",
+    OMEGA_10 = "omega-10"
 }
 
 /**
@@ -378,11 +378,11 @@ export type GatewayNetwork = Extract<Network,
     Network.LENS |
     Network.LENS_SEPOLIA |
     Network.HOODI |
-    Network.KATANA|
     Network.KATANA_TATARA|
     Network.AF_NEXUS_TESTNET|
     Network.ZIRCUIT_GARFIELD_TESTNET|
     Network.ZIRCUIT|
     Network.CELO_ALFAJORES_TESTNET|
     Network.CELO|
-    Network.CONVERGE_TESTNET>
+    Network.CONVERGE_TESTNET|
+    Network.OMEGA_10>
