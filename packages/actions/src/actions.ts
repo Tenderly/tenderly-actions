@@ -298,7 +298,8 @@ export enum Network {
     CONVERGE_TESTNET = "converge-testnet",
     OMEGA_10 = "omega-10",
     TAC = "tac",
-    TAC_SPB_TESTNET = "tac-spb-testnet"
+    TAC_SPB_TESTNET = "tac-spb-testnet",
+    SHAPE = "shape"
 }
 
 /**
