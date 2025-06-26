@@ -299,7 +299,8 @@ export enum Network {
     OMEGA_10 = "omega-10",
     TAC = "tac",
     TAC_SPB_TESTNET = "tac-spb-testnet",
-    SHAPE = "shape"
+    SHAPE = "shape",
+    SHAPE_SEPOLIA = "shape-sepolia"
 }
 
 /**
