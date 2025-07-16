@@ -301,7 +301,8 @@ export enum Network {
     TAC = "tac",
     TAC_SPB_TESTNET = "tac-spb-testnet",
     SHAPE = "shape",
-    SHAPE_SEPOLIA = "shape-sepolia"
+    SHAPE_SEPOLIA = "shape-sepolia",
+    CFX_ESPACE_TESTNET = "cfx-espace-testnet",
 }
 
 /**
@@ -389,4 +390,5 @@ export type GatewayNetwork = Extract<Network,
     Network.ZIRCUIT|
     Network.CELO_ALFAJORES_TESTNET|
     Network.CELO|
-    Network.KATANA>
+    Network.KATANA|
+    Network.CFX_ESPACE_TESTNET>
