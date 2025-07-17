@@ -303,6 +303,7 @@ export enum Network {
     SHAPE = "shape",
     SHAPE_SEPOLIA = "shape-sepolia",
     CFX_ESPACE_TESTNET = "cfx-espace-testnet",
+    PLASMA_TESTNET = "plasma-testnet",
 }
 
 /**
@@ -391,4 +392,5 @@ export type GatewayNetwork = Extract<Network,
     Network.CELO_ALFAJORES_TESTNET|
     Network.CELO|
     Network.KATANA|
-    Network.CFX_ESPACE_TESTNET>
+    Network.CFX_ESPACE_TESTNET|
+    Network.PLASMA_TESTNET>
