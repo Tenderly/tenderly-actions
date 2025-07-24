@@ -304,6 +304,7 @@ export enum Network {
     SHAPE_SEPOLIA = "shape-sepolia",
     CFX_ESPACE_TESTNET = "cfx-espace-testnet",
     PLASMA_TESTNET = "plasma-testnet",
+    ETHEREAL_TESTNET = "ethereal-testnet",
 }
 
 /**
