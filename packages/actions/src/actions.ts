@@ -305,6 +305,7 @@ export enum Network {
     CFX_ESPACE_TESTNET = "cfx-espace-testnet",
     PLASMA_TESTNET = "plasma-testnet",
     ETHEREAL_TESTNET = "ethereal-testnet",
+    PEAQ = "peaq",
 }
 
 /**
