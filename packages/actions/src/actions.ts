@@ -307,7 +307,7 @@ export enum Network {
     PLASMA_TESTNET = "plasma-testnet",
     ETHEREAL_TESTNET = "ethereal-testnet",
     PEAQ = "peaq",
-
+    PEAQ_AGUNG = "peaq-agung",
 }
 
 /**
@@ -398,4 +398,5 @@ export type GatewayNetwork = Extract<Network,
     Network.CELO |
     Network.KATANA |
     Network.CFX_ESPACE_TESTNET |
-    Network.PLASMA_TESTNET>
+    Network.PLASMA_TESTNET |
+    Network.PEAQ_AGUNG>
