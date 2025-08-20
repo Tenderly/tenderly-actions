@@ -1,0 +1,92 @@
+import { Network } from './networks';
+
+/**
+ * Networks supported by Web3 Gateways
+ */
+export type GatewayNetwork = Extract<Network,
+    Network.AF_NEXUS_TESTNET |
+    Network.AMOY |
+    Network.ARBITRUM |
+    Network.ARBITRUM_NOVA |
+    Network.ARBITRUM_SEPOLIA |
+    Network.AVA |
+    Network.BASE |
+    Network.BASE_SEPOLIA |
+    Network.BEPOLIA |
+    Network.BERACHAIN |
+    Network.BERACHAIN_BARTIO |
+    Network.BLAST |
+    Network.BLE_TESTNET |
+    Network.BOB |
+    Network.BOB_SEPOLIA |
+    Network.BOB_TESTNET |
+    Network.BOBA_BINANCE |
+    Network.BOBA_BINANCE_RIALTO |
+    Network.BOBA_ETHEREUM |
+    Network.BOBA_SEPOLIA |
+    Network.CELO |
+    Network.CELO_ALFAJORES_TESTNET |
+    Network.CFX_ESPACE_TESTNET |
+    Network.CONCRETE |
+    Network.CONCRETE_TESTNET |
+    Network.CORN |
+    Network.CORN_TESTNET |
+    Network.FLARE |
+    Network.FRAXTAL |
+    Network.FRAXTAL_HOLESKY |
+    Network.GOLD_MAINNET |
+    Network.HOLESKY |
+    Network.HOODI |
+    Network.IMMUTABLE |
+    Network.IMMUTABLE_TESTNET |
+    Network.INK_SEPOLIA |
+    Network.INTERVAL_TESTNET |
+    Network.KATANA |
+    Network.KATANA_BOKUTO |
+    Network.KATANA_TATARA |
+    Network.KINTO |
+    Network.LENS |
+    Network.LENS_SEPOLIA |
+    Network.LINEA |
+    Network.LINEA_SEPOLIA |
+    Network.LISK |
+    Network.LISK_SEPOLIA |
+    Network.MAINNET |
+    Network.MODE |
+    Network.MODE_SEPOLIA |
+    Network.MORPH |
+    Network.MORPH_HOLESKY |
+    Network.OPTIMISTIC |
+    Network.OPTIMISTIC_SEPOLIA |
+    Network.PLASMA_TESTNET |
+    Network.POLYGON |
+    Network.POLYNOMIAL |
+    Network.POLYNOMIAL_SEPOLIA |
+    Network.RONIN |
+    Network.RONIN_TESTNET |
+    Network.SCROLL |
+    Network.SCROLL_SEPOLIA |
+    Network.SEPOLIA |
+    Network.SONEIUM |
+    Network.SONEIUM_MINATO |
+    Network.SONIC |
+    Network.SONIC_BLAZE |
+    Network.SOPHON |
+    Network.SOPHON_TESTNET |
+    Network.STORY |
+    Network.STORY_AENEID |
+    Network.SWELLCHAIN |
+    Network.SWELLCHAIN_SEPOLIA |
+    Network.TAIKO |
+    Network.TAIKO_HEKLA |
+    Network.TANGIBLE_REAL |
+    Network.TANGIBLE_UNREAL |
+    Network.UNICHAIN |
+    Network.UNICHAIN_SEPOLIA |
+    Network.WORLDCHAIN |
+    Network.WORLDCHAIN_SEPOLIA |
+    Network.ZIRCUIT |
+    Network.ZIRCUIT_GARFIELD_TESTNET |
+    Network.ZKSYNC |
+    Network.ZKSYNC_SEPOLIA
+> 

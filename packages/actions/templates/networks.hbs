@@ -1,0 +1,8 @@
+/**
+ * Networks supported by Web3 Actions
+ */
+export enum Network {
+{{#each networks}}
+    {{name}} = "{{identifier}}"{{#unless @last}},{{/unless}}
+{{/each}}
+} 
