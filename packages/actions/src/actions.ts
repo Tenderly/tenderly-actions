@@ -1,3 +1,6 @@
+import { Network } from './networks';
+import { GatewayNetwork } from './gateway-networks';
+
 /**
  * Function must implement ActionFn. Event payload depends on a configured trigger.
  */
@@ -172,7 +175,7 @@ export interface Gateways {
     /**
      * Creates gateway provider (name param is reserved for future use)
      */
-    getGateway(network?: any, name?: string): string;
+    getGateway(network?: GatewayNetwork, name?: string): string;
 }
 
 export interface Metadata {
@@ -180,7 +183,7 @@ export interface Metadata {
      * Gets network of the current execution.
      * If current execution doesn't happen in a context of a network, returns undefined.
      */
-    getNetwork(): any | undefined;
+    getNetwork(): Network | undefined;
 }
 
 // Re-export network types from their respective files
