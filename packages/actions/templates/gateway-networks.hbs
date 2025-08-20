@@ -1,0 +1,9 @@
+import { Network } from './networks';
+
+/**
+ * Networks supported by Web3 Gateways
+ */
+export type GatewayNetwork = Extract<Network,
+{{#each gatewayNetworks}}
+    Network.{{name}}{{#unless @last}} |{{/unless}}
+{{/each}}> 

@@ -1,0 +1,609 @@
+{
+  "networks": [
+    {
+      "name": "AF_NEXUS_TESTNET",
+      "identifier": "af-nexus-testnet",
+      "supportsGateway": true
+    },
+    {
+      "name": "AMOY",
+      "identifier": "polygon-amoy",
+      "supportsGateway": true
+    },
+    {
+      "name": "APECHAIN",
+      "identifier": "apechain",
+      "supportsGateway": false
+    },
+    {
+      "name": "ARBITRUM",
+      "identifier": "arbitrum",
+      "supportsGateway": true
+    },
+    {
+      "name": "ARBITRUM_NOVA",
+      "identifier": "arbitrum-nova",
+      "supportsGateway": true
+    },
+    {
+      "name": "ARBITRUM_SEPOLIA",
+      "identifier": "arbitrum-sepolia",
+      "supportsGateway": true
+    },
+    {
+      "name": "AVA",
+      "identifier": "ava",
+      "supportsGateway": true
+    },
+    {
+      "name": "BASE",
+      "identifier": "base",
+      "supportsGateway": true
+    },
+    {
+      "name": "BASE_SEPOLIA",
+      "identifier": "base-sepolia",
+      "supportsGateway": true
+    },
+    {
+      "name": "BEPOLIA",
+      "identifier": "bepolia",
+      "supportsGateway": true
+    },
+    {
+      "name": "BERACHAIN",
+      "identifier": "berachain",
+      "supportsGateway": true
+    },
+    {
+      "name": "BERACHAIN_BARTIO",
+      "identifier": "berachain-bartio",
+      "supportsGateway": true
+    },
+    {
+      "name": "BLAST",
+      "identifier": "blast",
+      "supportsGateway": true
+    },
+    {
+      "name": "BLE_TESTNET",
+      "identifier": "ble-testnet",
+      "supportsGateway": true
+    },
+    {
+      "name": "BOB",
+      "identifier": "bob-mainnet",
+      "supportsGateway": true
+    },
+    {
+      "name": "BOB_SEPOLIA",
+      "identifier": "bob-sepolia",
+      "supportsGateway": true
+    },
+    {
+      "name": "BOB_TESTNET",
+      "identifier": "bob-testnet",
+      "supportsGateway": true
+    },
+    {
+      "name": "BOBA_AVALANCHE",
+      "identifier": "boba-avalanche",
+      "supportsGateway": false
+    },
+    {
+      "name": "BOBA_AVALANCHE_FUJI",
+      "identifier": "boba-avalanche-fuji",
+      "supportsGateway": false
+    },
+    {
+      "name": "BOBA_BINANCE",
+      "identifier": "boba-binance",
+      "supportsGateway": true
+    },
+    {
+      "name": "BOBA_BINANCE_RIALTO",
+      "identifier": "boba-binance-rialto",
+      "supportsGateway": true
+    },
+    {
+      "name": "BOBA_ETHEREUM",
+      "identifier": "boba-ethereum",
+      "supportsGateway": true
+    },
+    {
+      "name": "BOBA_SEPOLIA",
+      "identifier": "boba-sepolia",
+      "supportsGateway": true
+    },
+    {
+      "name": "BSC",
+      "identifier": "bsc",
+      "supportsGateway": false
+    },
+    {
+      "name": "BSC_TESTNET",
+      "identifier": "bsc-testnet",
+      "supportsGateway": false
+    },
+    {
+      "name": "CELO",
+      "identifier": "celo",
+      "supportsGateway": true
+    },
+    {
+      "name": "CELO_ALFAJORES_TESTNET",
+      "identifier": "celo-alfajores-testnet",
+      "supportsGateway": true
+    },
+    {
+      "name": "CFX_ESPACE_TESTNET",
+      "identifier": "cfx-espace-testnet",
+      "supportsGateway": true
+    },
+    {
+      "name": "CONCRETE",
+      "identifier": "concrete",
+      "supportsGateway": true
+    },
+    {
+      "name": "CONCRETE_TESTNET",
+      "identifier": "concrete-testnet",
+      "supportsGateway": true
+    },
+    {
+      "name": "CONVERGE_TESTNET",
+      "identifier": "converge-testnet",
+      "supportsGateway": false
+    },
+    {
+      "name": "CORN",
+      "identifier": "corn",
+      "supportsGateway": true
+    },
+    {
+      "name": "CORN_TESTNET",
+      "identifier": "corn-testnet",
+      "supportsGateway": true
+    },
+    {
+      "name": "CRONOS",
+      "identifier": "cronos",
+      "supportsGateway": false
+    },
+    {
+      "name": "CRONOS_TESTNET",
+      "identifier": "cronos-testnet",
+      "supportsGateway": false
+    },
+    {
+      "name": "CURTIS",
+      "identifier": "curtis",
+      "supportsGateway": false
+    },
+    {
+      "name": "ETHEREAL_TESTNET",
+      "identifier": "ethereal-testnet",
+      "supportsGateway": false
+    },
+    {
+      "name": "FLARE",
+      "identifier": "flare",
+      "supportsGateway": true
+    },
+    {
+      "name": "FRAXTAL",
+      "identifier": "fraxtal-mainnet",
+      "supportsGateway": true
+    },
+    {
+      "name": "FRAXTAL_HOLESKY",
+      "identifier": "fraxtal-holesky",
+      "supportsGateway": true
+    },
+    {
+      "name": "FUJI",
+      "identifier": "fuji",
+      "supportsGateway": false
+    },
+    {
+      "name": "GNOSIS_CHAIN",
+      "identifier": "gnosis-chain",
+      "supportsGateway": false
+    },
+    {
+      "name": "GOLD_MAINNET",
+      "identifier": "gold-mainnet",
+      "supportsGateway": true
+    },
+    {
+      "name": "HOLESKY",
+      "identifier": "holesky",
+      "supportsGateway": true
+    },
+    {
+      "name": "HOODI",
+      "identifier": "hoodi",
+      "supportsGateway": true
+    },
+    {
+      "name": "IMMUTABLE",
+      "identifier": "immutable-mainnet",
+      "supportsGateway": true
+    },
+    {
+      "name": "IMMUTABLE_TESTNET",
+      "identifier": "immutable-testnet",
+      "supportsGateway": true
+    },
+    {
+      "name": "INJECTIVE_TESTNET",
+      "identifier": "injective-testnet",
+      "supportsGateway": false
+    },
+    {
+      "name": "INK_SEPOLIA",
+      "identifier": "ink-sepolia",
+      "supportsGateway": true
+    },
+    {
+      "name": "INTERVAL_TESTNET",
+      "identifier": "interval-testnet",
+      "supportsGateway": true
+    },
+    {
+      "name": "KATANA",
+      "identifier": "katana",
+      "supportsGateway": true
+    },
+    {
+      "name": "KATANA_BOKUTO",
+      "identifier": "katana-bokuto",
+      "supportsGateway": true
+    },
+    {
+      "name": "KATANA_TATARA",
+      "identifier": "katana-tatara",
+      "supportsGateway": true
+    },
+    {
+      "name": "KINTO",
+      "identifier": "kinto-mainnet",
+      "supportsGateway": true
+    },
+    {
+      "name": "LENS",
+      "identifier": "lens",
+      "supportsGateway": true
+    },
+    {
+      "name": "LENS_SEPOLIA",
+      "identifier": "lens-sepolia",
+      "supportsGateway": true
+    },
+    {
+      "name": "LINEA",
+      "identifier": "linea",
+      "supportsGateway": true
+    },
+    {
+      "name": "LINEA_SEPOLIA",
+      "identifier": "linea-sepolia",
+      "supportsGateway": true
+    },
+    {
+      "name": "LISK",
+      "identifier": "lisk-mainnet",
+      "supportsGateway": true
+    },
+    {
+      "name": "LISK_SEPOLIA",
+      "identifier": "lisk-sepolia",
+      "supportsGateway": true
+    },
+    {
+      "name": "MAINNET",
+      "identifier": "mainnet",
+      "supportsGateway": true
+    },
+    {
+      "name": "MANTLE",
+      "identifier": "mantle",
+      "supportsGateway": false
+    },
+    {
+      "name": "MANTLE_SEPOLIA",
+      "identifier": "mantle-sepolia",
+      "supportsGateway": false
+    },
+    {
+      "name": "METIS_ANDROMEDA",
+      "identifier": "metis-andromeda",
+      "supportsGateway": false
+    },
+    {
+      "name": "METIS_SEPOLIA",
+      "identifier": "metis-sepolia",
+      "supportsGateway": false
+    },
+    {
+      "name": "MODE",
+      "identifier": "mode",
+      "supportsGateway": true
+    },
+    {
+      "name": "MODE_SEPOLIA",
+      "identifier": "mode-sepolia",
+      "supportsGateway": true
+    },
+    {
+      "name": "MOONBASE_ALPHA",
+      "identifier": "moonbase-alpha",
+      "supportsGateway": false
+    },
+    {
+      "name": "MOONBEAM",
+      "identifier": "moonbeam",
+      "supportsGateway": false
+    },
+    {
+      "name": "MOONRIVER",
+      "identifier": "moonriver",
+      "supportsGateway": false
+    },
+    {
+      "name": "MORPH",
+      "identifier": "morph",
+      "supportsGateway": true
+    },
+    {
+      "name": "MORPH_HOLESKY",
+      "identifier": "morph-holesky",
+      "supportsGateway": true
+    },
+    {
+      "name": "OMEGA_10",
+      "identifier": "omega-10",
+      "supportsGateway": false
+    },
+    {
+      "name": "OPTIMISTIC",
+      "identifier": "optimistic",
+      "supportsGateway": true
+    },
+    {
+      "name": "OPTIMISTIC_SEPOLIA",
+      "identifier": "optimistic-sepolia",
+      "supportsGateway": true
+    },
+    {
+      "name": "PEAQ",
+      "identifier": "peaq",
+      "supportsGateway": false
+    },
+    {
+      "name": "PEAQ_AGUNG",
+      "identifier": "peaq-agung",
+      "supportsGateway": false
+    },
+    {
+      "name": "PLASMA_TESTNET",
+      "identifier": "plasma-testnet",
+      "supportsGateway": true
+    },
+    {
+      "name": "POLYGON",
+      "identifier": "polygon",
+      "supportsGateway": true
+    },
+    {
+      "name": "POLYNOMIAL",
+      "identifier": "polynomial-mainnet",
+      "supportsGateway": true
+    },
+    {
+      "name": "POLYNOMIAL_SEPOLIA",
+      "identifier": "polynomial-sepolia",
+      "supportsGateway": true
+    },
+    {
+      "name": "RONIN",
+      "identifier": "ronin",
+      "supportsGateway": true
+    },
+    {
+      "name": "RONIN_TESTNET",
+      "identifier": "ronin-testnet",
+      "supportsGateway": true
+    },
+    {
+      "name": "RSK",
+      "identifier": "rsk",
+      "supportsGateway": false
+    },
+    {
+      "name": "RSK_TESTNET",
+      "identifier": "rsk-testnet",
+      "supportsGateway": false
+    },
+    {
+      "name": "SCROLL",
+      "identifier": "scroll-mainnet",
+      "supportsGateway": true
+    },
+    {
+      "name": "SCROLL_SEPOLIA",
+      "identifier": "scroll-sepolia",
+      "supportsGateway": true
+    },
+    {
+      "name": "SEI_ATLANTIC_2",
+      "identifier": "sei-atlantic-2",
+      "supportsGateway": false
+    },
+    {
+      "name": "SEI_PACIFIC_1",
+      "identifier": "sei-pacific-1",
+      "supportsGateway": false
+    },
+    {
+      "name": "SEPOLIA",
+      "identifier": "sepolia",
+      "supportsGateway": true
+    },
+    {
+      "name": "SHAPE",
+      "identifier": "shape",
+      "supportsGateway": false
+    },
+    {
+      "name": "SHAPE_SEPOLIA",
+      "identifier": "shape-sepolia",
+      "supportsGateway": false
+    },
+    {
+      "name": "SONEIUM",
+      "identifier": "soneium",
+      "supportsGateway": true
+    },
+    {
+      "name": "SONEIUM_MINATO",
+      "identifier": "soneium-minato",
+      "supportsGateway": true
+    },
+    {
+      "name": "SONIC",
+      "identifier": "sonic",
+      "supportsGateway": true
+    },
+    {
+      "name": "SONIC_BLAZE",
+      "identifier": "sonic-blaze",
+      "supportsGateway": true
+    },
+    {
+      "name": "SOPHON",
+      "identifier": "sophon",
+      "supportsGateway": true
+    },
+    {
+      "name": "SOPHON_TESTNET",
+      "identifier": "sophon-testnet",
+      "supportsGateway": true
+    },
+    {
+      "name": "STORY",
+      "identifier": "story",
+      "supportsGateway": true
+    },
+    {
+      "name": "STORY_AENEID",
+      "identifier": "story-aeneid",
+      "supportsGateway": true
+    },
+    {
+      "name": "SWELLCHAIN",
+      "identifier": "swellchain",
+      "supportsGateway": true
+    },
+    {
+      "name": "SWELLCHAIN_SEPOLIA",
+      "identifier": "swellchain-sepolia",
+      "supportsGateway": true
+    },
+    {
+      "name": "TAC",
+      "identifier": "tac",
+      "supportsGateway": false
+    },
+    {
+      "name": "TAC_SPB_TESTNET",
+      "identifier": "tac-spb-testnet",
+      "supportsGateway": false
+    },
+    {
+      "name": "TAIKO",
+      "identifier": "taiko-mainnet",
+      "supportsGateway": true
+    },
+    {
+      "name": "TAIKO_HEKLA",
+      "identifier": "taiko-hekla",
+      "supportsGateway": true
+    },
+    {
+      "name": "TANGIBLE_REAL",
+      "identifier": "tangible-real",
+      "supportsGateway": true
+    },
+    {
+      "name": "TANGIBLE_UNREAL",
+      "identifier": "tangible-unreal",
+      "supportsGateway": true
+    },
+    {
+      "name": "UNICHAIN",
+      "identifier": "unichain",
+      "supportsGateway": true
+    },
+    {
+      "name": "UNICHAIN_SEPOLIA",
+      "identifier": "unichain-sepolia",
+      "supportsGateway": true
+    },
+    {
+      "name": "WORLDCHAIN",
+      "identifier": "worldchain-mainnet",
+      "supportsGateway": true
+    },
+    {
+      "name": "WORLDCHAIN_SEPOLIA",
+      "identifier": "worldchain-sepolia",
+      "supportsGateway": true
+    },
+    {
+      "name": "ZETACHAIN",
+      "identifier": "zetachain",
+      "supportsGateway": false
+    },
+    {
+      "name": "ZETACHAIN_TESTNET",
+      "identifier": "zetachain-testnet",
+      "supportsGateway": false
+    },
+    {
+      "name": "ZIRCUIT",
+      "identifier": "zircuit",
+      "supportsGateway": true
+    },
+    {
+      "name": "ZIRCUIT_GARFIELD_TESTNET",
+      "identifier": "zircuit-garfield-testnet",
+      "supportsGateway": true
+    },
+    {
+      "name": "ZKSYNC",
+      "identifier": "zksync",
+      "supportsGateway": true
+    },
+    {
+      "name": "ZKSYNC_SEPOLIA",
+      "identifier": "zksync-sepolia",
+      "supportsGateway": true
+    },
+    {
+      "name": "ZORA",
+      "identifier": "zora",
+      "supportsGateway": false
+    },
+    {
+      "name": "ZORA_SEPOLIA",
+      "identifier": "zora-sepolia",
+      "supportsGateway": false
+    },
+    {
+      "name": "ZORA_TESTNET",
+      "identifier": "zora-testnet",
+      "supportsGateway": false
+    }
+  ]
+}
