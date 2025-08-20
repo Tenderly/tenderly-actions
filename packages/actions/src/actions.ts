@@ -398,5 +398,4 @@ export type GatewayNetwork = Extract<Network,
     Network.CELO |
     Network.KATANA |
     Network.CFX_ESPACE_TESTNET |
-    Network.PLASMA_TESTNET |
-    Network.PEAQ_AGUNG>
+    Network.PLASMA_TESTNET>
