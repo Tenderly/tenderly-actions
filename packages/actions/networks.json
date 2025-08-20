@@ -361,11 +361,6 @@
       "supportsGateway": true
     },
     {
-      "name": "OMEGA_10",
-      "identifier": "omega-10",
-      "supportsGateway": false
-    },
-    {
       "name": "OPTIMISTIC",
       "identifier": "optimistic",
       "supportsGateway": true
