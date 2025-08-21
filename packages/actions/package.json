@@ -1,11 +1,11 @@
 {
     "name": "@tenderly/actions",
-    "version": "0.2.141",
+    "version": "0.2.142",
     "description": "Types for Web3 Actions",
     "types": "lib/actions.d.ts",
     "scripts": {
         "build": "npm run validate && tsc",
-        "validate": "npm run generate && git diff --exit-code src/", 
+        "validate": "npm run generate && git diff --exit-code src/",
         "generate": "node scripts/generate-actions.js"
     },
     "repository": {
