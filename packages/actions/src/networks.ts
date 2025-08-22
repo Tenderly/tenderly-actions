@@ -15,7 +15,6 @@ export enum Network {
     BERACHAIN = "berachain",
     BERACHAIN_BARTIO = "berachain-bartio",
     BLAST = "blast",
-    BLE_TESTNET = "ble-testnet",
     BOB = "bob-mainnet",
     BOB_SEPOLIA = "bob-sepolia",
     BOB_TESTNET = "bob-testnet",

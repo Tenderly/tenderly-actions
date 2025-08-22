@@ -16,7 +16,6 @@ export type GatewayNetwork = Extract<Network,
     Network.BERACHAIN |
     Network.BERACHAIN_BARTIO |
     Network.BLAST |
-    Network.BLE_TESTNET |
     Network.BOB |
     Network.BOB_SEPOLIA |
     Network.BOB_TESTNET |
