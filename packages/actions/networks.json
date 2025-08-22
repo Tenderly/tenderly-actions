@@ -66,11 +66,6 @@
       "supportsGateway": true
     },
     {
-      "name": "BLE_TESTNET",
-      "identifier": "ble-testnet",
-      "supportsGateway": true
-    },
-    {
       "name": "BOB",
       "identifier": "bob-mainnet",
       "supportsGateway": true
