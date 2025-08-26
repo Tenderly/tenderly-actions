@@ -26,7 +26,7 @@
     ],
     "homepage": "https://github.com/Tenderly/tenderly-actions#readme",
     "devDependencies": {
-        "typescript": "^4.4.3",
+        "typescript": "^5.0.0",
         "handlebars": "^4.7.8"
     },
     "main": "./lib/actions.js"
