@@ -386,6 +386,11 @@
       "supportsGateway": false
     },
     {
+      "name": "PLUME_TESTNET",
+      "identifier": "plume-testnet",
+      "supportsGateway": false
+    },
+    {
       "name": "POLYGON",
       "identifier": "polygon",
       "supportsGateway": true

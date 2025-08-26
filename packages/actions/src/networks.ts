@@ -79,6 +79,7 @@ export enum Network {
     PEAQ_AGUNG = "peaq-agung",
     PLASMA_TESTNET = "plasma-testnet",
     PLUME = "plume",
+    PLUME_TESTNET = "plume-testnet",
     POLYGON = "polygon",
     POLYNOMIAL = "polynomial-mainnet",
     POLYNOMIAL_SEPOLIA = "polynomial-sepolia",
