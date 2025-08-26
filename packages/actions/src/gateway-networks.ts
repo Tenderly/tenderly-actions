@@ -17,12 +17,12 @@ export type GatewayNetwork = Extract<Network,
     Network.BERACHAIN_BARTIO |
     Network.BLAST |
     Network.BOB |
-    Network.BOB_SEPOLIA |
-    Network.BOB_TESTNET |
     Network.BOBA_BINANCE |
     Network.BOBA_BINANCE_RIALTO |
     Network.BOBA_ETHEREUM |
     Network.BOBA_SEPOLIA |
+    Network.BOB_SEPOLIA |
+    Network.BOB_TESTNET |
     Network.CELO |
     Network.CELO_ALFAJORES_TESTNET |
     Network.CFX_ESPACE_TESTNET |
