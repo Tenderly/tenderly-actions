@@ -100,6 +100,7 @@ export enum Network {
     SONIC_BLAZE = "sonic-blaze",
     SOPHON = "sophon",
     SOPHON_TESTNET = "sophon-testnet",
+    STABLE_TESTNET = "stable-testnet",
     STORY = "story",
     STORY_AENEID = "story-aeneid",
     SWELLCHAIN = "swellchain",
