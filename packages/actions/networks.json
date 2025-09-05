@@ -358,7 +358,7 @@
     {
       "name": "OMEGA_12",
       "identifier": "omega-12",
-      "supportsGateway": false
+      "supportsGateway": true
     },
     {
       "name": "OPTIMISTIC",
