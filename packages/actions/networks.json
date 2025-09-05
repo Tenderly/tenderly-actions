@@ -491,6 +491,11 @@
       "supportsGateway": true
     },
     {
+      "name": "STABLE_TESTNET",
+      "identifier": "stable-testnet",
+      "supportsGateway": false
+    },
+    {
       "name": "STORY",
       "identifier": "story",
       "supportsGateway": true
