@@ -73,7 +73,7 @@ export enum Network {
     MOONRIVER = "moonriver",
     MORPH = "morph",
     MORPH_HOLESKY = "morph-holesky",
-    OMEGA_12 = "omega-12",
+    PLASMA = "plasma",
     OPTIMISTIC = "optimistic",
     OPTIMISTIC_SEPOLIA = "optimistic-sepolia",
     PEAQ = "peaq",
