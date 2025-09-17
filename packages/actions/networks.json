@@ -131,6 +131,11 @@
       "supportsGateway": true
     },
     {
+      "name": "CFX_ESPACE",
+      "identifier": "cfx-espace",
+      "supportsGateway": false
+    },
+    {
       "name": "CFX_ESPACE_TESTNET",
       "identifier": "cfx-espace-testnet",
       "supportsGateway": true
@@ -356,11 +361,6 @@
       "supportsGateway": true
     },
     {
-      "name": "PLASMA",
-      "identifier": "plasma",
-      "supportsGateway": true
-    },
-    {
       "name": "OPTIMISTIC",
       "identifier": "optimistic",
       "supportsGateway": true
@@ -379,6 +379,11 @@
       "name": "PEAQ_AGUNG",
       "identifier": "peaq-agung",
       "supportsGateway": false
+    },
+    {
+      "name": "PLASMA",
+      "identifier": "plasma",
+      "supportsGateway": true
     },
     {
       "name": "PLASMA_TESTNET",
