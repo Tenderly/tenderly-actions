@@ -131,6 +131,11 @@
       "supportsGateway": true
     },
     {
+      "name": "CELO_SEPOLIA",
+      "identifier": "celo-sepolia",
+      "supportsGateway": false
+    },
+    {
       "name": "CFX_ESPACE",
       "identifier": "cfx-espace",
       "supportsGateway": false
