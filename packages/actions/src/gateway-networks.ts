@@ -25,6 +25,7 @@ export type GatewayNetwork = Extract<Network,
     Network.BOB_TESTNET |
     Network.CELO |
     Network.CELO_ALFAJORES_TESTNET |
+    Network.CFX_ESPACE |
     Network.CFX_ESPACE_TESTNET |
     Network.CONCRETE |
     Network.CONCRETE_TESTNET |
