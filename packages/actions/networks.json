@@ -138,7 +138,7 @@
     {
       "name": "CFX_ESPACE",
       "identifier": "cfx-espace",
-      "supportsGateway": false
+      "supportsGateway": true
     },
     {
       "name": "CFX_ESPACE_TESTNET",
