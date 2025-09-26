@@ -133,7 +133,7 @@
     {
       "name": "CELO_SEPOLIA",
       "identifier": "celo-sepolia",
-      "supportsGateway": false
+      "supportsGateway": true
     },
     {
       "name": "CFX_ESPACE",
