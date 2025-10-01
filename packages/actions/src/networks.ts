@@ -39,6 +39,7 @@ export enum Network {
     CRONOS = "cronos",
     CRONOS_TESTNET = "cronos-testnet",
     CURTIS = "curtis",
+    ETHEREAL = "ethereal",
     ETHEREAL_TESTNET = "ethereal-testnet",
     FLARE = "flare",
     FRAXTAL = "fraxtal-mainnet",

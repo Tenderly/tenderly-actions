@@ -186,6 +186,11 @@
       "supportsGateway": false
     },
     {
+      "name": "ETHEREAL",
+      "identifier": "ethereal",
+      "supportsGateway": false
+    },
+    {
       "name": "ETHEREAL_TESTNET",
       "identifier": "ethereal-testnet",
       "supportsGateway": false
