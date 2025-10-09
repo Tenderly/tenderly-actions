@@ -343,7 +343,7 @@
     {
       "name": "MODE_SEPOLIA",
       "identifier": "mode-sepolia",
-      "supportsGateway": true
+      "supportsGateway": false
     },
     {
       "name": "MOONBASE_ALPHA",
