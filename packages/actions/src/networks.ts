@@ -70,7 +70,6 @@ export enum Network {
     METIS_ANDROMEDA = "metis-andromeda",
     METIS_SEPOLIA = "metis-sepolia",
     MODE = "mode",
-    MODE_SEPOLIA = "mode-sepolia",
     MOONBASE_ALPHA = "moonbase-alpha",
     MOONBEAM = "moonbeam",
     MOONRIVER = "moonriver",

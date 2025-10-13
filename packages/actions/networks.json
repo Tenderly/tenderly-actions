@@ -341,11 +341,6 @@
       "supportsGateway": true
     },
     {
-      "name": "MODE_SEPOLIA",
-      "identifier": "mode-sepolia",
-      "supportsGateway": false
-    },
-    {
       "name": "MOONBASE_ALPHA",
       "identifier": "moonbase-alpha",
       "supportsGateway": false
