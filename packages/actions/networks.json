@@ -551,6 +551,11 @@
       "supportsGateway": true
     },
     {
+      "name": "TAIKO_HOODI",
+      "identifier": "taiko-hoodi",
+      "supportsGateway": false
+    },
+    {
       "name": "TANGIBLE_REAL",
       "identifier": "tangible-real",
       "supportsGateway": true
