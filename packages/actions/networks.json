@@ -336,11 +336,6 @@
       "supportsGateway": false
     },
     {
-      "name": "MODE",
-      "identifier": "mode",
-      "supportsGateway": false
-    },
-    {
       "name": "MOONBASE_ALPHA",
       "identifier": "moonbase-alpha",
       "supportsGateway": false
