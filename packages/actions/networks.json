@@ -543,7 +543,7 @@
     {
       "name": "TAIKO_HEKLA",
       "identifier": "taiko-hekla",
-      "supportsGateway": true
+      "supportsGateway": false
     },
     {
       "name": "TAIKO_HOODI",
