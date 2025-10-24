@@ -69,7 +69,6 @@ export enum Network {
     MANTLE_SEPOLIA = "mantle-sepolia",
     METIS_ANDROMEDA = "metis-andromeda",
     METIS_SEPOLIA = "metis-sepolia",
-    MODE = "mode",
     MOONBASE_ALPHA = "moonbase-alpha",
     MOONBEAM = "moonbeam",
     MOONRIVER = "moonriver",
