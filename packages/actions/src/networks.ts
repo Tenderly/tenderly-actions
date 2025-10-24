@@ -110,7 +110,6 @@ export enum Network {
     TAC = "tac",
     TAC_SPB_TESTNET = "tac-spb-testnet",
     TAIKO = "taiko-mainnet",
-    TAIKO_HEKLA = "taiko-hekla",
     TAIKO_HOODI = "taiko-hoodi",
     TANGIBLE_REAL = "tangible-real",
     TANGIBLE_UNREAL = "tangible-unreal",
