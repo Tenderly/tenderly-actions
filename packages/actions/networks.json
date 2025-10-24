@@ -541,11 +541,6 @@
       "supportsGateway": true
     },
     {
-      "name": "TAIKO_HEKLA",
-      "identifier": "taiko-hekla",
-      "supportsGateway": false
-    },
-    {
       "name": "TAIKO_HOODI",
       "identifier": "taiko-hoodi",
       "supportsGateway": false
