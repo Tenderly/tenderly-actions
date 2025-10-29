@@ -358,7 +358,7 @@
     {
       "name": "MORPH_HOLESKY",
       "identifier": "morph-holesky",
-      "supportsGateway": true
+      "supportsGateway": false
     },
     {
       "name": "OPTIMISTIC",
