@@ -498,7 +498,7 @@
     {
       "name": "STABLE_TESTNET",
       "identifier": "stable-testnet",
-      "supportsGateway": false
+      "supportsGateway": true
     },
     {
       "name": "STORY",
