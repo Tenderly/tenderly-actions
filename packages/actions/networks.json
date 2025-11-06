@@ -358,7 +358,7 @@
     {
       "name": "OMEGA_13",
       "identifier": "omega-13",
-      "supportsGateway": false
+      "supportsGateway": true
     },
     {
       "name": "OPTIMISTIC",
