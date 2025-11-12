@@ -46,6 +46,7 @@ export enum Network {
     FRAXTAL_HOLESKY = "fraxtal-holesky",
     FUJI = "fuji",
     GNOSIS_CHAIN = "gnosis-chain",
+    GNOSIS_CHIADO_TESTNET = "gnosis-chiado-testnet",
     GOLD_MAINNET = "gold-mainnet",
     HOLESKY = "holesky",
     HOODI = "hoodi",
