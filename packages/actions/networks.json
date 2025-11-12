@@ -216,6 +216,11 @@
       "supportsGateway": false
     },
     {
+      "name": "GNOSIS",
+      "identifier": "gnosis",
+      "supportsGateway": true
+    },
+    {
       "name": "GNOSIS_CHAIN",
       "identifier": "gnosis-chain",
       "supportsGateway": false
