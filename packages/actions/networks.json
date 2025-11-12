@@ -256,6 +256,11 @@
       "supportsGateway": true
     },
     {
+      "name": "INJECTIVE",
+      "identifier": "injective",
+      "supportsGateway": false
+    },
+    {
       "name": "INJECTIVE_TESTNET",
       "identifier": "injective-testnet",
       "supportsGateway": false
