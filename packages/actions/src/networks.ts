@@ -53,6 +53,7 @@ export enum Network {
     HOODI = "hoodi",
     IMMUTABLE = "immutable-mainnet",
     IMMUTABLE_TESTNET = "immutable-testnet",
+    INJECTIVE = "injective",
     INJECTIVE_TESTNET = "injective-testnet",
     INK_SEPOLIA = "ink-sepolia",
     INTERVAL_TESTNET = "interval-testnet",
