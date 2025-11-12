@@ -221,6 +221,11 @@
       "supportsGateway": false
     },
     {
+      "name": "GNOSIS_CHIADO_TESTNET",
+      "identifier": "gnosis-chiado-testnet",
+      "supportsGateway": false
+    },
+    {
       "name": "GOLD_MAINNET",
       "identifier": "gold-mainnet",
       "supportsGateway": true
