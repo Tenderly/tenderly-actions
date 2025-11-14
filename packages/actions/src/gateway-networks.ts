@@ -57,6 +57,7 @@ export type GatewayNetwork = Extract<Network,
     Network.MAINNET |
     Network.MORPH |
     Network.OMEGA_13 |
+    Network.OMEGA_14 |
     Network.OPTIMISTIC |
     Network.OPTIMISTIC_SEPOLIA |
     Network.PLASMA |
