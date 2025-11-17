@@ -596,6 +596,11 @@
       "supportsGateway": true
     },
     {
+      "name": "XLAYER",
+      "identifier": "xlayer",
+      "supportsGateway": false
+    },
+    {
       "name": "ZETACHAIN",
       "identifier": "zetachain",
       "supportsGateway": false
