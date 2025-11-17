@@ -121,6 +121,7 @@ export enum Network {
     UNICHAIN_SEPOLIA = "unichain-sepolia",
     WORLDCHAIN = "worldchain-mainnet",
     WORLDCHAIN_SEPOLIA = "worldchain-sepolia",
+    XLAYER = "xlayer",
     ZETACHAIN = "zetachain",
     ZETACHAIN_TESTNET = "zetachain-testnet",
     ZIRCUIT = "zircuit",
