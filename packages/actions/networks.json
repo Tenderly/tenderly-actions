@@ -351,6 +351,11 @@
       "supportsGateway": false
     },
     {
+      "name": "MONAD_TESTNET",
+      "identifier": "monad-testnet",
+      "supportsGateway": false
+    },
+    {
       "name": "MOONBASE_ALPHA",
       "identifier": "moonbase-alpha",
       "supportsGateway": false
