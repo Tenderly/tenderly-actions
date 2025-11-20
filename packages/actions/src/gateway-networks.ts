@@ -55,6 +55,7 @@ export type GatewayNetwork = Extract<Network,
     Network.LISK |
     Network.LISK_SEPOLIA |
     Network.MAINNET |
+    Network.MONAD_TESTNET |
     Network.MORPH |
     Network.OMEGA_13 |
     Network.OMEGA_14 |

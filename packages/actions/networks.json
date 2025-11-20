@@ -353,7 +353,7 @@
     {
       "name": "MONAD_TESTNET",
       "identifier": "monad-testnet",
-      "supportsGateway": false
+      "supportsGateway": true
     },
     {
       "name": "MOONBASE_ALPHA",
