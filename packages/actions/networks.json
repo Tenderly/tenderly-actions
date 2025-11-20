@@ -601,6 +601,11 @@
       "supportsGateway": false
     },
     {
+      "name": "XLAYER_TESTNET",
+      "identifier": "xlayer-testnet",
+      "supportsGateway": false
+    },
+    {
       "name": "ZETACHAIN",
       "identifier": "zetachain",
       "supportsGateway": false
