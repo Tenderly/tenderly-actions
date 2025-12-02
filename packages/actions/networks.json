@@ -206,11 +206,6 @@
       "supportsGateway": true
     },
     {
-      "name": "FRAXTAL_HOLESKY",
-      "identifier": "fraxtal-holesky",
-      "supportsGateway": false
-    },
-    {
       "name": "FUJI",
       "identifier": "fuji",
       "supportsGateway": false
