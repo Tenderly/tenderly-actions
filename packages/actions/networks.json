@@ -128,7 +128,7 @@
     {
       "name": "CELO_ALFAJORES_TESTNET",
       "identifier": "celo-alfajores-testnet",
-      "supportsGateway": true
+      "supportsGateway": false
     },
     {
       "name": "CELO_SEPOLIA",
