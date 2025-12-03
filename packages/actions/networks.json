@@ -641,11 +641,6 @@
       "supportsGateway": false
     },
     {
-      "name": "ZORA_SEPOLIA",
-      "identifier": "zora-sepolia",
-      "supportsGateway": false
-    },
-    {
       "name": "ZORA_TESTNET",
       "identifier": "zora-testnet",
       "supportsGateway": false
