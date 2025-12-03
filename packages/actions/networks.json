@@ -568,7 +568,7 @@
     {
       "name": "TANGIBLE_REAL",
       "identifier": "tangible-real",
-      "supportsGateway": true
+      "supportsGateway": false
     },
     {
       "name": "TANGIBLE_UNREAL",
