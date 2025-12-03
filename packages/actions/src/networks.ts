@@ -27,7 +27,6 @@ export enum Network {
     BSC = "bsc",
     BSC_TESTNET = "bsc-testnet",
     CELO = "celo",
-    CELO_ALFAJORES_TESTNET = "celo-alfajores-testnet",
     CELO_SEPOLIA = "celo-sepolia",
     CFX_ESPACE = "cfx-espace",
     CFX_ESPACE_TESTNET = "cfx-espace-testnet",
