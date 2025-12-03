@@ -24,7 +24,6 @@ export type GatewayNetwork = Extract<Network,
     Network.BOB_SEPOLIA |
     Network.BOB_TESTNET |
     Network.CELO |
-    Network.CELO_ALFAJORES_TESTNET |
     Network.CELO_SEPOLIA |
     Network.CFX_ESPACE |
     Network.CFX_ESPACE_TESTNET |
