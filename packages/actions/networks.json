@@ -636,11 +636,6 @@
       "supportsGateway": true
     },
     {
-      "name": "ZORA",
-      "identifier": "zora",
-      "supportsGateway": false
-    },
-    {
       "name": "ZORA_TESTNET",
       "identifier": "zora-testnet",
       "supportsGateway": false
