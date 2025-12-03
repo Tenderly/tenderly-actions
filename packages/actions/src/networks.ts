@@ -130,6 +130,5 @@ export enum Network {
     ZKSYNC = "zksync",
     ZKSYNC_SEPOLIA = "zksync-sepolia",
     ZORA = "zora",
-    ZORA_SEPOLIA = "zora-sepolia",
     ZORA_TESTNET = "zora-testnet"
 } 
