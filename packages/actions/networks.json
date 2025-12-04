@@ -561,11 +561,6 @@
       "supportsGateway": false
     },
     {
-      "name": "TANGIBLE_REAL",
-      "identifier": "tangible-real",
-      "supportsGateway": false
-    },
-    {
       "name": "TANGIBLE_UNREAL",
       "identifier": "tangible-unreal",
       "supportsGateway": true
