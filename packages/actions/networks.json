@@ -563,7 +563,7 @@
     {
       "name": "TANGIBLE_UNREAL",
       "identifier": "tangible-unreal",
-      "supportsGateway": true
+      "supportsGateway": false
     },
     {
       "name": "UNICHAIN",
