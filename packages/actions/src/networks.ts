@@ -58,7 +58,6 @@ export enum Network {
     KATANA = "katana",
     KATANA_BOKUTO = "katana-bokuto",
     KATANA_TATARA = "katana-tatara",
-    KINTO = "kinto-mainnet",
     LENS = "lens",
     LENS_SEPOLIA = "lens-sepolia",
     LINEA = "linea",
