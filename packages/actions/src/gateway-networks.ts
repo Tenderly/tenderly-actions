@@ -40,6 +40,7 @@ export type GatewayNetwork = Extract<Network,
     Network.HOODI |
     Network.IMMUTABLE |
     Network.IMMUTABLE_TESTNET |
+    Network.INK |
     Network.INK_SEPOLIA |
     Network.INTERVAL_TESTNET |
     Network.KATANA |
@@ -52,10 +53,10 @@ export type GatewayNetwork = Extract<Network,
     Network.LISK |
     Network.LISK_SEPOLIA |
     Network.MAINNET |
+    Network.MONAD |
     Network.MONAD_TESTNET |
     Network.MORPH |
     Network.OMEGA_13 |
-    Network.MONAD |
     Network.OPTIMISTIC |
     Network.OPTIMISTIC_SEPOLIA |
     Network.PLASMA |
