@@ -256,6 +256,11 @@
       "supportsGateway": false
     },
     {
+      "name": "INK",
+      "identifier": "ink",
+      "supportsGateway": true
+    },
+    {
       "name": "INK_SEPOLIA",
       "identifier": "ink-sepolia",
       "supportsGateway": true
@@ -336,6 +341,11 @@
       "supportsGateway": false
     },
     {
+      "name": "MONAD",
+      "identifier": "monad",
+      "supportsGateway": true
+    },
+    {
       "name": "MONAD_TESTNET",
       "identifier": "monad-testnet",
       "supportsGateway": true
@@ -363,11 +373,6 @@
     {
       "name": "OMEGA_13",
       "identifier": "omega-13",
-      "supportsGateway": true
-    },
-    {
-      "name": "MONAD",
-      "identifier": "monad",
       "supportsGateway": true
     },
     {
