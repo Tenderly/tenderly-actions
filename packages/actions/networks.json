@@ -148,7 +148,7 @@
     {
       "name": "CONCRETE_TESTNET",
       "identifier": "concrete-testnet",
-      "supportsGateway": true
+      "supportsGateway": false
     },
     {
       "name": "CONVERGE_TESTNET",
