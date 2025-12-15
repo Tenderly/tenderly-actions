@@ -31,7 +31,6 @@ export enum Network {
     CFX_ESPACE = "cfx-espace",
     CFX_ESPACE_TESTNET = "cfx-espace-testnet",
     CONCRETE = "concrete",
-    CONCRETE_TESTNET = "concrete-testnet",
     CONVERGE_TESTNET = "converge-testnet",
     CORN = "corn",
     CORN_TESTNET = "corn-testnet",
