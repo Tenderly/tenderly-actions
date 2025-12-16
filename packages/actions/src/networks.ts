@@ -30,7 +30,6 @@ export enum Network {
     CELO_SEPOLIA = "celo-sepolia",
     CFX_ESPACE = "cfx-espace",
     CFX_ESPACE_TESTNET = "cfx-espace-testnet",
-    CONCRETE = "concrete",
     CONVERGE_TESTNET = "converge-testnet",
     CORN = "corn",
     CORN_TESTNET = "corn-testnet",
