@@ -141,11 +141,6 @@
       "supportsGateway": true
     },
     {
-      "name": "CONCRETE",
-      "identifier": "concrete",
-      "supportsGateway": false
-    },
-    {
       "name": "CONVERGE_TESTNET",
       "identifier": "converge-testnet",
       "supportsGateway": false
