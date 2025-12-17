@@ -9,6 +9,7 @@ on:
 jobs:
   release-actions:
     runs-on: ubuntu-latest
+    if: "!startsWith(github.event.head_commit.message, 'release actions-') && !startsWith(github.event.head_commit.message, 'release actions-test-')"
     outputs:
       version: ${{ steps.commit.outputs.version }}
     steps:
@@ -49,7 +50,9 @@ jobs:
         working-directory: packages/actions
       
       - name: push
-        run: git push origin && git push origin actions/$VERSION
+        run: |
+          git pull --rebase origin main
+          git push origin && git push origin actions/$VERSION
 
       - name: publish release
         working-directory: packages/actions
@@ -97,7 +100,9 @@ jobs:
         working-directory: packages/actions-test
 
       - name: push
-        run: git push origin && git push origin actions-test/$VERSION
+        run: |
+          git pull --rebase origin main
+          git push origin && git push origin actions-test/$VERSION
 
       - name: publish release
         working-directory: packages/actions-test
