@@ -51,7 +51,8 @@ jobs:
       - name: push
         run: |
           git pull --rebase origin main
-          git push origin && git push origin actions/$VERSION
+          git push origin
+          git push origin actions/$VERSION --force-with-lease || echo "Tag already exists, skipping tag push"
 
       - name: publish release
         working-directory: packages/actions
@@ -101,7 +102,8 @@ jobs:
       - name: push
         run: |
           git pull --rebase origin main
-          git push origin && git push origin actions-test/$VERSION
+          git push origin
+          git push origin actions-test/$VERSION --force-with-lease || echo "Tag already exists, skipping tag push"
 
       - name: publish release
         working-directory: packages/actions-test
