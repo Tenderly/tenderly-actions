@@ -112,6 +112,7 @@ export enum Network {
     TAC_SPB_TESTNET = "tac-spb-testnet",
     TAIKO = "taiko-mainnet",
     TAIKO_HOODI = "taiko-hoodi",
+    TEMPO_TESTNET = "tempo-testnet",
     UNICHAIN = "unichain",
     UNICHAIN_SEPOLIA = "unichain-sepolia",
     WORLDCHAIN = "worldchain-mainnet",
