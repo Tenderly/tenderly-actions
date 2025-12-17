@@ -9,7 +9,6 @@ on:
 jobs:
   release-actions:
     runs-on: ubuntu-latest
-    if: "!startsWith(github.event.head_commit.message, 'release actions-') && !startsWith(github.event.head_commit.message, 'release actions-test-')"
     outputs:
       version: ${{ steps.commit.outputs.version }}
     steps:
