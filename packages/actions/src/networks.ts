@@ -40,6 +40,7 @@ export enum Network {
     ETHEREAL_TESTNET = "ethereal-testnet",
     FLARE = "flare",
     FRAXTAL = "fraxtal-mainnet",
+    FRAXTAL_HOODI = "fraxtal-hoodi",
     FUJI = "fuji",
     GNOSIS = "gnosis",
     GNOSIS_CHAIN = "gnosis-chain",
