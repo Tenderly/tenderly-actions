@@ -191,6 +191,11 @@
       "supportsGateway": true
     },
     {
+      "name": "FRAXTAL_HOODI",
+      "identifier": "fraxtal-hoodi",
+      "supportsGateway": false
+    },
+    {
       "name": "FUJI",
       "identifier": "fuji",
       "supportsGateway": false
