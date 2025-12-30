@@ -31,6 +31,7 @@ export type GatewayNetwork = Extract<Network,
     Network.CORN_TESTNET |
     Network.FLARE |
     Network.FRAXTAL |
+    Network.FRAXTAL_HOODI |
     Network.GNOSIS |
     Network.GNOSIS_CHIADO_TESTNET |
     Network.GOLD_MAINNET |
