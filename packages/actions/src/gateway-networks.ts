@@ -80,6 +80,7 @@ export type GatewayNetwork = Extract<Network,
     Network.SWELLCHAIN |
     Network.SWELLCHAIN_SEPOLIA |
     Network.TAIKO |
+    Network.TAIKO_HOODI |
     Network.TEMPO_TESTNET |
     Network.UNICHAIN |
     Network.UNICHAIN_SEPOLIA |
