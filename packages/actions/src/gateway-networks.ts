@@ -55,6 +55,7 @@ export type GatewayNetwork = Extract<Network,
     Network.MONAD |
     Network.MONAD_TESTNET |
     Network.MORPH |
+    Network.MORPH_HOODI |
     Network.OMEGA_13 |
     Network.OPTIMISTIC |
     Network.OPTIMISTIC_SEPOLIA |
