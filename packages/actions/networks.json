@@ -366,6 +366,11 @@
       "supportsGateway": true
     },
     {
+      "name": "MORPH_HOODI",
+      "identifier": "morph-hoodi",
+      "supportsGateway": true
+    },
+    {
       "name": "OMEGA_13",
       "identifier": "omega-13",
       "supportsGateway": true
