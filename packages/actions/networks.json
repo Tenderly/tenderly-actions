@@ -223,7 +223,7 @@
     {
       "name": "HOLESKY",
       "identifier": "holesky",
-      "supportsGateway": true
+      "supportsGateway": false
     },
     {
       "name": "HOODI",
