@@ -35,7 +35,6 @@ export type GatewayNetwork = Extract<Network,
     Network.GNOSIS |
     Network.GNOSIS_CHIADO_TESTNET |
     Network.GOLD_MAINNET |
-    Network.HOLESKY |
     Network.HOODI |
     Network.IMMUTABLE |
     Network.IMMUTABLE_TESTNET |
