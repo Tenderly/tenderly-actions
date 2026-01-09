@@ -273,7 +273,7 @@
     {
       "name": "KATANA_TATARA",
       "identifier": "katana-tatara",
-      "supportsGateway": true
+      "supportsGateway": false
     },
     {
       "name": "LENS",
