@@ -46,7 +46,6 @@ export enum Network {
     GNOSIS_CHAIN = "gnosis-chain",
     GNOSIS_CHIADO_TESTNET = "gnosis-chiado-testnet",
     GOLD_MAINNET = "gold-mainnet",
-    HOLESKY = "holesky",
     HOODI = "hoodi",
     IMMUTABLE = "immutable-mainnet",
     IMMUTABLE_TESTNET = "immutable-testnet",
