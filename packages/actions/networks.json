@@ -221,11 +221,6 @@
       "supportsGateway": true
     },
     {
-      "name": "HOLESKY",
-      "identifier": "holesky",
-      "supportsGateway": false
-    },
-    {
       "name": "HOODI",
       "identifier": "hoodi",
       "supportsGateway": true
