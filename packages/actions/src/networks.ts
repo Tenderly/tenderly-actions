@@ -56,7 +56,6 @@ export enum Network {
     INTERVAL_TESTNET = "interval-testnet",
     KATANA = "katana",
     KATANA_BOKUTO = "katana-bokuto",
-    KATANA_TATARA = "katana-tatara",
     LENS = "lens",
     LENS_SEPOLIA = "lens-sepolia",
     LINEA = "linea",
