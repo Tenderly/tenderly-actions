@@ -271,11 +271,6 @@
       "supportsGateway": true
     },
     {
-      "name": "KATANA_TATARA",
-      "identifier": "katana-tatara",
-      "supportsGateway": false
-    },
-    {
       "name": "LENS",
       "identifier": "lens",
       "supportsGateway": true
