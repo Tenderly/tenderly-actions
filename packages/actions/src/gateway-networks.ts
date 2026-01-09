@@ -43,7 +43,6 @@ export type GatewayNetwork = Extract<Network,
     Network.INTERVAL_TESTNET |
     Network.KATANA |
     Network.KATANA_BOKUTO |
-    Network.KATANA_TATARA |
     Network.LENS |
     Network.LENS_SEPOLIA |
     Network.LINEA |
