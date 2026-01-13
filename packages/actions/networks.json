@@ -153,7 +153,7 @@
     {
       "name": "CORN_TESTNET",
       "identifier": "corn-testnet",
-      "supportsGateway": true
+      "supportsGateway": false
     },
     {
       "name": "CRONOS",
