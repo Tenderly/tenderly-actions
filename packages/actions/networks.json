@@ -148,7 +148,7 @@
     {
       "name": "CORN",
       "identifier": "corn",
-      "supportsGateway": true
+      "supportsGateway": false
     },
     {
       "name": "CRONOS",
