@@ -27,7 +27,6 @@ export type GatewayNetwork = Extract<Network,
     Network.CELO_SEPOLIA |
     Network.CFX_ESPACE |
     Network.CFX_ESPACE_TESTNET |
-    Network.CORN |
     Network.FLARE |
     Network.FRAXTAL |
     Network.FRAXTAL_HOODI |
