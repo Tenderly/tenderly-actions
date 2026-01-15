@@ -42,7 +42,7 @@ export interface WebhookEvent extends Event {
 export type ExtensionEvent = any[]
 
 /**
- * For trigger type "block
+ * For trigger type "block"
  */
 export interface BlockEvent extends Event {
     /**
