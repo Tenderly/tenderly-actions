@@ -146,11 +146,6 @@
       "supportsGateway": false
     },
     {
-      "name": "CORN",
-      "identifier": "corn",
-      "supportsGateway": false
-    },
-    {
       "name": "CRONOS",
       "identifier": "cronos",
       "supportsGateway": false
