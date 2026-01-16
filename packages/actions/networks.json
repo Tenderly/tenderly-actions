@@ -541,6 +541,11 @@
       "supportsGateway": true
     },
     {
+      "name": "TEMPO_MODERATO_TESTNET",
+      "identifier": "tempo-moderato-testnet",
+      "supportsGateway": false
+    },
+    {
       "name": "TEMPO_TESTNET",
       "identifier": "tempo-testnet",
       "supportsGateway": true
