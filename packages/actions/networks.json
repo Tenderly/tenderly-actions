@@ -543,7 +543,7 @@
     {
       "name": "TEMPO_MODERATO_TESTNET",
       "identifier": "tempo-moderato-testnet",
-      "supportsGateway": false
+      "supportsGateway": true
     },
     {
       "name": "TEMPO_TESTNET",
