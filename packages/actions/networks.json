@@ -141,11 +141,6 @@
       "supportsGateway": true
     },
     {
-      "name": "CONVERGE_TESTNET",
-      "identifier": "converge-testnet",
-      "supportsGateway": false
-    },
-    {
       "name": "CRONOS",
       "identifier": "cronos",
       "supportsGateway": false
