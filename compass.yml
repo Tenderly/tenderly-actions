@@ -1,0 +1,16 @@
+name: tenderly-actions
+id: ari:cloud:compass:2eefe999-d61b-469c-92ef-31fc5e9b3f13:component/ace244a1-3ae8-43fb-8c96-347d12170341/25c206ad-e068-4682-bcdf-5e33a626d480
+description: Deploy a custom JavaScript/Typescript function that hooks into an on-chain event and builds active monitoring or a serverless backend for a dapp, improves dapp UX, and connects different services.
+configVersion: 1
+typeId: SERVICE
+fields:
+  tier: 4
+links:
+  - name: null
+    type: REPOSITORY
+    url: https://github.com/Boomtoknlab/tenderly-actions
+relationships:
+  DEPENDS_ON: []
+labels:
+  - source:github
+customFields: null
