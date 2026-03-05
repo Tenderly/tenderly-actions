@@ -301,6 +301,11 @@
       "supportsGateway": false
     },
     {
+      "name": "MEGAETH",
+      "identifier": "megaeth",
+      "supportsGateway": true
+    },
+    {
       "name": "METIS_ANDROMEDA",
       "identifier": "metis-andromeda",
       "supportsGateway": false

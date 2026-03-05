@@ -62,6 +62,7 @@ export enum Network {
     MAINNET = "mainnet",
     MANTLE = "mantle",
     MANTLE_SEPOLIA = "mantle-sepolia",
+    MEGAETH = "megaeth",
     METIS_ANDROMEDA = "metis-andromeda",
     METIS_SEPOLIA = "metis-sepolia",
     MONAD = "monad",
