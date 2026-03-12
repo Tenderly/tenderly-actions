@@ -79,12 +79,15 @@ export type GatewayNetwork = Extract<Network,
     Network.SWELLCHAIN_SEPOLIA |
     Network.TAIKO |
     Network.TAIKO_HOODI |
+    Network.TEMPO |
     Network.TEMPO_MODERATO_TESTNET |
     Network.TEMPO_TESTNET |
     Network.UNICHAIN |
     Network.UNICHAIN_SEPOLIA |
     Network.WORLDCHAIN |
     Network.WORLDCHAIN_SEPOLIA |
+    Network.XLAYER |
+    Network.XLAYER_TESTNET |
     Network.ZIRCUIT |
     Network.ZIRCUIT_GARFIELD_TESTNET |
     Network.ZKSYNC |
