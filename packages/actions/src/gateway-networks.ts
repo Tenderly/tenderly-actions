@@ -92,4 +92,4 @@ export type GatewayNetwork = Extract<Network,
     Network.ZIRCUIT_GARFIELD_TESTNET |
     Network.ZKSYNC |
     Network.ZKSYNC_SEPOLIA
-> 
+>
