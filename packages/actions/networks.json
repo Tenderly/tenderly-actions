@@ -553,7 +553,7 @@
     {
       "name": "TEMPO_TESTNET",
       "identifier": "tempo-testnet",
-      "supportsGateway": true
+      "supportsGateway": false
     },
     {
       "name": "UNICHAIN",
