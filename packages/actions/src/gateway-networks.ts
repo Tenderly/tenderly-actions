@@ -81,7 +81,6 @@ export type GatewayNetwork = Extract<Network,
     Network.TAIKO_HOODI |
     Network.TEMPO |
     Network.TEMPO_MODERATO_TESTNET |
-    Network.TEMPO_TESTNET |
     Network.UNICHAIN |
     Network.UNICHAIN_SEPOLIA |
     Network.WORLDCHAIN |
