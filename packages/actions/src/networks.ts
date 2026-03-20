@@ -112,7 +112,6 @@ export enum Network {
     TAIKO_HOODI = "taiko-hoodi",
     TEMPO = "tempo",
     TEMPO_MODERATO_TESTNET = "tempo-moderato-testnet",
-    TEMPO_TESTNET = "tempo-testnet",
     UNICHAIN = "unichain",
     UNICHAIN_SEPOLIA = "unichain-sepolia",
     WORLDCHAIN = "worldchain-mainnet",
