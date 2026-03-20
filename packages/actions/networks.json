@@ -401,11 +401,6 @@
       "supportsGateway": true
     },
     {
-      "name": "POLYNOMIAL",
-      "identifier": "polynomial-mainnet",
-      "supportsGateway": false
-    },
-    {
       "name": "POLYNOMIAL_SEPOLIA",
       "identifier": "polynomial-sepolia",
       "supportsGateway": true
