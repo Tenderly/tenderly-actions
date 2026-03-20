@@ -551,11 +551,6 @@
       "supportsGateway": true
     },
     {
-      "name": "TEMPO_TESTNET",
-      "identifier": "tempo-testnet",
-      "supportsGateway": false
-    },
-    {
       "name": "UNICHAIN",
       "identifier": "unichain",
       "supportsGateway": true
