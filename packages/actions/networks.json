@@ -403,7 +403,7 @@
     {
       "name": "POLYNOMIAL",
       "identifier": "polynomial-mainnet",
-      "supportsGateway": true
+      "supportsGateway": false
     },
     {
       "name": "POLYNOMIAL_SEPOLIA",
