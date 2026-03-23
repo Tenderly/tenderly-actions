@@ -22,7 +22,6 @@ export enum Network {
     BOBA_BINANCE_RIALTO = "boba-binance-rialto",
     BOBA_ETHEREUM = "boba-ethereum",
     BOBA_SEPOLIA = "boba-sepolia",
-    BOB_SEPOLIA = "bob-sepolia",
     BOB_TESTNET = "bob-testnet",
     BSC = "bsc",
     BSC_TESTNET = "bsc-testnet",
