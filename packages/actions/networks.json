@@ -101,11 +101,6 @@
       "supportsGateway": true
     },
     {
-      "name": "BOB_SEPOLIA",
-      "identifier": "bob-sepolia",
-      "supportsGateway": false
-    },
-    {
       "name": "BOB_TESTNET",
       "identifier": "bob-testnet",
       "supportsGateway": true
