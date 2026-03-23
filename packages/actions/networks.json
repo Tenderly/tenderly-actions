@@ -403,7 +403,7 @@
     {
       "name": "POLYNOMIAL_SEPOLIA",
       "identifier": "polynomial-sepolia",
-      "supportsGateway": true
+      "supportsGateway": false
     },
     {
       "name": "RONIN",
