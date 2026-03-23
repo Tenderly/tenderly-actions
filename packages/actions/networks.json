@@ -103,7 +103,7 @@
     {
       "name": "BOB_SEPOLIA",
       "identifier": "bob-sepolia",
-      "supportsGateway": true
+      "supportsGateway": false
     },
     {
       "name": "BOB_TESTNET",
