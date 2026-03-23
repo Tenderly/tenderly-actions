@@ -21,7 +21,6 @@ export type GatewayNetwork = Extract<Network,
     Network.BOBA_BINANCE_RIALTO |
     Network.BOBA_ETHEREUM |
     Network.BOBA_SEPOLIA |
-    Network.BOB_SEPOLIA |
     Network.BOB_TESTNET |
     Network.CELO |
     Network.CELO_SEPOLIA |
