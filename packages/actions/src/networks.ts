@@ -82,7 +82,6 @@ export enum Network {
     PLUME = "plume",
     PLUME_TESTNET = "plume-testnet",
     POLYGON = "polygon",
-    POLYNOMIAL_SEPOLIA = "polynomial-sepolia",
     RONIN = "ronin",
     RONIN_TESTNET = "ronin-testnet",
     RSK = "rsk",
