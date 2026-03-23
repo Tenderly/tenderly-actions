@@ -236,11 +236,6 @@
       "supportsGateway": true
     },
     {
-      "name": "INTERVAL_TESTNET",
-      "identifier": "interval-testnet",
-      "supportsGateway": false
-    },
-    {
       "name": "KATANA",
       "identifier": "katana",
       "supportsGateway": true
