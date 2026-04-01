@@ -468,7 +468,7 @@
     {
       "name": "SOPHON",
       "identifier": "sophon",
-      "supportsGateway": true
+      "supportsGateway": false
     },
     {
       "name": "STABLE_TESTNET",
