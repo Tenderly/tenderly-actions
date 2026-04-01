@@ -466,11 +466,6 @@
       "supportsGateway": true
     },
     {
-      "name": "SOPHON",
-      "identifier": "sophon",
-      "supportsGateway": false
-    },
-    {
       "name": "STABLE_TESTNET",
       "identifier": "stable-testnet",
       "supportsGateway": true
