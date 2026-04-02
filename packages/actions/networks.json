@@ -471,11 +471,6 @@
       "supportsGateway": true
     },
     {
-      "name": "STORY",
-      "identifier": "story",
-      "supportsGateway": false
-    },
-    {
       "name": "SWELLCHAIN",
       "identifier": "swellchain",
       "supportsGateway": true
