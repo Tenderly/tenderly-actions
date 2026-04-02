@@ -97,7 +97,6 @@ export enum Network {
     SONIC_BLAZE = "sonic-blaze",
     STABLE_TESTNET = "stable-testnet",
     STORY = "story",
-    STORY_AENEID = "story-aeneid",
     SWELLCHAIN = "swellchain",
     SWELLCHAIN_SEPOLIA = "swellchain-sepolia",
     TAC = "tac",
