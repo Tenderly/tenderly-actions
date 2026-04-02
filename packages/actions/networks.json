@@ -476,11 +476,6 @@
       "supportsGateway": false
     },
     {
-      "name": "STORY_AENEID",
-      "identifier": "story-aeneid",
-      "supportsGateway": false
-    },
-    {
       "name": "SWELLCHAIN",
       "identifier": "swellchain",
       "supportsGateway": true
