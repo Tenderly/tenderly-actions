@@ -473,7 +473,7 @@
     {
       "name": "STORY",
       "identifier": "story",
-      "supportsGateway": true
+      "supportsGateway": false
     },
     {
       "name": "STORY_AENEID",

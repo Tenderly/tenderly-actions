@@ -67,7 +67,6 @@ export type GatewayNetwork = Extract<Network,
     Network.SONIC |
     Network.SONIC_BLAZE |
     Network.STABLE_TESTNET |
-    Network.STORY |
     Network.SWELLCHAIN |
     Network.SWELLCHAIN_SEPOLIA |
     Network.TAIKO |
