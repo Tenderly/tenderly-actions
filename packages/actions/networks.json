@@ -236,6 +236,11 @@
       "supportsGateway": true
     },
     {
+      "name": "INTERVAL",
+      "identifier": "interval",
+      "supportsGateway": false
+    },
+    {
       "name": "KATANA",
       "identifier": "katana",
       "supportsGateway": true

@@ -49,6 +49,7 @@ export enum Network {
     INJECTIVE_TESTNET = "injective-testnet",
     INK = "ink",
     INK_SEPOLIA = "ink-sepolia",
+    INTERVAL = "interval",
     KATANA = "katana",
     KATANA_BOKUTO = "katana-bokuto",
     LENS = "lens",
