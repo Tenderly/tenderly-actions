@@ -466,11 +466,6 @@
       "supportsGateway": true
     },
     {
-      "name": "SONIC_BLAZE",
-      "identifier": "sonic-blaze",
-      "supportsGateway": false
-    },
-    {
       "name": "STABLE_TESTNET",
       "identifier": "stable-testnet",
       "supportsGateway": true
