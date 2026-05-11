@@ -468,7 +468,7 @@
     {
       "name": "SONIC_BLAZE",
       "identifier": "sonic-blaze",
-      "supportsGateway": true
+      "supportsGateway": false
     },
     {
       "name": "STABLE_TESTNET",
