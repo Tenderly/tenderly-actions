@@ -23,7 +23,7 @@
     {
       "name": "ARBITRUM_NOVA",
       "identifier": "arbitrum-nova",
-      "supportsGateway": true
+      "supportsGateway": false
     },
     {
       "name": "ARBITRUM_SEPOLIA",
