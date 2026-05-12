@@ -7,7 +7,6 @@ export type GatewayNetwork = Extract<Network,
     Network.AF_NEXUS_TESTNET |
     Network.AMOY |
     Network.ARBITRUM |
-    Network.ARBITRUM_NOVA |
     Network.ARBITRUM_SEPOLIA |
     Network.AVA |
     Network.BASE |
