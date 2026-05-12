@@ -21,11 +21,6 @@
       "supportsGateway": true
     },
     {
-      "name": "ARBITRUM_NOVA",
-      "identifier": "arbitrum-nova",
-      "supportsGateway": false
-    },
-    {
       "name": "ARBITRUM_SEPOLIA",
       "identifier": "arbitrum-sepolia",
       "supportsGateway": true
