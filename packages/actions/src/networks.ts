@@ -6,7 +6,6 @@ export enum Network {
     AMOY = "polygon-amoy",
     APECHAIN = "apechain",
     ARBITRUM = "arbitrum",
-    ARBITRUM_NOVA = "arbitrum-nova",
     ARBITRUM_SEPOLIA = "arbitrum-sepolia",
     AVA = "ava",
     BASE = "base",
