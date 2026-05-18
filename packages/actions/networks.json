@@ -461,6 +461,11 @@
       "supportsGateway": true
     },
     {
+      "name": "SONIC_TESTNET",
+      "identifier": "sonic-testnet",
+      "supportsGateway": false
+    },
+    {
       "name": "STABLE_TESTNET",
       "identifier": "stable-testnet",
       "supportsGateway": true
