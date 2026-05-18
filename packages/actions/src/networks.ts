@@ -94,6 +94,7 @@ export enum Network {
     SONEIUM = "soneium",
     SONEIUM_MINATO = "soneium-minato",
     SONIC = "sonic",
+    SONIC_TESTNET = "sonic-testnet",
     STABLE_TESTNET = "stable-testnet",
     SWELLCHAIN = "swellchain",
     SWELLCHAIN_SEPOLIA = "swellchain-sepolia",
