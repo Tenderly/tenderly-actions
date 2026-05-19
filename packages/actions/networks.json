@@ -463,7 +463,7 @@
     {
       "name": "SONIC_TESTNET",
       "identifier": "sonic-testnet",
-      "supportsGateway": false
+      "supportsGateway": true
     },
     {
       "name": "STABLE_TESTNET",
