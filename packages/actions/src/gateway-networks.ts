@@ -65,6 +65,7 @@ export type GatewayNetwork = Extract<Network,
     Network.SONEIUM |
     Network.SONEIUM_MINATO |
     Network.SONIC |
+    Network.SONIC_TESTNET |
     Network.STABLE_TESTNET |
     Network.SWELLCHAIN |
     Network.SWELLCHAIN_SEPOLIA |
