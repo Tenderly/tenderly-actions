@@ -58,7 +58,7 @@ jobs:
         working-directory: packages/actions
         run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+          NODE_AUTH_TOKEN: ${{secrets.npm_token_aug_2026}}
       
   release-actions-test:
     needs: release-actions
@@ -109,5 +109,5 @@ jobs:
         working-directory: packages/actions-test
         run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+          NODE_AUTH_TOKEN: ${{secrets.npm_token_aug_2026}}
 
