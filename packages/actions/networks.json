@@ -481,11 +481,6 @@
       "supportsGateway": true
     },
     {
-      "name": "SWELLCHAIN_SEPOLIA",
-      "identifier": "swellchain-sepolia",
-      "supportsGateway": false
-    },
-    {
       "name": "TAC",
       "identifier": "tac",
       "supportsGateway": false
