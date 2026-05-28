@@ -483,7 +483,7 @@
     {
       "name": "SWELLCHAIN_SEPOLIA",
       "identifier": "swellchain-sepolia",
-      "supportsGateway": true
+      "supportsGateway": false
     },
     {
       "name": "TAC",
