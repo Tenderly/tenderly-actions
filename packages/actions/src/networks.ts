@@ -98,7 +98,6 @@ export enum Network {
     SONIC_TESTNET = "sonic-testnet",
     STABLE_TESTNET = "stable-testnet",
     SWELLCHAIN = "swellchain",
-    SWELLCHAIN_SEPOLIA = "swellchain-sepolia",
     TAC = "tac",
     TAC_SPB_TESTNET = "tac-spb-testnet",
     TAIKO = "taiko-mainnet",
