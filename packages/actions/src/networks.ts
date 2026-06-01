@@ -81,6 +81,7 @@ export enum Network {
     PLUME = "plume",
     PLUME_TESTNET = "plume-testnet",
     POLYGON = "polygon",
+    ROBINHOOD_CHAIN_TESTNET = "robinhood-chain-testnet",
     RONIN = "ronin",
     RONIN_TESTNET = "ronin-testnet",
     RSK = "rsk",
