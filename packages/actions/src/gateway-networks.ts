@@ -58,6 +58,7 @@ export type GatewayNetwork = Extract<Network,
     Network.PLASMA |
     Network.PLASMA_TESTNET |
     Network.POLYGON |
+    Network.ROBINHOOD_CHAIN_TESTNET |
     Network.RONIN |
     Network.RONIN_TESTNET |
     Network.SCROLL |
