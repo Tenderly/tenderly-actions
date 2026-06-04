@@ -398,7 +398,7 @@
     {
       "name": "ROBINHOOD_CHAIN_TESTNET",
       "identifier": "robinhood-chain-testnet",
-      "supportsGateway": false
+      "supportsGateway": true
     },
     {
       "name": "RONIN",
