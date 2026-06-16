@@ -7,6 +7,7 @@ export enum Network {
     APECHAIN = "apechain",
     ARBITRUM = "arbitrum",
     ARBITRUM_SEPOLIA = "arbitrum-sepolia",
+    ARC_TESTNET = "arc-testnet",
     AVA = "ava",
     BASE = "base",
     BASE_SEPOLIA = "base-sepolia",
