@@ -26,6 +26,11 @@
       "supportsGateway": true
     },
     {
+      "name": "ARC_TESTNET",
+      "identifier": "arc-testnet",
+      "supportsGateway": false
+    },
+    {
       "name": "AVA",
       "identifier": "ava",
       "supportsGateway": true
