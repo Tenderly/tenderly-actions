@@ -73,6 +73,7 @@ export enum Network {
     MORPH_HOODI = "morph-hoodi",
     OMEGA_13 = "omega-13",
     OMEGA_16 = "omega-16",
+    OMEGA_17 = "omega-17",
     OPTIMISTIC = "optimistic",
     OPTIMISTIC_SEPOLIA = "optimistic-sepolia",
     PEAQ = "peaq",
