@@ -69,7 +69,6 @@ export type GatewayNetwork = Extract<Network,
     Network.SONIC |
     Network.SONIC_TESTNET |
     Network.STABLE_TESTNET |
-    Network.SWELLCHAIN |
     Network.TAIKO |
     Network.TAIKO_HOODI |
     Network.TEMPO |
