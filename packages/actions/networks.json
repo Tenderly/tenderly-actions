@@ -493,7 +493,7 @@
     {
       "name": "SWELLCHAIN",
       "identifier": "swellchain",
-      "supportsGateway": true
+      "supportsGateway": false
     },
     {
       "name": "TAC",
