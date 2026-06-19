@@ -356,6 +356,11 @@
       "supportsGateway": true
     },
     {
+      "name": "OMEGA_17",
+      "identifier": "omega-17",
+      "supportsGateway": false
+    },
+    {
       "name": "OPTIMISTIC",
       "identifier": "optimistic",
       "supportsGateway": true
