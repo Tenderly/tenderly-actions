@@ -491,11 +491,6 @@
       "supportsGateway": true
     },
     {
-      "name": "SWELLCHAIN",
-      "identifier": "swellchain",
-      "supportsGateway": false
-    },
-    {
       "name": "TAC",
       "identifier": "tac",
       "supportsGateway": false
