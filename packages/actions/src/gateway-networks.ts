@@ -80,7 +80,6 @@ export type GatewayNetwork = Extract<Network,
     Network.XLAYER |
     Network.XLAYER_TESTNET |
     Network.ZIRCUIT |
-    Network.ZIRCUIT_GARFIELD_TESTNET |
     Network.ZKSYNC |
     Network.ZKSYNC_SEPOLIA
 > 

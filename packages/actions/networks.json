@@ -568,7 +568,7 @@
     {
       "name": "ZIRCUIT_GARFIELD_TESTNET",
       "identifier": "zircuit-garfield-testnet",
-      "supportsGateway": true
+      "supportsGateway": false
     },
     {
       "name": "ZKSYNC",
