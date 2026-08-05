@@ -115,7 +115,6 @@ export enum Network {
     ZETACHAIN = "zetachain",
     ZETACHAIN_TESTNET = "zetachain-testnet",
     ZIRCUIT = "zircuit",
-    ZIRCUIT_GARFIELD_TESTNET = "zircuit-garfield-testnet",
     ZKSYNC = "zksync",
     ZKSYNC_SEPOLIA = "zksync-sepolia",
     ZORA_TESTNET = "zora-testnet"
