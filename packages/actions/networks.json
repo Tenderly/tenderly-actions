@@ -561,11 +561,6 @@
       "supportsGateway": false
     },
     {
-      "name": "ZIRCUIT",
-      "identifier": "zircuit",
-      "supportsGateway": false
-    },
-    {
       "name": "ZKSYNC",
       "identifier": "zksync",
       "supportsGateway": true
