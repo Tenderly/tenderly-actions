@@ -563,7 +563,7 @@
     {
       "name": "ZIRCUIT",
       "identifier": "zircuit",
-      "supportsGateway": true
+      "supportsGateway": false
     },
     {
       "name": "ZKSYNC",
