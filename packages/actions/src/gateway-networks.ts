@@ -79,7 +79,6 @@ export type GatewayNetwork = Extract<Network,
     Network.WORLDCHAIN_SEPOLIA |
     Network.XLAYER |
     Network.XLAYER_TESTNET |
-    Network.ZIRCUIT |
     Network.ZKSYNC |
     Network.ZKSYNC_SEPOLIA
 > 
