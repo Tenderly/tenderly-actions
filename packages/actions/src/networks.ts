@@ -114,7 +114,6 @@ export enum Network {
     XLAYER_TESTNET = "xlayer-testnet",
     ZETACHAIN = "zetachain",
     ZETACHAIN_TESTNET = "zetachain-testnet",
-    ZIRCUIT = "zircuit",
     ZKSYNC = "zksync",
     ZKSYNC_SEPOLIA = "zksync-sepolia",
     ZORA_TESTNET = "zora-testnet"
