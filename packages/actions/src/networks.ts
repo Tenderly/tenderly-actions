@@ -89,7 +89,6 @@ export enum Network {
     RSK = "rsk",
     RSK_TESTNET = "rsk-testnet",
     SCROLL = "scroll-mainnet",
-    SCROLL_SEPOLIA = "scroll-sepolia",
     SEI_ATLANTIC_2 = "sei-atlantic-2",
     SEI_PACIFIC_1 = "sei-pacific-1",
     SEPOLIA = "sepolia",
