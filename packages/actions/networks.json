@@ -438,7 +438,7 @@
     {
       "name": "SCROLL_SEPOLIA",
       "identifier": "scroll-sepolia",
-      "supportsGateway": true
+      "supportsGateway": false
     },
     {
       "name": "SEI_ATLANTIC_2",
