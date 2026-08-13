@@ -62,7 +62,6 @@ export type GatewayNetwork = Extract<Network,
     Network.RONIN |
     Network.RONIN_TESTNET |
     Network.SCROLL |
-    Network.SCROLL_SEPOLIA |
     Network.SEPOLIA |
     Network.SONEIUM |
     Network.SONEIUM_MINATO |
