@@ -436,11 +436,6 @@
       "supportsGateway": true
     },
     {
-      "name": "SCROLL_SEPOLIA",
-      "identifier": "scroll-sepolia",
-      "supportsGateway": false
-    },
-    {
       "name": "SEI_ATLANTIC_2",
       "identifier": "sei-atlantic-2",
       "supportsGateway": false
