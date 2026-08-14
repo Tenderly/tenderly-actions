@@ -321,11 +321,6 @@
       "supportsGateway": true
     },
     {
-      "name": "MOONBASE_ALPHA",
-      "identifier": "moonbase-alpha",
-      "supportsGateway": false
-    },
-    {
       "name": "MOONBEAM",
       "identifier": "moonbeam",
       "supportsGateway": false
