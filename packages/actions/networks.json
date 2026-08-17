@@ -321,11 +321,6 @@
       "supportsGateway": true
     },
     {
-      "name": "MOONBEAM",
-      "identifier": "moonbeam",
-      "supportsGateway": false
-    },
-    {
       "name": "MORPH",
       "identifier": "morph",
       "supportsGateway": true
