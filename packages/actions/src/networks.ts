@@ -67,7 +67,6 @@ export enum Network {
     MONAD = "monad",
     MONAD_TESTNET = "monad-testnet",
     MOONBEAM = "moonbeam",
-    MOONRIVER = "moonriver",
     MORPH = "morph",
     MORPH_HOODI = "morph-hoodi",
     OMEGA_13 = "omega-13",

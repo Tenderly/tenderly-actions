@@ -326,11 +326,6 @@
       "supportsGateway": false
     },
     {
-      "name": "MOONRIVER",
-      "identifier": "moonriver",
-      "supportsGateway": false
-    },
-    {
       "name": "MORPH",
       "identifier": "morph",
       "supportsGateway": true
