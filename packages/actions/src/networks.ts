@@ -66,7 +66,6 @@ export enum Network {
     METIS_SEPOLIA = "metis-sepolia",
     MONAD = "monad",
     MONAD_TESTNET = "monad-testnet",
-    MOONBEAM = "moonbeam",
     MORPH = "morph",
     MORPH_HOODI = "morph-hoodi",
     OMEGA_13 = "omega-13",
