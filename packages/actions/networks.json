@@ -151,16 +151,6 @@
       "supportsGateway": false
     },
     {
-      "name": "ETHEREAL",
-      "identifier": "ethereal",
-      "supportsGateway": false
-    },
-    {
-      "name": "ETHEREAL_TESTNET",
-      "identifier": "ethereal-testnet",
-      "supportsGateway": false
-    },
-    {
       "name": "FLARE",
       "identifier": "flare",
       "supportsGateway": true
@@ -354,16 +344,6 @@
       "name": "OPTIMISTIC_SEPOLIA",
       "identifier": "optimistic-sepolia",
       "supportsGateway": true
-    },
-    {
-      "name": "PEAQ",
-      "identifier": "peaq",
-      "supportsGateway": false
-    },
-    {
-      "name": "PEAQ_AGUNG",
-      "identifier": "peaq-agung",
-      "supportsGateway": false
     },
     {
       "name": "PLASMA",
