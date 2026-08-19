@@ -346,11 +346,6 @@
       "supportsGateway": true
     },
     {
-      "name": "PEAQ_AGUNG",
-      "identifier": "peaq-agung",
-      "supportsGateway": false
-    },
-    {
       "name": "PLASMA",
       "identifier": "plasma",
       "supportsGateway": true
