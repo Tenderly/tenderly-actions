@@ -71,7 +71,6 @@ export enum Network {
     OMEGA_17 = "omega-17",
     OPTIMISTIC = "optimistic",
     OPTIMISTIC_SEPOLIA = "optimistic-sepolia",
-    PEAQ_AGUNG = "peaq-agung",
     PLASMA = "plasma",
     PLASMA_TESTNET = "plasma-testnet",
     PLUME = "plume",
