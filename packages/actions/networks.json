@@ -331,9 +331,9 @@
       "supportsGateway": true
     },
     {
-      "name": "OMEGA_17",
-      "identifier": "omega-17",
-      "supportsGateway": false
+      "name": "ARC",
+      "identifier": "arc",
+      "supportsGateway": true
     },
     {
       "name": "OPTIMISTIC",
