@@ -63,7 +63,7 @@
     {
       "name": "BLAST",
       "identifier": "blast",
-      "supportsGateway": true
+      "supportsGateway": false
     },
     {
       "name": "BOB",
