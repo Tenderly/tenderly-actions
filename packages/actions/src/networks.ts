@@ -14,7 +14,6 @@ export enum Network {
     BEPOLIA = "bepolia",
     BERACHAIN = "berachain",
     BERACHAIN_BARTIO = "berachain-bartio",
-    BLAST = "blast",
     BOB = "bob-mainnet",
     BOBA_AVALANCHE = "boba-avalanche",
     BOBA_AVALANCHE_FUJI = "boba-avalanche-fuji",
