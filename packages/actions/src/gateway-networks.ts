@@ -35,7 +35,6 @@ export type GatewayNetwork = Extract<Network,
     Network.IMMUTABLE_TESTNET |
     Network.INK |
     Network.INK_SEPOLIA |
-    Network.INTERVAL |
     Network.KATANA |
     Network.KATANA_BOKUTO |
     Network.LENS |
