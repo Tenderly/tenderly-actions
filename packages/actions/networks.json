@@ -223,7 +223,7 @@
     {
       "name": "INTERVAL",
       "identifier": "interval",
-      "supportsGateway": true
+      "supportsGateway": false
     },
     {
       "name": "KATANA",
