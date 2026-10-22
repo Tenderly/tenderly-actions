@@ -13,23 +13,29 @@ on:
       - 'packages/actions/templates/*.hbs'
   workflow_dispatch: # Allow manual triggering
 
+permissions: {}
+
 jobs:
   generate:
     runs-on: ubuntu-latest
     permissions:
       contents: write
       pull-requests: write
+    env:
+      # Only same-repo PR branches can be fixed up automatically; main is protected and
+      # fork PRs get a read-only token, so everywhere else stale files fail the check.
+      CAN_PUSH: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository }}
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           fetch-depth: 0
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
-          node-version: '18' # same as in npm-publish
+          node-version: '22' # same as in npm-publish
           cache: 'npm'
           cache-dependency-path: 'packages/actions/package-lock.json'
 
@@ -59,8 +65,8 @@ jobs:
           echo "✅ TypeScript validation passed!"
 
       - name: Comment on PR about auto-fix
-        if: steps.verify-changed-files.outputs.changed == 'true' && github.event_name == 'pull_request'
-        uses: actions/github-script@v7
+        if: steps.verify-changed-files.outputs.changed == 'true' && env.CAN_PUSH == 'true'
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
         with:
           script: |
             github.rest.issues.createComment({
@@ -71,10 +77,19 @@ jobs:
             })
 
       - name: Commit and push changes
-        if: steps.verify-changed-files.outputs.changed == 'true'
+        if: steps.verify-changed-files.outputs.changed == 'true' && env.CAN_PUSH == 'true'
+        env:
+          HEAD_REF: ${{ github.head_ref }}
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add packages/actions/src/networks.ts packages/actions/src/gateway-networks.ts
           git commit -m "chore: regenerate network files from networks.json"
-          git push origin HEAD:${{ github.head_ref || github.ref_name }}
+          git push origin "HEAD:refs/heads/$HEAD_REF"
+
+      - name: Fail on stale generated files
+        if: steps.verify-changed-files.outputs.changed == 'true' && env.CAN_PUSH != 'true'
+        run: |
+          echo "::error::Generated network files are out of date. Run 'npm run generate' in packages/actions and commit the result."
+          git diff --stat
+          exit 1

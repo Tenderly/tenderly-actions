@@ -1,117 +1,204 @@
 name: Actions Package Release
 
+# Each package is released in two jobs:
+#   build-*   installs dependencies and builds with a read-only token and no OIDC access,
+#             so third-party code from node_modules never runs next to publish credentials.
+#   publish-* runs in the `npm-publish` environment (main only), installs nothing, pushes the
+#             release commit with the environment's deploy key and publishes the packed tarball
+#             via npm trusted publishing (OIDC).
+#
+# Release commits carry [skip ci] because pushes made with a deploy key trigger workflows.
+
 on:
   push:
-    branches: 
+    branches:
       - main
 
+permissions: {}
 
-permissions:
-  contents: write
-  id-token: write
+concurrency:
+  group: npm-release
+  cancel-in-progress: false
+
+env:
+  NODE_VERSION: 22
+  NPM_VERSION: 11.21.1 # trusted publishing requires npm >= 11.5.1
 
 jobs:
-  release-actions:
+  build-actions:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     outputs:
-      version: ${{ steps.commit.outputs.version }}
+      version: ${{ steps.bump.outputs.version }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
-      - name: prepare
-        run: |
-          git config --global user.email "tenderly+github-actions[bot]@users.noreply.github.com"
-          git config --global user.name "GitHub Actions"
-      - uses: actions/setup-node@v4
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
-          node-version: 22
-          registry-url: https://registry.npmjs.org/
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: ${{ env.NODE_VERSION }}
 
-      - run: npm install -g npm@latest
       - name: bump version
+        id: bump
         working-directory: packages/actions
-        run: npm version patch
-      - name: install 
+        run: |
+          npm version patch --no-git-tag-version
+          echo "version=$(node -p "require('./package.json').version")" >> "$GITHUB_OUTPUT"
+
+      - name: install
         working-directory: packages/actions
         run: npm install
 
       - run: npm run build
         working-directory: packages/actions
 
-      - name: commit
-        id: commit
+      - name: pack
         working-directory: packages/actions
-        run: |
-          VERSION=$(node -p "require('./package.json').version")
-          echo "VERSION=${VERSION}" >> "$GITHUB_ENV"
-          echo "version=${VERSION}" >> "$GITHUB_OUTPUT"
+        run: npm pack --pack-destination "$RUNNER_TEMP/release"
 
-          git add "package.json"
-          git add "package-lock.json"
-          git commit -m "release actions-$VERSION"
-          git tag actions/$VERSION
-
-      - run: cat package.json && cat package-lock.json
+      - name: stage release files
         working-directory: packages/actions
-      
-      - name: push
-        run: |
-          git pull --rebase origin main
-          git push origin
-          git push origin actions/$VERSION --force-with-lease || echo "Tag already exists, skipping tag push"
+        run: cp package.json package-lock.json "$RUNNER_TEMP/release/"
 
-      - name: publish release
-        working-directory: packages/actions
-        run: npm publish
-      
-  release-actions-test:
-    needs: release-actions
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: actions-release
+          path: ${{ runner.temp }}/release
+          if-no-files-found: error
+
+  publish-actions:
+    needs: build-actions
     runs-on: ubuntu-latest
+    environment: npm-publish
+    permissions:
+      contents: read
+      id-token: write # npm trusted publishing (OIDC)
     env:
-      VERSION: ${{needs.release-actions.outputs.version}}
+      VERSION: ${{ needs.build-actions.outputs.version }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
-          ref: main
+          ssh-key: ${{ secrets.RELEASE_DEPLOY_KEY }}
       - name: prepare
         run: |
           git config --global user.email "tenderly+github-actions[bot]@users.noreply.github.com"
           git config --global user.name "GitHub Actions"
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
-          node-version: 22
+          node-version: ${{ env.NODE_VERSION }}
           registry-url: https://registry.npmjs.org/
-      
-      - run: npm install -g npm@latest
+      - run: npm install -g "npm@$NPM_VERSION"
+
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: actions-release
+          path: ${{ runner.temp }}/release
+
+      - name: commit
+        working-directory: packages/actions
+        run: |
+          cp "$RUNNER_TEMP/release/package.json" "$RUNNER_TEMP/release/package-lock.json" .
+          git add package.json package-lock.json
+          git commit -m "release actions-$VERSION [skip ci]"
+          git tag "actions/$VERSION"
+
+      - name: push
+        run: |
+          git pull --rebase origin main
+          git push origin HEAD:main
+          git push origin "actions/$VERSION" --force-with-lease || echo "Tag already exists, skipping tag push"
+
+      - name: publish release
+        run: npm publish "$RUNNER_TEMP/release/tenderly-actions-$VERSION.tgz"
+
+  build-actions-test:
+    needs: [build-actions, publish-actions]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    env:
+      VERSION: ${{ needs.build-actions.outputs.version }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: main
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
       - name: bump version
         working-directory: packages/actions-test
-        run:  npm version $VERSION
+        run: npm version "$VERSION" --no-git-tag-version
 
-      - name: install 
+      - name: install
         working-directory: packages/actions-test
         run: npm update @tenderly/actions && npm install
 
       - run: npm run build
         working-directory: packages/actions-test
 
+      - name: pack
+        working-directory: packages/actions-test
+        run: npm pack --pack-destination "$RUNNER_TEMP/release"
+
+      - name: stage release files
+        working-directory: packages/actions-test
+        run: cp package.json package-lock.json "$RUNNER_TEMP/release/"
+
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: actions-test-release
+          path: ${{ runner.temp }}/release
+          if-no-files-found: error
+
+  publish-actions-test:
+    needs: [build-actions, build-actions-test]
+    runs-on: ubuntu-latest
+    environment: npm-publish
+    permissions:
+      contents: read
+      id-token: write # npm trusted publishing (OIDC)
+    env:
+      VERSION: ${{ needs.build-actions.outputs.version }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: main
+          ssh-key: ${{ secrets.RELEASE_DEPLOY_KEY }}
+      - name: prepare
+        run: |
+          git config --global user.email "tenderly+github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "GitHub Actions"
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          registry-url: https://registry.npmjs.org/
+      - run: npm install -g "npm@$NPM_VERSION"
+
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: actions-test-release
+          path: ${{ runner.temp }}/release
+
       - name: commit
         working-directory: packages/actions-test
         run: |
-          git add "package.json"
-          git add "package-lock.json"
-          git commit -m "release actions-test-$VERSION"
-          git tag actions-test/$VERSION
-      - run: cat package.json && cat package-lock.json
-        working-directory: packages/actions-test
+          cp "$RUNNER_TEMP/release/package.json" "$RUNNER_TEMP/release/package-lock.json" .
+          git add package.json package-lock.json
+          git commit -m "release actions-test-$VERSION [skip ci]"
+          git tag "actions-test/$VERSION"
 
       - name: push
         run: |
           git pull --rebase origin main
-          git push origin
-          git push origin actions-test/$VERSION --force-with-lease || echo "Tag already exists, skipping tag push"
+          git push origin HEAD:main
+          git push origin "actions-test/$VERSION" --force-with-lease || echo "Tag already exists, skipping tag push"
 
       - name: publish release
-        working-directory: packages/actions-test
-        run: npm publish
-
+        run: npm publish "$RUNNER_TEMP/release/tenderly-actions-test-$VERSION.tgz"
