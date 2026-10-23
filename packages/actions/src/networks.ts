@@ -28,8 +28,6 @@ export enum Network {
     CELO_SEPOLIA = "celo-sepolia",
     CFX_ESPACE = "cfx-espace",
     CFX_ESPACE_TESTNET = "cfx-espace-testnet",
-    CRONOS = "cronos",
-    CRONOS_TESTNET = "cronos-testnet",
     CURTIS = "curtis",
     FLARE = "flare",
     FRAXTAL = "fraxtal-mainnet",
@@ -105,6 +103,5 @@ export enum Network {
     ZETACHAIN = "zetachain",
     ZETACHAIN_TESTNET = "zetachain-testnet",
     ZKSYNC = "zksync",
-    ZKSYNC_SEPOLIA = "zksync-sepolia",
-    ZORA_TESTNET = "zora-testnet"
+    ZKSYNC_SEPOLIA = "zksync-sepolia"
 } 

@@ -131,16 +131,6 @@
       "supportsGateway": true
     },
     {
-      "name": "CRONOS",
-      "identifier": "cronos",
-      "supportsGateway": false
-    },
-    {
-      "name": "CRONOS_TESTNET",
-      "identifier": "cronos-testnet",
-      "supportsGateway": false
-    },
-    {
       "name": "CURTIS",
       "identifier": "curtis",
       "supportsGateway": false
@@ -519,11 +509,6 @@
       "name": "ZKSYNC_SEPOLIA",
       "identifier": "zksync-sepolia",
       "supportsGateway": true
-    },
-    {
-      "name": "ZORA_TESTNET",
-      "identifier": "zora-testnet",
-      "supportsGateway": false
     }
   ]
 }
