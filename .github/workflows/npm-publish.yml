@@ -56,7 +56,9 @@ jobs:
 
       - name: pack
         working-directory: packages/actions
-        run: npm pack --pack-destination "$RUNNER_TEMP/release"
+        run: |
+          mkdir -p "$RUNNER_TEMP/release"
+          npm pack --pack-destination "$RUNNER_TEMP/release"
 
       - name: stage release files
         working-directory: packages/actions
@@ -144,7 +146,9 @@ jobs:
 
       - name: pack
         working-directory: packages/actions-test
-        run: npm pack --pack-destination "$RUNNER_TEMP/release"
+        run: |
+          mkdir -p "$RUNNER_TEMP/release"
+          npm pack --pack-destination "$RUNNER_TEMP/release"
 
       - name: stage release files
         working-directory: packages/actions-test
