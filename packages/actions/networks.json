@@ -473,12 +473,12 @@
     {
       "name": "WORLDCHAIN",
       "identifier": "worldchain-mainnet",
-      "supportsGateway": true
+      "supportsGateway": false
     },
     {
       "name": "WORLDCHAIN_SEPOLIA",
       "identifier": "worldchain-sepolia",
-      "supportsGateway": true
+      "supportsGateway": false
     },
     {
       "name": "XLAYER",
