@@ -73,8 +73,6 @@ export type GatewayNetwork = Extract<Network,
     Network.TEMPO_MODERATO_TESTNET |
     Network.UNICHAIN |
     Network.UNICHAIN_SEPOLIA |
-    Network.WORLDCHAIN |
-    Network.WORLDCHAIN_SEPOLIA |
     Network.XLAYER |
     Network.XLAYER_TESTNET |
     Network.ZKSYNC |
