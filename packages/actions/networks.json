@@ -11,11 +11,6 @@
       "supportsGateway": true
     },
     {
-      "name": "APECHAIN",
-      "identifier": "apechain",
-      "supportsGateway": false
-    },
-    {
       "name": "ARBITRUM",
       "identifier": "arbitrum",
       "supportsGateway": true
@@ -129,11 +124,6 @@
       "name": "CFX_ESPACE_TESTNET",
       "identifier": "cfx-espace-testnet",
       "supportsGateway": true
-    },
-    {
-      "name": "CURTIS",
-      "identifier": "curtis",
-      "supportsGateway": false
     },
     {
       "name": "FLARE",
@@ -396,16 +386,6 @@
       "supportsGateway": true
     },
     {
-      "name": "SHAPE",
-      "identifier": "shape",
-      "supportsGateway": false
-    },
-    {
-      "name": "SHAPE_SEPOLIA",
-      "identifier": "shape-sepolia",
-      "supportsGateway": false
-    },
-    {
       "name": "SONEIUM",
       "identifier": "soneium",
       "supportsGateway": true
@@ -469,16 +449,6 @@
       "name": "UNICHAIN_SEPOLIA",
       "identifier": "unichain-sepolia",
       "supportsGateway": true
-    },
-    {
-      "name": "WORLDCHAIN",
-      "identifier": "worldchain-mainnet",
-      "supportsGateway": false
-    },
-    {
-      "name": "WORLDCHAIN_SEPOLIA",
-      "identifier": "worldchain-sepolia",
-      "supportsGateway": false
     },
     {
       "name": "XLAYER",
