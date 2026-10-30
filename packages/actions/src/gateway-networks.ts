@@ -8,6 +8,7 @@ export type GatewayNetwork = Extract<Network,
     Network.AMOY |
     Network.ARBITRUM |
     Network.ARBITRUM_SEPOLIA |
+    Network.ARC |
     Network.AVA |
     Network.BASE |
     Network.BASE_SEPOLIA |
@@ -50,13 +51,12 @@ export type GatewayNetwork = Extract<Network,
     Network.MORPH |
     Network.MORPH_HOODI |
     Network.OMEGA_13 |
-    Network.ROBINHOOD_CHAIN |
-    Network.ARC |
     Network.OPTIMISTIC |
     Network.OPTIMISTIC_SEPOLIA |
     Network.PLASMA |
     Network.PLASMA_TESTNET |
     Network.POLYGON |
+    Network.ROBINHOOD_CHAIN |
     Network.ROBINHOOD_CHAIN_TESTNET |
     Network.RONIN |
     Network.RONIN_TESTNET |

@@ -3,9 +3,11 @@
  */
 export enum Network {
     AF_NEXUS_TESTNET = "af-nexus-testnet",
+    ALPEN_TESTNET = "alpen-testnet",
     AMOY = "polygon-amoy",
     ARBITRUM = "arbitrum",
     ARBITRUM_SEPOLIA = "arbitrum-sepolia",
+    ARC = "arc",
     ARC_TESTNET = "arc-testnet",
     AVA = "ava",
     BASE = "base",
@@ -61,8 +63,6 @@ export enum Network {
     MORPH = "morph",
     MORPH_HOODI = "morph-hoodi",
     OMEGA_13 = "omega-13",
-    ROBINHOOD_CHAIN = "robinhood-chain",
-    ARC = "arc",
     OPTIMISTIC = "optimistic",
     OPTIMISTIC_SEPOLIA = "optimistic-sepolia",
     PLASMA = "plasma",
@@ -70,6 +70,7 @@ export enum Network {
     PLUME = "plume",
     PLUME_TESTNET = "plume-testnet",
     POLYGON = "polygon",
+    ROBINHOOD_CHAIN = "robinhood-chain",
     ROBINHOOD_CHAIN_TESTNET = "robinhood-chain-testnet",
     RONIN = "ronin",
     RONIN_TESTNET = "ronin-testnet",
