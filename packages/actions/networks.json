@@ -6,6 +6,11 @@
       "supportsGateway": true
     },
     {
+      "name": "ALPEN_TESTNET",
+      "identifier": "alpen-testnet",
+      "supportsGateway": false
+    },
+    {
       "name": "AMOY",
       "identifier": "polygon-amoy",
       "supportsGateway": true
@@ -18,6 +23,11 @@
     {
       "name": "ARBITRUM_SEPOLIA",
       "identifier": "arbitrum-sepolia",
+      "supportsGateway": true
+    },
+    {
+      "name": "ARC",
+      "identifier": "arc",
       "supportsGateway": true
     },
     {
@@ -296,16 +306,6 @@
       "supportsGateway": true
     },
     {
-      "name": "ROBINHOOD_CHAIN",
-      "identifier": "robinhood-chain",
-      "supportsGateway": true
-    },
-    {
-      "name": "ARC",
-      "identifier": "arc",
-      "supportsGateway": true
-    },
-    {
       "name": "OPTIMISTIC",
       "identifier": "optimistic",
       "supportsGateway": true
@@ -338,6 +338,11 @@
     {
       "name": "POLYGON",
       "identifier": "polygon",
+      "supportsGateway": true
+    },
+    {
+      "name": "ROBINHOOD_CHAIN",
+      "identifier": "robinhood-chain",
       "supportsGateway": true
     },
     {
