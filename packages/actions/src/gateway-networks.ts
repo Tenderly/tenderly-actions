@@ -5,6 +5,7 @@ import { Network } from './networks';
  */
 export type GatewayNetwork = Extract<Network,
     Network.AF_NEXUS_TESTNET |
+    Network.ALPEN_TESTNET |
     Network.AMOY |
     Network.ARBITRUM |
     Network.ARBITRUM_SEPOLIA |
