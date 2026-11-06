@@ -8,7 +8,7 @@
     {
       "name": "ALPEN_TESTNET",
       "identifier": "alpen-testnet",
-      "supportsGateway": false
+      "supportsGateway": true
     },
     {
       "name": "AMOY",
