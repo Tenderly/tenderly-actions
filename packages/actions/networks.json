@@ -271,16 +271,6 @@
       "supportsGateway": true
     },
     {
-      "name": "METIS_ANDROMEDA",
-      "identifier": "metis-andromeda",
-      "supportsGateway": false
-    },
-    {
-      "name": "METIS_SEPOLIA",
-      "identifier": "metis-sepolia",
-      "supportsGateway": false
-    },
-    {
       "name": "MONAD",
       "identifier": "monad",
       "supportsGateway": true
