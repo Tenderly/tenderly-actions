@@ -107,11 +107,13 @@ jobs:
           git commit -m "release actions-$VERSION [skip ci]"
           git tag "actions/$VERSION"
 
+      # Fully-qualified refs only: git resolves a short name through refs/tags/ before
+      # refs/heads/, so a tag named main would steer the deploy-key push.
       - name: push
         run: |
-          git pull --rebase origin main
-          git push origin HEAD:main
-          git push origin "actions/$VERSION" --force-with-lease || echo "Tag already exists, skipping tag push"
+          git pull --rebase origin refs/heads/main
+          git push origin HEAD:refs/heads/main
+          git push origin "refs/tags/actions/$VERSION"
 
       - name: publish release
         run: npm publish "$RUNNER_TEMP/release/tenderly-actions-$VERSION.tgz"
@@ -127,7 +129,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
-          ref: main
+          ref: refs/heads/main
           persist-credentials: false
       - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
@@ -173,7 +175,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
-          ref: main
+          ref: refs/heads/main
           ssh-key: ${{ secrets.RELEASE_DEPLOY_KEY }}
       - name: prepare
         run: |
@@ -198,11 +200,13 @@ jobs:
           git commit -m "release actions-test-$VERSION [skip ci]"
           git tag "actions-test/$VERSION"
 
+      # Fully-qualified refs only: git resolves a short name through refs/tags/ before
+      # refs/heads/, so a tag named main would steer the deploy-key push.
       - name: push
         run: |
-          git pull --rebase origin main
-          git push origin HEAD:main
-          git push origin "actions-test/$VERSION" --force-with-lease || echo "Tag already exists, skipping tag push"
+          git pull --rebase origin refs/heads/main
+          git push origin HEAD:refs/heads/main
+          git push origin "refs/tags/actions-test/$VERSION"
 
       - name: publish release
         run: npm publish "$RUNNER_TEMP/release/tenderly-actions-test-$VERSION.tgz"
