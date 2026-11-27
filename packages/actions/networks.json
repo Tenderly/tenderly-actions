@@ -6,6 +6,11 @@
       "supportsGateway": true
     },
     {
+      "name": "ALPEN",
+      "identifier": "alpen",
+      "supportsGateway": false
+    },
+    {
       "name": "ALPEN_TESTNET",
       "identifier": "alpen-testnet",
       "supportsGateway": true

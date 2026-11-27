@@ -3,6 +3,7 @@
  */
 export enum Network {
     AF_NEXUS_TESTNET = "af-nexus-testnet",
+    ALPEN = "alpen",
     ALPEN_TESTNET = "alpen-testnet",
     AMOY = "polygon-amoy",
     ARBITRUM = "arbitrum",
